@@ -58,7 +58,11 @@
       "Bash(sed -i 's|<title>Ayyıldız E-İmza Satın Al — 1, 2, 3 Yıllık Paketler | UMAY TÜM BİLİŞİM LTD.ŞTİ.</title>|<title>E-İmza Satın Al — Ayyıldız Yetkili Bayi | UMAY TÜM BİLİŞİM</title>|' C:/claude/GUN2/e-imza.html)",
       "Bash(sed -i 's|<title>Ayyıldız KEP \\(Kayıtlı Elektronik Posta\\) — Başvuru ve Fiyat | UMAY TÜM BİLİŞİM LTD.ŞTİ.</title>|<title>KEP Başvurusu — Ayyıldız Yetkili Bayi | UMAY TÜM BİLİŞİM</title>|' C:/claude/GUN2/kep.html)",
       "Bash(sed -i 's|<title>Hizmetler — Zaman Damgası, HSM, E-Mühür, API | UMAY TÜM BİLİŞİM LTD.ŞTİ.</title>|<title>Zaman Damgası, HSM, E-Mühür, API | UMAY TÜM BİLİŞİM</title>|' C:/claude/GUN2/hizmetler.html)",
-      "Bash(sed -i 's|<title>Hakkımızda — Ayyıldız Yetkili Satıcısı | UMAY TÜM BİLİŞİM LTD.ŞTİ.</title>|<title>Hakkımızda — Ayyıldız Yetkili Bayi | UMAY TÜM BİLİŞİM</title>|' C:/claude/GUN2/hakkimizda.html)"
+      "Bash(sed -i 's|<title>Hakkımızda — Ayyıldız Yetkili Satıcısı | UMAY TÜM BİLİŞİM LTD.ŞTİ.</title>|<title>Hakkımızda — Ayyıldız Yetkili Bayi | UMAY TÜM BİLİŞİM</title>|' C:/claude/GUN2/hakkimizda.html)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot"
     ]
   }
 }
