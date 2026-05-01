@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: ★ Ayyıldız Yetkili Satıcısı
+    - heading "E-İmza ve KEP 81 İlde Hızlı Teslimat" [level=1] [ref=e7]:
+      - text: E-İmza ve KEP
+      - text: 81 İlde Hızlı
+      - text: Teslimat
+    - paragraph [ref=e8]:
+      - text: Bireysel, firma ve kurumsal e-imza çözümleri.
+      - text: Aynı gün kargo, uzaktan kurulum, ücretsiz destek.
+    - generic [ref=e9]:
+      - generic [ref=e10]: ✍ E-İmza
+      - generic [ref=e11]: ✉ KEP
+      - generic [ref=e12]: ⏱ Zaman Damgası
+      - generic [ref=e13]: ⚙ E-Mühür
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]: ★
+      - generic [ref=e17]:
+        - text: UMAY TÜM
+        - text: BİLİŞİM
+    - generic [ref=e18]: e-imzasatinal.com.tr
