@@ -14,7 +14,7 @@ const SITEMAP_FILE = path.join(ROOT, "sitemap.xml");
 
 // ---- Domain (canonical için) ----
 // Kendi domaininizi buraya yazın
-const SITE = "https://e-imzasatinal.com.tr";
+const SITE = "https://www.e-imzasatinal.com.tr";
 
 const template = fs.readFileSync(TEMPLATE_FILE, "utf8");
 const cities = JSON.parse(fs.readFileSync(CITIES_FILE, "utf8"));
