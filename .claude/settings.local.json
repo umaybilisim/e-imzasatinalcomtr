@@ -63,7 +63,11 @@
       "mcp__plugin_playwright_playwright__browser_evaluate",
       "mcp__plugin_playwright_playwright__browser_resize",
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
-      "mcp__plugin_playwright_playwright__browser_tabs"
+      "mcp__plugin_playwright_playwright__browser_tabs",
+
+      "Bash(curl *)",
+      "Bash(del C:/claude/GUN2/build/dns_records.json)",
+      "Bash(Start-Sleep -Seconds 15)"
     ]
   }
 }
