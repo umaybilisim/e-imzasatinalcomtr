@@ -127,6 +127,8 @@ button{font-family:inherit;cursor:pointer;border:none}
 .btn--wa:hover{background:var(--wa-dark);color:var(--white)}
 .btn--pay{background:#c1121f;color:var(--white)}
 .btn--pay:hover{background:#a00f1a;color:var(--white)}
+.nav a.btn--pay{color:var(--white)}
+.nav a.btn--pay:hover{color:var(--white)}
 .btn--ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
 .btn--ghost:hover{background:var(--navy);color:var(--white)}
 .btn--sm{padding:9px 16px;font-size:.88rem}
