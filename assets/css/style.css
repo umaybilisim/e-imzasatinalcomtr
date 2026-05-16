@@ -260,7 +260,7 @@ button{font-family:inherit;cursor:pointer;border:none}
 }
 .cta-strip h2{color:var(--white);margin-bottom:12px}
 .cta-strip p{color:rgba(255,255,255,.92);max-width:620px;margin:0 auto 24px;font-size:1.05rem}
-.cta-strip .btn--navy{background:var(--white);color:var(--accent)}
+.cta-strip .btn--navy{background:var(--white);color:#c1121f}
 .cta-strip .btn--navy:hover{background:var(--navy);color:var(--white)}
 
 /* ---------- Stats Counter ---------- */
