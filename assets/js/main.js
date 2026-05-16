@@ -86,4 +86,17 @@
     var href = (a.getAttribute("href") || "").split("/").pop();
     if (href && href === path) a.classList.add("active");
   });
+
+  // GA4 gecikimli yükleme — sayfanın önce açılmasını sağlar
+  setTimeout(function () {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = window.gtag || gtag;
+    gtag("js", new Date());
+    gtag("config", "G-XTGNCVEKBV");
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=G-XTGNCVEKBV";
+    document.head.appendChild(s);
+  }, 1500);
 })();
