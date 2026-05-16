@@ -1,0 +1,711 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link "PageSpeed Insights logo PageSpeed Insights" [ref=e3] [cursor=pointer]:
+      - /url: ./
+      - img "PageSpeed Insights logo" [ref=e4]
+      - generic [ref=e5]: PageSpeed Insights
+    - generic [ref=e6]:
+      - button "Bağlantıyı Kopyala" [ref=e8]:
+        - img [ref=e11]
+        - generic [ref=e14]: Bağlantıyı Kopyala
+      - generic [ref=e16]:
+        - generic [ref=e18]: Dokümanlar
+        - link "Dokümanlar" [ref=e19] [cursor=pointer]:
+          - /url: https://developers.google.com/speed/docs/insights/v5/about
+  - generic [ref=e1171]:
+    - generic [ref=e1185]: 16 May 2026 18:57:12 tarihinden başlayan rapor
+    - generic [ref=e1186]:
+      - generic [ref=e1187]:
+        - textbox [ref=e1189]:
+          - /placeholder: Web sayfası URL'si girin
+          - text: https://www.e-imzasatinal.com.tr/
+        - paragraph [ref=e1191]: Geçerli bir URL girin
+      - button "Analiz et" [ref=e1193]:
+        - generic [ref=e1196]: Analiz et
+    - generic [ref=e1199]:
+      - tablist [ref=e1200]:
+        - generic [ref=e1203]:
+          - tab "Mobil" [selected] [ref=e1204] [cursor=pointer]:
+            - generic:
+              - generic: smartphone
+              - generic: Mobil
+          - tab "Masaüstü" [ref=e1206] [cursor=pointer]:
+            - generic:
+              - generic: computer
+              - generic: Masaüstü
+      - tabpanel "Mobil" [ref=e1208]:
+        - generic [ref=e1210]:
+          - generic [ref=e1212]:
+            - generic [ref=e1213]:
+              - generic [ref=e1214]: Gerçek kullanıcılarınızın nelerle karşılaştığını görün
+              - generic [ref=e1216]:
+                - button "button" [ref=e1218] [cursor=pointer]:
+                  - img [ref=e1220]
+                - generic [ref=e1222]: Veri Yok
+            - separator [ref=e1223]
+          - generic [ref=e1224]:
+            - generic [ref=e1245]: Performans sorunlarını teşhis edin
+            - article [ref=e1251]:
+              - generic [ref=e1252]:
+                - generic [ref=e1257]:
+                  - link "99 Performans" [ref=e1258] [cursor=pointer]:
+                    - /url: "#performance"
+                    - img [ref=e1260]
+                    - generic [ref=e1263]: "99"
+                    - generic [ref=e1264]: Performans
+                  - link "93 Erişilebilirlik" [ref=e1265] [cursor=pointer]:
+                    - /url: "#accessibility"
+                    - img [ref=e1267]
+                    - generic [ref=e1270]: "93"
+                    - generic [ref=e1271]: Erişilebilirlik
+                  - link "96 En İyi Uygulamalar" [ref=e1272] [cursor=pointer]:
+                    - /url: "#best-practices"
+                    - img [ref=e1274]
+                    - generic [ref=e1277]: "96"
+                    - generic [ref=e1278]: En İyi Uygulamalar
+                  - link "100 SEO" [ref=e1279] [cursor=pointer]:
+                    - /url: "#seo"
+                    - img [ref=e1281]
+                    - generic [ref=e1284]: "100"
+                    - generic [ref=e1285]: SEO
+                - generic [ref=e1287]:
+                  - generic [ref=e1289]:
+                    - generic [ref=e1290]:
+                      - generic [ref=e1291]:
+                        - img [ref=e1295]:
+                          - generic [ref=e1300]: "99"
+                          - generic [ref=e1301]:
+                            - generic:
+                              - generic: FCP
+                              - generic: "+10"
+                            - generic:
+                              - generic: LCP
+                              - generic: "+25"
+                            - generic:
+                              - generic: TBT
+                              - generic: "+30"
+                            - generic:
+                              - generic: CLS
+                              - generic: "+25"
+                            - generic:
+                              - generic: SI
+                              - generic: "+9"
+                          - generic [ref=e1303]: Performans
+                        - generic [ref=e1305]:
+                          - generic [ref=e1306]:
+                            - text: Değerler tahminidir ve değişiklik gösterebilir.
+                            - link "Performance skorunun hesaplanması" [ref=e1307] [cursor=pointer]:
+                              - /url: https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+                            - text: ", doğrudan bu metriklerle yapılır."
+                          - link "Hesap makinesini göster." [ref=e1308] [cursor=pointer]:
+                            - /url: https://googlechrome.github.io/lighthouse/scorecalc/#FCP=1004&LCP=1517&TBT=0&CLS=0&SI=3661&TTI=1517&device=mobile&version=13.0.1
+                        - generic [ref=e1310]:
+                          - generic [ref=e1311]: 0–49
+                          - generic [ref=e1312]: 50–89
+                          - generic [ref=e1313]: 90–100
+                      - img "Final Screenshot" [ref=e1316]
+                    - generic [ref=e1317]:
+                      - checkbox "Toggle the display of metric descriptions" [ref=e1318]
+                      - generic [ref=e1319]:
+                        - generic [ref=e1320]: Metrikler
+                        - generic [ref=e1321] [cursor=pointer]: Görünümü genişlet
+                      - generic [ref=e1322]:
+                        - generic [ref=e1324]:
+                          - generic [ref=e1326]: First Contentful Paint
+                          - generic [ref=e1327]: 1,0 sn.
+                        - generic [ref=e1329]:
+                          - generic [ref=e1331]: Largest Contentful Paint
+                          - generic [ref=e1332]: 1,5 sn.
+                        - generic [ref=e1334]:
+                          - generic [ref=e1336]: Total Blocking Time
+                          - generic [ref=e1337]: 0 ms.
+                        - generic [ref=e1339]:
+                          - generic [ref=e1341]: Cumulative Layout Shift
+                          - generic [ref=e1342]: "0"
+                        - generic [ref=e1344]:
+                          - generic [ref=e1346]: Speed Index
+                          - generic [ref=e1347]: 3,7 sn.
+                      - list [ref=e1348]:
+                        - listitem [ref=e1349]: Captured at 16 May 2026 18:57 GMT+3
+                        - listitem [ref=e1350]: Emülasyonlu Moto G Power with Lighthouse 13.0.1
+                        - listitem [ref=e1351]: Tek sayfalık oturum
+                        - listitem [ref=e1352]: İlk sayfa yükleme
+                        - listitem [ref=e1353]: Yavaş 4G kısıtlaması
+                        - listitem [ref=e1354]: Using HeadlessChromium 146.0.7680.177 with lr
+                      - button "Ağaç grafiği göster" [ref=e1356] [cursor=pointer]
+                    - generic [ref=e1358]:
+                      - img "Screenshot" [ref=e1360]
+                      - img "Screenshot" [ref=e1362]
+                      - img "Screenshot" [ref=e1364]
+                      - img "Screenshot" [ref=e1366]
+                      - img "Screenshot" [ref=e1368]
+                      - img "Screenshot" [ref=e1370]
+                      - img "Screenshot" [ref=e1372]
+                      - img "Screenshot" [ref=e1374]
+                    - generic [ref=e1375]:
+                      - generic [ref=e1376]:
+                        - generic [ref=e1377]: "Şunlarla alakalı denetimleri göster:"
+                        - radio "All" [checked] [ref=e1378]
+                        - generic [ref=e1379] [cursor=pointer]: All
+                        - radio "FCP" [ref=e1380]
+                        - generic "First Contentful Paint" [ref=e1381] [cursor=pointer]: FCP
+                        - radio "LCP" [ref=e1382]
+                        - generic "Largest Contentful Paint" [ref=e1383] [cursor=pointer]: LCP
+                        - radio "TBT" [ref=e1384]
+                        - generic "Total Blocking Time" [ref=e1385] [cursor=pointer]: TBT
+                        - radio "CLS" [ref=e1386]
+                        - generic "Cumulative Layout Shift" [ref=e1387] [cursor=pointer]: CLS
+                      - generic [ref=e1388]:
+                        - generic [ref=e1389]: Analizler
+                        - group [ref=e1391]:
+                          - 'generic "Oluşturma engelleme istekleri —Tahmini tasarruf: 310 ms." [ref=e1392] [cursor=pointer]':
+                            - generic [ref=e1393]:
+                              - generic [ref=e1395]:
+                                - generic [ref=e1396]: Oluşturma engelleme istekleri
+                                - text: "—Tahmini tasarruf: 310 ms."
+                              - img [ref=e1398]
+                        - group [ref=e1403]:
+                          - generic "Zorunlu yeniden düzenleme" [ref=e1404] [cursor=pointer]:
+                            - generic [ref=e1405]:
+                              - generic [ref=e1408]: Zorunlu yeniden düzenleme
+                              - img [ref=e1410]
+                        - group [ref=e1415]:
+                          - generic "Ağ bağımlılık ağacı" [ref=e1416] [cursor=pointer]:
+                            - generic [ref=e1417]:
+                              - generic [ref=e1420]: Ağ bağımlılık ağacı
+                              - img [ref=e1422]
+                        - group [ref=e1427]:
+                          - 'generic "Verimli önbellek sürelerini kullanın —Tahmini tasarruf: 7 KiB" [ref=e1428] [cursor=pointer]':
+                            - generic [ref=e1429]:
+                              - generic [ref=e1431]:
+                                - generic [ref=e1432]: Verimli önbellek sürelerini kullanın
+                                - text: "—Tahmini tasarruf: 7 KiB"
+                              - img [ref=e1434]
+                        - group [ref=e1439]:
+                          - generic "DOM boyutunu optimize edin" [ref=e1440] [cursor=pointer]:
+                            - generic [ref=e1441]:
+                              - generic [ref=e1444]: DOM boyutunu optimize edin
+                              - img [ref=e1446]
+                        - group [ref=e1451]:
+                          - generic "LCP dökümü" [ref=e1452] [cursor=pointer]:
+                            - generic [ref=e1453]:
+                              - generic [ref=e1456]: LCP dökümü
+                              - img [ref=e1458]
+                        - group [ref=e1463]:
+                          - generic "3. taraflar" [ref=e1464] [cursor=pointer]:
+                            - generic [ref=e1465]:
+                              - generic [ref=e1468]: 3. taraflar
+                              - img [ref=e1470]
+                        - generic [ref=e1474]:
+                          - text: Bu analizler Chrome Geliştirici Araçları Performans Paneli'nde de mevcuttur. Daha ayrıntılı bilgi görüntülemek için
+                          - link "izleme kaydı oluşturun" [ref=e1475] [cursor=pointer]:
+                            - /url: https://developer.chrome.com/docs/devtools/performance/reference?utm_source=lighthouse&utm_medium=lr
+                          - text: .
+                      - generic [ref=e1476]:
+                        - generic [ref=e1477]: Teşhis
+                        - group [ref=e1479]:
+                          - generic "Birleştirilmemiş animasyonlardan kaçının —Animasyonlu 1 öğe bulundu" [ref=e1480] [cursor=pointer]:
+                            - generic [ref=e1481]:
+                              - generic [ref=e1483]:
+                                - generic [ref=e1484]: Birleştirilmemiş animasyonlardan kaçının
+                                - text: —Animasyonlu 1 öğe bulundu
+                              - img [ref=e1486]
+                        - group [ref=e1491]:
+                          - generic "Uzun ana ileti dizisi görevlerinden kaçının —1 uzun görev bulundu" [ref=e1492] [cursor=pointer]:
+                            - generic [ref=e1493]:
+                              - generic [ref=e1495]:
+                                - generic [ref=e1496]: Uzun ana ileti dizisi görevlerinden kaçının
+                                - text: —1 uzun görev bulundu
+                              - img [ref=e1498]
+                        - generic [ref=e1502]:
+                          - text: Uygulamanızın performansı hakkında daha fazla bilgi. Bu sayılar Performan skoruna
+                          - link "doğrudan etki" [ref=e1503] [cursor=pointer]:
+                            - /url: https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/?utm_source=lighthouse&utm_medium=lr
+                          - text: etmezler.
+                      - group [ref=e1505]:
+                        - generic "Başarılı denetimler (18) Göster" [ref=e1506] [cursor=pointer]:
+                          - generic [ref=e1507]:
+                            - generic [ref=e1508]: Başarılı denetimler (18)
+                            - generic [ref=e1509]: Göster
+                        - text: — — —
+                  - generic [ref=e1511]:
+                    - generic [ref=e1512]:
+                      - heading "93 Erişilebilirlik" [level=2] [ref=e1513]:
+                        - generic [ref=e1514]:
+                          - img [ref=e1516]
+                          - generic [ref=e1519]: "93"
+                          - generic [ref=e1520]: Erişilebilirlik
+                      - generic [ref=e1522]:
+                        - text: Bu kontroller,
+                        - link "web uygulamanızın erişilebilirliğini iyileştirme" [ref=e1523] [cursor=pointer]:
+                          - /url: https://developer.chrome.com/docs/lighthouse/accessibility/?utm_source=lighthouse&utm_medium=lr
+                        - text: fırsatlarını öne çıkarır. Otomatik algılama, sorunların yalnızca bir alt kümesini algılayabilir ve web uygulamanızın erişilebilirliğini garanti etmez. Bu nedenle,
+                        - link "manuel test" [ref=e1524] [cursor=pointer]:
+                          - /url: https://web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+                        - text: yapmanız da önerilir.
+                    - generic [ref=e1525]:
+                      - generic [ref=e1526]:
+                        - generic [ref=e1527]: Kontrast
+                        - group [ref=e1529]:
+                          - generic "Arka plan ve ön plan renkleri yeterli kontrast oranına sahip değil." [active] [ref=e1530] [cursor=pointer]:
+                            - generic [ref=e1531]:
+                              - generic [ref=e1534]: Arka plan ve ön plan renkleri yeterli kontrast oranına sahip değil.
+                              - img [ref=e1536]
+                          - generic [ref=e1761]:
+                            - text: Birçok kullanıcı, düşük kontrastlı metni okumakta zorlanır veya okuyamaz.
+                            - link "Yeterli renk kontrastını nasıl sağlayacağınızı öğrenin" [ref=e1762] [cursor=pointer]:
+                              - /url: https://dequeuniversity.com/rules/axe/4.11/color-contrast
+                            - text: .
+                          - table [ref=e1763]:
+                            - rowgroup [ref=e1764]:
+                              - row "Başarısız Öğeler" [ref=e1765]:
+                                - columnheader "Başarısız Öğeler" [ref=e1766]:
+                                  - generic [ref=e1767]: Başarısız Öğeler
+                            - rowgroup [ref=e1768]:
+                              - row "HİZMETLERİMİZ <span class=\"eyebrow\">" [ref=e1769]:
+                                - cell "HİZMETLERİMİZ <span class=\"eyebrow\">" [ref=e1770]:
+                                  - generic "section.section > div.container > div.section-head > span.eyebrow" [ref=e1771]:
+                                    - generic [ref=e1775]:
+                                      - img
+                                    - generic [ref=e1777]: HİZMETLERİMİZ
+                                    - generic [ref=e1778]: <span class="eyebrow">
+                              - row "body <body>" [ref=e1779]:
+                                - cell "body <body>" [ref=e1780]:
+                                  - generic "body" [ref=e1781]:
+                                    - generic [ref=e1785]:
+                                      - img
+                                    - generic [ref=e1787]: body
+                                    - generic [ref=e1788]: <body>
+                              - row "Detaylı bilgi <a href=\"e-imza.html\" class=\"card__link\">" [ref=e1789]:
+                                - cell "Detaylı bilgi <a href=\"e-imza.html\" class=\"card__link\">" [ref=e1790]:
+                                  - generic "div.container > div.grid > article.card > a.card__link" [ref=e1791]:
+                                    - generic [ref=e1795]:
+                                      - img
+                                    - generic [ref=e1797]: Detaylı bilgi
+                                    - generic [ref=e1798]: <a href="e-imza.html" class="card__link">
+                              - row "✍ Elektronik İmza (E-İmza) Bireysel, firma ve kurumsal elektronik imza. 1, 2 v… <article class=\"card\">" [ref=e1799]:
+                                - cell "✍ Elektronik İmza (E-İmza) Bireysel, firma ve kurumsal elektronik imza. 1, 2 v… <article class=\"card\">" [ref=e1800]:
+                                  - generic "section.section > div.container > div.grid > article.card" [ref=e1801]:
+                                    - generic [ref=e1805]:
+                                      - img
+                                    - generic [ref=e1807]: ✍ Elektronik İmza (E-İmza) Bireysel, firma ve kurumsal elektronik imza. 1, 2 v…
+                                    - generic [ref=e1808]: <article class="card">
+                              - row "Detaylı bilgi <a href=\"kep.html\" class=\"card__link\">" [ref=e1809]:
+                                - cell "Detaylı bilgi <a href=\"kep.html\" class=\"card__link\">" [ref=e1810]:
+                                  - generic "div.container > div.grid > article.card > a.card__link" [ref=e1811]:
+                                    - generic [ref=e1815]:
+                                      - img
+                                    - generic [ref=e1817]: Detaylı bilgi
+                                    - generic [ref=e1818]: <a href="kep.html" class="card__link">
+                              - row "✉ KEP (Kayıtlı E-Posta) Yasal delil niteliğinde kayıtlı elektronik posta. Tica… <article class=\"card\">" [ref=e1819]:
+                                - cell "✉ KEP (Kayıtlı E-Posta) Yasal delil niteliğinde kayıtlı elektronik posta. Tica… <article class=\"card\">" [ref=e1820]:
+                                  - generic "section.section > div.container > div.grid > article.card" [ref=e1821]:
+                                    - generic [ref=e1825]:
+                                      - img
+                                    - generic [ref=e1827]: ✉ KEP (Kayıtlı E-Posta) Yasal delil niteliğinde kayıtlı elektronik posta. Tica…
+                                    - generic [ref=e1828]: <article class="card">
+                              - row "Detaylı bilgi <a href=\"hizmetler.html#zaman-damgasi\" class=\"card__link\">" [ref=e1829]:
+                                - cell "Detaylı bilgi <a href=\"hizmetler.html#zaman-damgasi\" class=\"card__link\">" [ref=e1830]:
+                                  - generic "div.container > div.grid > article.card > a.card__link" [ref=e1831]:
+                                    - generic [ref=e1835]:
+                                      - img
+                                    - generic [ref=e1837]: Detaylı bilgi
+                                    - generic [ref=e1838]: <a href="hizmetler.html#zaman-damgasi" class="card__link">
+                              - row "⏱ Zaman Damgası Belgelerinizin belirli bir anda var olduğunu kanıtlayan, hukuk… <article class=\"card\">" [ref=e1839]:
+                                - cell "⏱ Zaman Damgası Belgelerinizin belirli bir anda var olduğunu kanıtlayan, hukuk… <article class=\"card\">" [ref=e1840]:
+                                  - generic "section.section > div.container > div.grid > article.card" [ref=e1841]:
+                                    - generic [ref=e1845]:
+                                      - img
+                                    - generic [ref=e1847]: ⏱ Zaman Damgası Belgelerinizin belirli bir anda var olduğunu kanıtlayan, hukuk…
+                                    - generic [ref=e1848]: <article class="card">
+                              - row "Detaylı bilgi <a href=\"hizmetler.html#hsm\" class=\"card__link\">" [ref=e1849]:
+                                - cell "Detaylı bilgi <a href=\"hizmetler.html#hsm\" class=\"card__link\">" [ref=e1850]:
+                                  - generic "div.container > div.grid > article.card > a.card__link" [ref=e1851]:
+                                    - generic [ref=e1855]:
+                                      - img
+                                    - generic [ref=e1857]: Detaylı bilgi
+                                    - generic [ref=e1858]: <a href="hizmetler.html#hsm" class="card__link">
+                              - row "🔐 HSM Cihazları Yüksek güvenlikli donanım çözümleri. Sunucu ve kurumsal ortaml… <article class=\"card\">" [ref=e1859]:
+                                - cell "🔐 HSM Cihazları Yüksek güvenlikli donanım çözümleri. Sunucu ve kurumsal ortaml… <article class=\"card\">" [ref=e1860]:
+                                  - generic "section.section > div.container > div.grid > article.card" [ref=e1861]:
+                                    - generic [ref=e1865]:
+                                      - img
+                                    - generic [ref=e1867]: 🔐 HSM Cihazları Yüksek güvenlikli donanım çözümleri. Sunucu ve kurumsal ortaml…
+                                    - generic [ref=e1868]: <article class="card">
+                              - row "Detaylı bilgi <a href=\"hizmetler.html#e-muhur\" class=\"card__link\">" [ref=e1869]:
+                                - cell "Detaylı bilgi <a href=\"hizmetler.html#e-muhur\" class=\"card__link\">" [ref=e1870]:
+                                  - generic "div.container > div.grid > article.card > a.card__link" [ref=e1871]:
+                                    - generic [ref=e1875]:
+                                      - img
+                                    - generic [ref=e1877]: Detaylı bilgi
+                                    - generic [ref=e1878]: <a href="hizmetler.html#e-muhur" class="card__link">
+                              - row "⚙ E-Mühür Tüzel kişiler için kurumsal e-mühür çözümleri. Otomatik fatura, fatu… <article class=\"card\">" [ref=e1879]:
+                                - cell "⚙ E-Mühür Tüzel kişiler için kurumsal e-mühür çözümleri. Otomatik fatura, fatu… <article class=\"card\">" [ref=e1880]:
+                                  - generic "section.section > div.container > div.grid > article.card" [ref=e1881]:
+                                    - generic [ref=e1885]:
+                                      - img
+                                    - generic [ref=e1887]: ⚙ E-Mühür Tüzel kişiler için kurumsal e-mühür çözümleri. Otomatik fatura, fatu…
+                                    - generic [ref=e1888]: <article class="card">
+                              - row "Detaylı bilgi <a href=\"hizmetler.html#api\" class=\"card__link\">" [ref=e1889]:
+                                - cell "Detaylı bilgi <a href=\"hizmetler.html#api\" class=\"card__link\">" [ref=e1890]:
+                                  - generic "div.container > div.grid > article.card > a.card__link" [ref=e1891]:
+                                    - generic [ref=e1895]:
+                                      - img
+                                    - generic [ref=e1897]: Detaylı bilgi
+                                    - generic [ref=e1898]: <a href="hizmetler.html#api" class="card__link">
+                              - row "⚡ Toplu İmzalama & API Yüksek hacimli belge imzalama ve kurumsal sistemlere en… <article class=\"card\">" [ref=e1899]:
+                                - cell "⚡ Toplu İmzalama & API Yüksek hacimli belge imzalama ve kurumsal sistemlere en… <article class=\"card\">" [ref=e1900]:
+                                  - generic "section.section > div.container > div.grid > article.card" [ref=e1901]:
+                                    - generic [ref=e1905]:
+                                      - img
+                                    - generic [ref=e1907]: ⚡ Toplu İmzalama & API Yüksek hacimli belge imzalama ve kurumsal sistemlere en…
+                                    - generic [ref=e1908]: <article class="card">
+                              - row "NEDEN BİZ <span class=\"eyebrow\">" [ref=e1909]:
+                                - cell "NEDEN BİZ <span class=\"eyebrow\">" [ref=e1910]:
+                                  - generic "section.section > div.container > div.section-head > span.eyebrow" [ref=e1911]:
+                                    - generic [ref=e1915]:
+                                      - img
+                                    - generic [ref=e1917]: NEDEN BİZ
+                                    - generic [ref=e1918]: <span class="eyebrow">
+                              - row "NEDEN BİZ Bayiler Arasında Fark Yaratan Hizmet Ayyıldız ürünlerini sadece satm… <section class=\"section section--navy\">" [ref=e1919]:
+                                - cell "NEDEN BİZ Bayiler Arasında Fark Yaratan Hizmet Ayyıldız ürünlerini sadece satm… <section class=\"section section--navy\">" [ref=e1920]:
+                                  - generic "body > main > section.section" [ref=e1921]:
+                                    - generic [ref=e1925]:
+                                      - img
+                                    - generic [ref=e1927]: NEDEN BİZ Bayiler Arasında Fark Yaratan Hizmet Ayyıldız ürünlerini sadece satm…
+                                    - generic [ref=e1928]: <section class="section section--navy">
+                              - row "3 ADIMDA E-İMZA <span class=\"eyebrow\">" [ref=e1929]:
+                                - cell "3 ADIMDA E-İMZA <span class=\"eyebrow\">" [ref=e1930]:
+                                  - generic "section.section > div.container > div.section-head > span.eyebrow" [ref=e1931]:
+                                    - generic [ref=e1935]:
+                                      - img
+                                    - generic [ref=e1937]: 3 ADIMDA E-İMZA
+                                    - generic [ref=e1938]: <span class="eyebrow">
+                              - row "3 ADIMDA E-İMZA Başvurudan Teslime Hızlı ve Kolay Teklif Alın WhatsApp veya te… <section class=\"section section--alt\">" [ref=e1939]:
+                                - cell "3 ADIMDA E-İMZA Başvurudan Teslime Hızlı ve Kolay Teklif Alın WhatsApp veya te… <section class=\"section section--alt\">" [ref=e1940]:
+                                  - generic "body > main > section.section" [ref=e1941]:
+                                    - generic [ref=e1945]:
+                                      - img
+                                    - generic [ref=e1947]: 3 ADIMDA E-İMZA Başvurudan Teslime Hızlı ve Kolay Teklif Alın WhatsApp veya te…
+                                    - generic [ref=e1948]: <section class="section section--alt">
+                              - row "MÜŞTERİ YORUMLARI <span class=\"eyebrow\">" [ref=e1949]:
+                                - cell "MÜŞTERİ YORUMLARI <span class=\"eyebrow\">" [ref=e1950]:
+                                  - generic "section.section > div.container > div.section-head > span.eyebrow" [ref=e1951]:
+                                    - generic [ref=e1955]:
+                                      - img
+                                    - generic [ref=e1957]: MÜŞTERİ YORUMLARI
+                                    - generic [ref=e1958]: <span class="eyebrow">
+                              - row "MÜŞTERİ YORUMLARI Müşterilerimiz Ne Diyor? 1.500'den fazla bireysel ve kurumsa… <section class=\"section section--alt\">" [ref=e1959]:
+                                - cell "MÜŞTERİ YORUMLARI Müşterilerimiz Ne Diyor? 1.500'den fazla bireysel ve kurumsa… <section class=\"section section--alt\">" [ref=e1960]:
+                                  - generic "body > main > section.section" [ref=e1961]:
+                                    - generic [ref=e1965]:
+                                      - img
+                                    - generic [ref=e1967]: MÜŞTERİ YORUMLARI Müşterilerimiz Ne Diyor? 1.500'den fazla bireysel ve kurumsa…
+                                    - generic [ref=e1968]: <section class="section section--alt">
+                              - row "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e1969]:
+                                - cell "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e1970]:
+                                  - generic "div.testimonial > div.testimonial__author > div > span.testimonial__badge" [ref=e1971]:
+                                    - generic [ref=e1975]:
+                                      - img
+                                    - generic [ref=e1977]: E-İMZA
+                                    - generic [ref=e1978]: <span class="testimonial__badge testimonial__badge--eimza">
+                              - row "★★★★★ \"Müvekkillerim adına beyanname gönderirken e-imza olmazsa olmaz. Umay Bi… <div class=\"testimonial\">" [ref=e1979]:
+                                - cell "★★★★★ \"Müvekkillerim adına beyanname gönderirken e-imza olmazsa olmaz. Umay Bi… <div class=\"testimonial\">" [ref=e1980]:
+                                  - generic "section.section > div.container > div.testimonials > div.testimonial" [ref=e1981]:
+                                    - generic [ref=e1985]:
+                                      - img
+                                    - generic [ref=e1987]: ★★★★★ "Müvekkillerim adına beyanname gönderirken e-imza olmazsa olmaz. Umay Bi…
+                                    - generic [ref=e1988]: <div class="testimonial">
+                              - row "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e1989]:
+                                - cell "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e1990]:
+                                  - generic "div.testimonial > div.testimonial__author > div > span.testimonial__badge" [ref=e1991]:
+                                    - generic [ref=e1995]:
+                                      - img
+                                    - generic [ref=e1997]: E-İMZA
+                                    - generic [ref=e1998]: <span class="testimonial__badge testimonial__badge--eimza">
+                              - row "★★★★★ \"Dükkanım için e-imza gerekiyordu ama nereden alacağımı bilmiyordum. Wha… <div class=\"testimonial\">" [ref=e1999]:
+                                - cell "★★★★★ \"Dükkanım için e-imza gerekiyordu ama nereden alacağımı bilmiyordum. Wha… <div class=\"testimonial\">" [ref=e2000]:
+                                  - generic "section.section > div.container > div.testimonials > div.testimonial" [ref=e2001]:
+                                    - generic [ref=e2005]:
+                                      - img
+                                    - generic [ref=e2007]: ★★★★★ "Dükkanım için e-imza gerekiyordu ama nereden alacağımı bilmiyordum. Wha…
+                                    - generic [ref=e2008]: <div class="testimonial">
+                              - row "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e2009]:
+                                - cell "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e2010]:
+                                  - generic "div.testimonial > div.testimonial__author > div > span.testimonial__badge" [ref=e2011]:
+                                    - generic [ref=e2015]:
+                                      - img
+                                    - generic [ref=e2017]: E-İMZA
+                                    - generic [ref=e2018]: <span class="testimonial__badge testimonial__badge--eimza">
+                              - row "★★★★★ \"Firmamız için e-fatura ve e-arşiv zorunluluğu başladığında acil e-imza … <div class=\"testimonial\">" [ref=e2019]:
+                                - cell "★★★★★ \"Firmamız için e-fatura ve e-arşiv zorunluluğu başladığında acil e-imza … <div class=\"testimonial\">" [ref=e2020]:
+                                  - generic "section.section > div.container > div.testimonials > div.testimonial" [ref=e2021]:
+                                    - generic [ref=e2025]:
+                                      - img
+                                    - generic [ref=e2027]: ★★★★★ "Firmamız için e-fatura ve e-arşiv zorunluluğu başladığında acil e-imza …
+                                    - generic [ref=e2028]: <div class="testimonial">
+                              - row "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e2029]:
+                                - cell "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e2030]:
+                                  - generic "div.testimonial > div.testimonial__author > div > span.testimonial__badge" [ref=e2031]:
+                                    - generic [ref=e2035]:
+                                      - img
+                                    - generic [ref=e2037]: E-İMZA
+                                    - generic [ref=e2038]: <span class="testimonial__badge testimonial__badge--eimza">
+                              - row "★★★★★ \"Kliniğimde e-reçete yazmak için e-imza şarttı. Daha önce başka bir firm… <div class=\"testimonial\">" [ref=e2039]:
+                                - cell "★★★★★ \"Kliniğimde e-reçete yazmak için e-imza şarttı. Daha önce başka bir firm… <div class=\"testimonial\">" [ref=e2040]:
+                                  - generic "section.section > div.container > div.testimonials > div.testimonial" [ref=e2041]:
+                                    - generic [ref=e2045]:
+                                      - img
+                                    - generic [ref=e2047]: ★★★★★ "Kliniğimde e-reçete yazmak için e-imza şarttı. Daha önce başka bir firm…
+                                    - generic [ref=e2048]: <div class="testimonial">
+                              - row "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e2049]:
+                                - cell "E-İMZA <span class=\"testimonial__badge testimonial__badge--eimza\">" [ref=e2050]:
+                                  - generic "div.testimonial > div.testimonial__author > div > span.testimonial__badge" [ref=e2051]:
+                                    - generic [ref=e2055]:
+                                      - img
+                                    - generic [ref=e2057]: E-İMZA
+                                    - generic [ref=e2058]: <span class="testimonial__badge testimonial__badge--eimza">
+                              - row "★★★★★ \"Online satış yapan firmamız için e-fatura düzenlemek amacıyla e-imza al… <div class=\"testimonial\">" [ref=e2059]:
+                                - cell "★★★★★ \"Online satış yapan firmamız için e-fatura düzenlemek amacıyla e-imza al… <div class=\"testimonial\">" [ref=e2060]:
+                                  - generic "section.section > div.container > div.testimonials > div.testimonial" [ref=e2061]:
+                                    - generic [ref=e2065]:
+                                      - img
+                                    - generic [ref=e2067]: ★★★★★ "Online satış yapan firmamız için e-fatura düzenlemek amacıyla e-imza al…
+                                    - generic [ref=e2068]: <div class="testimonial">
+                              - row "81 İL HİZMET KAPSAMI <span class=\"eyebrow\">" [ref=e2069]:
+                                - cell "81 İL HİZMET KAPSAMI <span class=\"eyebrow\">" [ref=e2070]:
+                                  - generic "section.section > div.container > div.section-head > span.eyebrow" [ref=e2071]:
+                                    - generic [ref=e2075]:
+                                      - img
+                                    - generic [ref=e2077]: 81 İL HİZMET KAPSAMI
+                                    - generic [ref=e2078]: <span class="eyebrow">
+                              - row "body <body>" [ref=e2079]:
+                                - cell "body <body>" [ref=e2080]:
+                                  - generic "body" [ref=e2081]:
+                                    - generic [ref=e2085]:
+                                      - img
+                                    - generic [ref=e2087]: body
+                                    - generic [ref=e2088]: <body>
+                              - row "SIKÇA SORULANLAR <span class=\"eyebrow\">" [ref=e2089]:
+                                - cell "SIKÇA SORULANLAR <span class=\"eyebrow\">" [ref=e2090]:
+                                  - generic "section.section > div.container > div.section-head > span.eyebrow" [ref=e2091]:
+                                    - generic [ref=e2095]:
+                                      - img
+                                    - generic [ref=e2097]: SIKÇA SORULANLAR
+                                    - generic [ref=e2098]: <span class="eyebrow">
+                              - row "SIKÇA SORULANLAR Aklınızdaki Soruların Cevapları E-imza başvurusu için hangi be… <section class=\"section section--alt\">" [ref=e2099]:
+                                - cell "SIKÇA SORULANLAR Aklınızdaki Soruların Cevapları E-imza başvurusu için hangi be… <section class=\"section section--alt\">" [ref=e2100]:
+                                  - generic "body > main > section.section" [ref=e2101]:
+                                    - generic [ref=e2105]:
+                                      - img
+                                    - generic [ref=e2107]: SIKÇA SORULANLAR Aklınızdaki Soruların Cevapları E-imza başvurusu için hangi be…
+                                    - generic [ref=e2108]: <section class="section section--alt">
+                              - row "WhatsApp ile Hemen Yaz <a href=\"https://wa.me/908507771145?text=Merhaba,%20teklif%20almak%20istiyorum.\" class=\"btn btn--navy btn--lg\" target=\"_blank\" rel=\"noopener\">" [ref=e2109]:
+                                - cell "WhatsApp ile Hemen Yaz <a href=\"https://wa.me/908507771145?text=Merhaba,%20teklif%20almak%20istiyorum.\" class=\"btn btn--navy btn--lg\" target=\"_blank\" rel=\"noopener\">" [ref=e2110]:
+                                  - generic "body > section.cta-strip > div.container > a.btn" [ref=e2111]:
+                                    - generic [ref=e2115]:
+                                      - img
+                                    - generic [ref=e2117]: WhatsApp ile Hemen Yaz
+                                    - generic [ref=e2118]: <a href="https://wa.me/908507771145?text=Merhaba,%20teklif%20almak%20istiyorum." class="btn btn--navy btn--lg" target="_blank" rel="noopener">
+                        - generic [ref=e1540]: Bu fırsatlar, içeriğinizin daha rahat okunmasına olanak tanır.
+                      - generic [ref=e1541]:
+                        - generic [ref=e1542]: Gezinme
+                        - group [ref=e1544]:
+                          - generic "Başlık öğeleri sırayla azalan düzende sıralı değil" [ref=e1545] [cursor=pointer]:
+                            - generic [ref=e1546]:
+                              - generic [ref=e1549]: Başlık öğeleri sırayla azalan düzende sıralı değil
+                              - img [ref=e1551]
+                        - generic [ref=e1555]: Bu fırsatlar, uygulamanızda klavyeyle gezinmeyi kolaylaştırır.
+                      - generic [ref=e1556]:
+                        - generic [ref=e1557]: En iyi uygulamalar
+                        - group [ref=e1559]:
+                          - generic "Özdeş bağlantılar aynı amaca sahiptir." [ref=e1560] [cursor=pointer]:
+                            - generic [ref=e1561]:
+                              - generic [ref=e1564]: Özdeş bağlantılar aynı amaca sahiptir.
+                              - img [ref=e1566]
+                        - generic [ref=e1570]: Bu öğeler, erişilebilirlikle ilgili yaygın en iyi uygulamaları öne çıkarır.
+                    - generic [ref=e1571]:
+                      - group [ref=e1572]:
+                        - generic "Manuel olarak kontrol edilecek ek öğeler (10) Göster" [ref=e1573] [cursor=pointer]:
+                          - generic [ref=e1574]:
+                            - generic [ref=e1575]: Manuel olarak kontrol edilecek ek öğeler (10)
+                            - generic [ref=e1576]: Göster
+                      - generic [ref=e1577]:
+                        - text: Bu öğeler, otomatik test aracının kapsamında yer almayan alanları ele alır.
+                        - link "Erişilebilirlik incelemesi gerçekleştirme" [ref=e1578] [cursor=pointer]:
+                          - /url: https://web.dev/articles/how-to-review?utm_source=lighthouse&utm_medium=lr
+                        - text: hakkında daha fazla bilgiyi rehberimizde bulabilirsiniz.
+                    - group [ref=e1580]:
+                      - generic "Başarılı denetimler (18) Göster" [ref=e1581] [cursor=pointer]:
+                        - generic [ref=e1582]:
+                          - generic [ref=e1583]: Başarılı denetimler (18)
+                          - generic [ref=e1584]: Göster
+                    - group [ref=e1586]:
+                      - generic "Geçerli değil (39) Göster" [ref=e1587] [cursor=pointer]:
+                        - generic [ref=e1588]:
+                          - generic [ref=e1589]: Geçerli değil (39)
+                          - generic [ref=e1590]: Göster
+                  - generic [ref=e1592]:
+                    - heading "96 En İyi Uygulamalar" [level=2] [ref=e1594]:
+                      - generic [ref=e1595]:
+                        - img [ref=e1597]
+                        - generic [ref=e1600]: "96"
+                        - generic [ref=e1601]: En İyi Uygulamalar
+                    - generic [ref=e1602]:
+                      - generic [ref=e1603]:
+                        - generic [ref=e1604]: Genel
+                        - group [ref=e1606]:
+                          - generic "Tarayıcı hataları konsola kaydedildi" [ref=e1607] [cursor=pointer]:
+                            - generic [ref=e1608]:
+                              - generic [ref=e1611]: Tarayıcı hataları konsola kaydedildi
+                              - img [ref=e1613]
+                          - generic [ref=e1739]:
+                            - text: Konsola kaydedilen hatalar çözülmemiş problemleri belirtir Bunlar, ağ istek hatalarından ve diğer tarayıcı sorunlarından gelebilir.
+                            - link "Konsol teşhis denetlemesindeki hatalar hakkında daha fazla bilgi edinin" [ref=e1740] [cursor=pointer]:
+                              - /url: https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/?utm_source=lighthouse&utm_medium=lr
+                            - text: .
+                          - table [ref=e1741]:
+                            - rowgroup [ref=e1742]:
+                              - row "Kaynak Açıklama" [ref=e1743]:
+                                - columnheader "Kaynak" [ref=e1744]:
+                                  - generic [ref=e1745]: Kaynak
+                                - columnheader "Açıklama" [ref=e1746]:
+                                  - generic [ref=e1747]: Açıklama
+                            - rowgroup [ref=e1748]:
+                              - row "Google Tag Manager tag-manager" [ref=e1749]:
+                                - cell "Google Tag Manager tag-manager" [ref=e1750]:
+                                  - generic [ref=e1751]: Google Tag Manager
+                                  - generic [ref=e1752]: tag-manager
+                                - cell [ref=e1753]
+                              - 'row "/gtag/js?id=G-5MVRBXGYEL:1:0(www.googletagmanager.com) Failed to load resource: the server responded with a status of 404 (Not Found)" [ref=e1754]':
+                                - cell "/gtag/js?id=G-5MVRBXGYEL:1:0(www.googletagmanager.com)" [ref=e1755]:
+                                  - generic "https://www.googletagmanager.com/gtag/js?id=G-5MVRBXGYEL" [ref=e1756]:
+                                    - link "/gtag/js?id=G-5MVRBXGYEL:1:0" [ref=e1757] [cursor=pointer]:
+                                      - /url: https://www.googletagmanager.com/gtag/js?id=G-5MVRBXGYEL
+                                    - text: (www.googletagmanager.com)
+                                - 'cell "Failed to load resource: the server responded with a status of 404 (Not Found)" [ref=e1758]':
+                                  - generic [ref=e1759]: "Failed to load resource: the server responded with a status of 404 (Not Found)"
+                      - generic [ref=e1617]:
+                        - generic [ref=e1618]: Politika Değerlendirme
+                        - group [ref=e1620]:
+                          - generic "XSS saldırıları karşısında CSP'nin etkinliğini sınayın" [ref=e1621] [cursor=pointer]:
+                            - generic [ref=e1622]:
+                              - generic [ref=e1625]: XSS saldırıları karşısında CSP'nin etkinliğini sınayın
+                              - img [ref=e1627]
+                        - group [ref=e1632]:
+                          - generic "Güçlü bir HSTS politikası kullanın" [ref=e1633] [cursor=pointer]:
+                            - generic [ref=e1634]:
+                              - generic [ref=e1637]: Güçlü bir HSTS politikası kullanın
+                              - img [ref=e1639]
+                        - group [ref=e1644]:
+                          - generic "COOP ile uygun kaynak izolasyonunu sağlayın" [ref=e1645] [cursor=pointer]:
+                            - generic [ref=e1646]:
+                              - generic [ref=e1649]: COOP ile uygun kaynak izolasyonunu sağlayın
+                              - img [ref=e1651]
+                        - group [ref=e1656]:
+                          - generic "XFO veya CSP ile clickjacking'i azaltma" [ref=e1657] [cursor=pointer]:
+                            - generic [ref=e1658]:
+                              - generic [ref=e1661]: XFO veya CSP ile clickjacking'i azaltma
+                              - img [ref=e1663]
+                        - group [ref=e1668]:
+                          - generic "Trusted Types ile DOM tabanlı XSS'yi azaltın" [ref=e1669] [cursor=pointer]:
+                            - generic [ref=e1670]:
+                              - generic [ref=e1673]: Trusted Types ile DOM tabanlı XSS'yi azaltın
+                              - img [ref=e1675]
+                    - group [ref=e1680]:
+                      - generic "Başarılı denetimler (12) Göster" [ref=e1681] [cursor=pointer]:
+                        - generic [ref=e1682]:
+                          - generic [ref=e1683]: Başarılı denetimler (12)
+                          - generic [ref=e1684]: Göster
+                    - group [ref=e1686]:
+                      - generic "Geçerli değil (2) Göster" [ref=e1687] [cursor=pointer]:
+                        - generic [ref=e1688]:
+                          - generic [ref=e1689]: Geçerli değil (2)
+                          - generic [ref=e1690]: Göster
+                  - generic [ref=e1692]:
+                    - generic [ref=e1693]:
+                      - heading "100 SEO" [level=2] [ref=e1694]:
+                        - generic [ref=e1695]:
+                          - img [ref=e1697]
+                          - generic [ref=e1700]: "100"
+                          - generic [ref=e1701]: SEO
+                      - generic [ref=e1703]:
+                        - text: Bu kontroller, sayfanızın temel arama motoru optimizasyonu tavsiyesine uymasını sağlar. Burada Lighthouse'un puan vermediği ve
+                        - link "Önemli Web Verileri" [ref=e1704] [cursor=pointer]:
+                          - /url: https://web.dev/explore/vitals?utm_source=lighthouse&utm_medium=lr
+                        - text: "'ndeki performansınız da dahil arama sıralamanızı etkileyebilecek birçok ek faktör vardır."
+                        - link "Google Arama'nın Temel Özellikleri hakkında daha fazla bilgi edinin" [ref=e1705] [cursor=pointer]:
+                          - /url: https://support.google.com/webmasters/answer/35769
+                        - text: .
+                    - generic [ref=e1706]:
+                      - group [ref=e1707]:
+                        - generic "Manuel olarak kontrol edilecek ek öğeler (1) Gizle" [ref=e1708] [cursor=pointer]:
+                          - generic [ref=e1709]:
+                            - generic [ref=e1710]: Manuel olarak kontrol edilecek ek öğeler (1)
+                            - generic [ref=e1712]: Gizle
+                        - group [ref=e1714]:
+                          - generic "Yapılandırılmış veriler geçerli" [ref=e1715] [cursor=pointer]:
+                            - generic [ref=e1716]:
+                              - generic [ref=e1719]: Yapılandırılmış veriler geçerli
+                              - img [ref=e1721]
+                      - generic [ref=e1725]: SEO ile ilgili diğer en iyi uygulamaları kontrol etmek için sitenizde bu ek doğrulayıcıları çalıştırın.
+                    - group [ref=e1727]:
+                      - generic "Başarılı denetimler (9) Göster" [ref=e1728] [cursor=pointer]:
+                        - generic [ref=e1729]:
+                          - generic [ref=e1730]: Başarılı denetimler (9)
+                          - generic [ref=e1731]: Göster
+                    - group [ref=e1733]:
+                      - generic "Geçerli değil (1) Göster" [ref=e1734] [cursor=pointer]:
+                        - generic [ref=e1735]:
+                          - generic [ref=e1736]: Geçerli değil (1)
+                          - generic [ref=e1737]: Göster
+      - text: — — — — — —
+  - contentinfo [ref=e52]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: PageSpeed Insights hakkında daha fazla bilgi
+          - link "Yenilikler" [ref=e58] [cursor=pointer]:
+            - /url: https://developers.google.com/speed/docs/insights/release_notes
+          - link "Dokümanlar" [ref=e60] [cursor=pointer]:
+            - /url: https://developers.google.com/speed/docs/insights/v5/about
+          - link "Web Performansı hakkında bilgi edinin" [ref=e62] [cursor=pointer]:
+            - /url: https://developers.google.com/speed
+          - link "Stack Overflow hakkında soru sorun" [ref=e64] [cursor=pointer]:
+            - /url: https://stackoverflow.com/questions/tagged/pagespeed-insights
+          - link "Posta listesi" [ref=e66] [cursor=pointer]:
+            - /url: https://groups.google.com/g/pagespeed-insights-discuss
+        - generic [ref=e67]:
+          - generic [ref=e68]: Alakalı İçerik
+          - link "Güncellemeler" [ref=e70] [cursor=pointer]:
+            - /url: https://developer.chrome.com/blog
+          - link "Web'in Temelleri" [ref=e72] [cursor=pointer]:
+            - /url: https://developers.google.com/focus/web-development
+          - link "Örnek Olaylar" [ref=e74] [cursor=pointer]:
+            - /url: https://web.dev/case-studies
+          - link "Podcast'ler" [ref=e76] [cursor=pointer]:
+            - /url: https://web.dev/shows
+        - generic [ref=e77]:
+          - generic [ref=e78]: Bağlan
+          - link "Twitter" [ref=e80] [cursor=pointer]:
+            - /url: https://twitter.com/ChromiumDev
+          - link "YouTube" [ref=e82] [cursor=pointer]:
+            - /url: https://www.youtube.com/user/ChromeDevelopers
+      - generic [ref=e83]:
+        - link "Google Developers Logo" [ref=e84] [cursor=pointer]:
+          - /url: https://developers.google.com/
+          - img "Google Developers Logo" [ref=e85]
+        - link "Chrome" [ref=e86] [cursor=pointer]:
+          - /url: https://developer.chrome.com/
+        - link "Firebase" [ref=e87] [cursor=pointer]:
+          - /url: https://firebase.google.com/
+        - link "Tüm ürünler" [ref=e88] [cursor=pointer]:
+          - /url: https://developers.google.com/products/
+      - generic [ref=e89]:
+        - link "Şartlar ve Gizlilik Politikası" [ref=e91] [cursor=pointer]:
+          - /url: https://policies.google.com/
+        - generic [ref=e92]:
+          - text: Ayrıntılı bilgi için
+          - link "Google Developers Sitesi Politikaları" [ref=e93] [cursor=pointer]:
+            - /url: https://developers.google.com/terms/site-policies
+          - text: "'na bakın."

@@ -64,10 +64,13 @@
       "mcp__plugin_playwright_playwright__browser_resize",
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
       "mcp__plugin_playwright_playwright__browser_tabs",
-
       "Bash(curl *)",
       "Bash(del C:/claude/GUN2/build/dns_records.json)",
-      "Bash(Start-Sleep -Seconds 15)"
+      "Bash(Start-Sleep -Seconds 15)",
+      "WebFetch(domain:www.googleapis.com)",
+      "mcp__plugin_playwright_playwright__browser_wait_for",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "Bash(git reset *)"
     ]
   }
 }
