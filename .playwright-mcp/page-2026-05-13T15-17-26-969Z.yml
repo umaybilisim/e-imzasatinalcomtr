@@ -1,0 +1,519 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "UMAY TÜM BİLİŞİM LTD.ŞTİ." [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: ★
+        - generic [ref=e6]: UMAY TÜM BİLİŞİM LTD.ŞTİ.
+      - navigation "Ana menü" [ref=e7]:
+        - link "Anasayfa" [ref=e8] [cursor=pointer]:
+          - /url: index.html
+        - link "E-İmza" [ref=e9] [cursor=pointer]:
+          - /url: e-imza.html
+        - link "KEP" [ref=e10] [cursor=pointer]:
+          - /url: kep.html
+        - link "Hizmetler" [ref=e11] [cursor=pointer]:
+          - /url: hizmetler.html
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: blog.html
+        - link "SSS" [ref=e13] [cursor=pointer]:
+          - /url: sss.html
+        - link "İletişim" [ref=e14] [cursor=pointer]:
+          - /url: iletisim.html
+        - link "Online Tahsilat" [ref=e15] [cursor=pointer]:
+          - /url: https://odeme.umaybilisim.com.tr/
+        - link "WhatsApp" [ref=e16] [cursor=pointer]:
+          - /url: https://wa.me/908507771145
+  - main [ref=e17]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Ayyıldız Yetkili Satıcısı
+        - heading "Türkiye'nin 81 İlinde Ayyıldız E-İmza ve KEP" [level=1] [ref=e23]
+        - paragraph [ref=e24]: Bireysel, firma ve kurumsal ihtiyaçlarınız için orijinal Ayyıldız e-imza, KEP, zaman damgası ve e-mühür çözümleri. Aynı gün teslim, uygun bayi fiyatı ve uçtan uca kurumsal destek.
+        - generic [ref=e25]:
+          - generic [ref=e26]: ✓ Orijinal & Yetkili
+          - generic [ref=e27]: ✓ Uzaktan Kurulum
+          - generic [ref=e28]: ✓ 81 İl Kapsama
+          - generic [ref=e29]: ✓ Ücretsiz Destek
+        - generic [ref=e30]:
+          - link "WhatsApp ile Teklif Al" [ref=e31] [cursor=pointer]:
+            - /url: https://wa.me/908507771145?text=Merhaba,%20e-imza%20teklifi%20almak%20istiyorum.
+          - link "E-İmza Paketleri" [ref=e32] [cursor=pointer]:
+            - /url: e-imza.html
+      - generic [ref=e33]: ★
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: Hizmetlerimiz
+        - heading "Dijital Güven İçin Tüm Çözümler" [level=2] [ref=e38]
+        - paragraph [ref=e39]: Ayyıldız'ın orijinal ürün yelpazesi ile yasal geçerli elektronik imza süreçlerinizi tek elden yönetin.
+      - generic [ref=e40]:
+        - article [ref=e41]:
+          - generic [ref=e42]: ✍
+          - heading "Elektronik İmza (E-İmza)" [level=3] [ref=e43]
+          - paragraph [ref=e44]: Bireysel, firma ve kurumsal elektronik imza. 1, 2 ve 3 yıllık paketler. Tüm kamu uygulamaları ile uyumlu.
+          - link "Detaylı bilgi →" [ref=e45] [cursor=pointer]:
+            - /url: e-imza.html
+        - article [ref=e46]:
+          - generic [ref=e47]: ✉
+          - heading "KEP (Kayıtlı E-Posta)" [level=3] [ref=e48]
+          - paragraph [ref=e49]: Yasal delil niteliğinde kayıtlı elektronik posta. Ticaret Kanunu kapsamındaki firmalar için zorunlu.
+          - link "Detaylı bilgi →" [ref=e50] [cursor=pointer]:
+            - /url: kep.html
+        - article [ref=e51]:
+          - generic [ref=e52]: ⏱
+          - heading "Zaman Damgası" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Belgelerinizin belirli bir anda var olduğunu kanıtlayan, hukuki geçerliliği olan zaman damgası paketleri.
+          - link "Detaylı bilgi →" [ref=e55] [cursor=pointer]:
+            - /url: hizmetler.html#zaman-damgasi
+        - article [ref=e56]:
+          - generic [ref=e57]: 🔐
+          - heading "HSM Cihazları" [level=3] [ref=e58]
+          - paragraph [ref=e59]: Yüksek güvenlikli donanım çözümleri. Sunucu ve kurumsal ortamlarda güvenli anahtar yönetimi.
+          - link "Detaylı bilgi →" [ref=e60] [cursor=pointer]:
+            - /url: hizmetler.html#hsm
+        - article [ref=e61]:
+          - generic [ref=e62]: ⚙
+          - heading "E-Mühür" [level=3] [ref=e63]
+          - paragraph [ref=e64]: Tüzel kişiler için kurumsal e-mühür çözümleri. Otomatik fatura, fatura arşivi ve daha fazlası.
+          - link "Detaylı bilgi →" [ref=e65] [cursor=pointer]:
+            - /url: hizmetler.html#e-muhur
+        - article [ref=e66]:
+          - generic [ref=e67]: ⚡
+          - heading "Toplu İmzalama & API" [level=3] [ref=e68]
+          - paragraph [ref=e69]: Yüksek hacimli belge imzalama ve kurumsal sistemlere entegrasyon için API çözümleri.
+          - link "Detaylı bilgi →" [ref=e70] [cursor=pointer]:
+            - /url: hizmetler.html#api
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]: Neden Biz
+        - heading "Bayiler Arasında Fark Yaratan Hizmet" [level=2] [ref=e75]
+        - paragraph [ref=e76]: Ayyıldız ürünlerini sadece satmıyoruz; kurulumdan kullanımına, yenilemesine kadar yanınızdayız.
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e79]: ★
+          - generic [ref=e80]:
+            - heading "Orijinal & Yetkili Ürün" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Tüm ürünlerimiz doğrudan Ayyıldız Bilgi Güvenliği A.Ş. kaynaklıdır. Fatura, sertifika ve garanti eksiksiz.
+        - generic [ref=e83]:
+          - generic [ref=e84]: ⚡
+          - generic [ref=e85]:
+            - heading "Uzaktan Kurulum" [level=3] [ref=e86]
+            - paragraph [ref=e87]: E-imza sürücüsü, kart okuyucu ve yazılım ayarlarınızı uzaktan masaüstü desteği ile kuruyoruz.
+        - generic [ref=e88]:
+          - generic [ref=e89]: 🛡
+          - generic [ref=e90]:
+            - heading "Kurulum Desteği" [level=3] [ref=e91]
+            - paragraph [ref=e92]: E-imza sürücüsü, kart okuyucu, Java, Adobe Reader ayarları — uzaktan destek ile çözüyoruz.
+        - generic [ref=e93]:
+          - generic [ref=e94]: ₺
+          - generic [ref=e95]:
+            - heading "Uygun Bayi Fiyatı" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Toplu alım ve kurumsal anlaşmalarda özel indirimler. Rekabetçi fiyat garantisi.
+        - generic [ref=e98]:
+          - generic [ref=e99]: 📞
+          - generic [ref=e100]:
+            - heading "Ücretsiz Destek" [level=3] [ref=e101]
+            - paragraph [ref=e102]: Kurulum, kullanım ve yenileme süreçlerinde tamamen ücretsiz teknik destek hizmeti sunuyoruz.
+        - generic [ref=e103]:
+          - generic [ref=e104]: 🔄
+          - generic [ref=e105]:
+            - heading "Kolay Yenileme" [level=3] [ref=e106]
+            - paragraph [ref=e107]: Süresi dolan e-imzanızı WhatsApp üzerinden birkaç dakikada yenileyebilirsiniz.
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]: 3 Adımda E-İmza
+        - heading "Başvurudan Teslime Hızlı ve Kolay" [level=2] [ref=e112]
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - heading "Teklif Alın" [level=3] [ref=e115]
+          - paragraph [ref=e116]: WhatsApp veya telefon ile ihtiyacınıza uygun paket ve fiyat bilgisini anında alın.
+        - generic [ref=e117]:
+          - heading "Başvuruyu Tamamlayın" [level=3] [ref=e118]
+          - paragraph [ref=e119]: Kimlik fotoğrafı ve gerekli belgeleri gönderin, başvurunuzu biz oluşturalım.
+        - generic [ref=e120]:
+          - heading "Teslim Alın" [level=3] [ref=e121]
+          - paragraph [ref=e122]: E-imza kartınızı kargo ile size ulaştıralım, kurulum desteğiyle birlikte kullanıma hazır.
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]: "0"
+        - text: Mutlu Müşteri
+      - generic [ref=e128]:
+        - generic [ref=e129]: "0"
+        - text: İl Kapsama Alanı
+      - generic [ref=e130]:
+        - generic [ref=e131]: "0"
+        - text: Yıl Deneyim
+      - generic [ref=e132]:
+        - generic [ref=e133]: "0"
+        - text: Ücretsiz WhatsApp Destek
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]: Müşteri Yorumları
+        - heading "Müşterilerimiz Ne Diyor?" [level=2] [ref=e138]
+        - paragraph [ref=e139]: 1.500'den fazla bireysel ve kurumsal müşterimizin güvenini kazandık.
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - generic [ref=e142]: ★★★★★
+          - paragraph [ref=e143]: "\"Müvekkillerim adına beyanname gönderirken e-imza olmazsa olmaz. Umay Bilişim'den 3 yıllık paket aldım, aynı gün kargoya verdiler. Kurulumda da uzaktan bağlanıp her şeyi ayarladılar. Meslektaşlarıma gönül rahatlığıyla tavsiye ediyorum.\""
+          - generic [ref=e144]:
+            - generic [ref=e145]: ÖF
+            - generic [ref=e146]:
+              - generic [ref=e147]: SMMM Ömer Faruk Şahin
+              - generic [ref=e148]: Serbest Muhasebeci Mali Müşavir
+              - generic [ref=e149]: E-İmza
+        - generic [ref=e150]:
+          - generic [ref=e151]: ★★★★★
+          - paragraph [ref=e152]: "\"Dükkanım için e-imza gerekiyordu ama nereden alacağımı bilmiyordum. WhatsApp'tan yazdım, 10 dakikada her şeyi anlattılar. Belgelerimi gönderdim, ertesi gün e-imzam elime ulaştı. Çok pratik ve hızlı bir süreçti, teşekkürler.\""
+          - generic [ref=e153]:
+            - generic [ref=e154]: MG
+            - generic [ref=e155]:
+              - generic [ref=e156]: Mustafa Güney
+              - generic [ref=e157]: Esnaf
+              - generic [ref=e158]: E-İmza
+        - generic [ref=e159]:
+          - generic [ref=e160]: ★★★★★
+          - paragraph [ref=e161]: "\"Firmamız için e-fatura ve e-arşiv zorunluluğu başladığında acil e-imza gerekti. Umay Bilişim ile aynı gün başvurumuzu tamamladık. Üstelik e-imza kurulumunu uzaktan masaüstü ile yaparak bizi hiç uğraştırmadılar. Profesyonel hizmet.\""
+          - generic [ref=e162]:
+            - generic [ref=e163]: EB
+            - generic [ref=e164]:
+              - generic [ref=e165]: Emre Baytar
+              - generic [ref=e166]: Baytar Et Dünyası — Firma Sahibi
+              - generic [ref=e167]: E-İmza
+        - generic [ref=e168]:
+          - generic [ref=e169]: ★★★★★
+          - paragraph [ref=e170]: "\"Kliniğimde e-reçete yazmak için e-imza şarttı. Daha önce başka bir firmadan almıştım, yenileme sürecinde çok zorlandım. Umay Bilişim'e geçtim, hem fiyat hem hizmet olarak çok memnunum. Süresi dolmadan hatırlattılar bile.\""
+          - generic [ref=e171]:
+            - generic [ref=e172]: BÇ
+            - generic [ref=e173]:
+              - generic [ref=e174]: Dt. Berkay Çoruğlu
+              - generic [ref=e175]: Diş Hekimi
+              - generic [ref=e176]: E-İmza
+        - generic [ref=e177]:
+          - generic [ref=e178]: ★★★★★
+          - paragraph [ref=e179]: "\"Online satış yapan firmamız için e-fatura düzenlemek amacıyla e-imza aldık. Tüm süreci WhatsApp üzerinden yürüttük, ofisten hiç çıkmadan halledildi. Fiyatı da piyasaya göre çok uygundu. Kesinlikle tavsiye ederim.\""
+          - generic [ref=e180]:
+            - generic [ref=e181]: VK
+            - generic [ref=e182]:
+              - generic [ref=e183]: Vahide Koç
+              - generic [ref=e184]: HV Kozmetik — Firma Sahibi
+              - generic [ref=e185]: E-İmza
+        - generic [ref=e186]:
+          - generic [ref=e187]: ★★★★★
+          - paragraph [ref=e188]: "\"Limited şirketimiz için KEP adresi almak zorundaydık ama süreç karmaşık geliyordu. Umay Bilişim gerekli belgeleri söyledi, biz gönderdik, onlar halletti. KEP hesabımız aynı hafta aktif oldu. Resmi yazışmalarımızı artık güvenle yapıyoruz.\""
+          - generic [ref=e189]:
+            - generic [ref=e190]: K
+            - generic [ref=e191]:
+              - generic [ref=e192]: Köftecis
+              - generic [ref=e193]: Gıda Sektörü
+              - generic [ref=e194]: KEP
+    - generic [ref=e196]:
+      - generic [ref=e197]:
+        - generic [ref=e198]: 81 İl Hizmet Kapsamı
+        - heading "Bulunduğunuz İlden Hemen Başvurun" [level=2] [ref=e199]
+        - paragraph [ref=e200]: Hangi ilde olursanız olun, Ayyıldız e-imza ve KEP hizmetlerine hızlıca ulaşın. İlinize özel sayfamızdan detayları inceleyin.
+      - generic [ref=e201]:
+        - link "Adana" [ref=e202] [cursor=pointer]:
+          - /url: iller/adana.html
+        - link "Adıyaman" [ref=e203] [cursor=pointer]:
+          - /url: iller/adiyaman.html
+        - link "Afyonkarahisar" [ref=e204] [cursor=pointer]:
+          - /url: iller/afyonkarahisar.html
+        - link "Ağrı" [ref=e205] [cursor=pointer]:
+          - /url: iller/agri.html
+        - link "Aksaray" [ref=e206] [cursor=pointer]:
+          - /url: iller/aksaray.html
+        - link "Amasya" [ref=e207] [cursor=pointer]:
+          - /url: iller/amasya.html
+        - link "Ankara" [ref=e208] [cursor=pointer]:
+          - /url: iller/ankara.html
+        - link "Antalya" [ref=e209] [cursor=pointer]:
+          - /url: iller/antalya.html
+        - link "Ardahan" [ref=e210] [cursor=pointer]:
+          - /url: iller/ardahan.html
+        - link "Artvin" [ref=e211] [cursor=pointer]:
+          - /url: iller/artvin.html
+        - link "Aydın" [ref=e212] [cursor=pointer]:
+          - /url: iller/aydin.html
+        - link "Balıkesir" [ref=e213] [cursor=pointer]:
+          - /url: iller/balikesir.html
+        - link "Bartın" [ref=e214] [cursor=pointer]:
+          - /url: iller/bartin.html
+        - link "Batman" [ref=e215] [cursor=pointer]:
+          - /url: iller/batman.html
+        - link "Bayburt" [ref=e216] [cursor=pointer]:
+          - /url: iller/bayburt.html
+        - link "Bilecik" [ref=e217] [cursor=pointer]:
+          - /url: iller/bilecik.html
+        - link "Bingöl" [ref=e218] [cursor=pointer]:
+          - /url: iller/bingol.html
+        - link "Bitlis" [ref=e219] [cursor=pointer]:
+          - /url: iller/bitlis.html
+        - link "Bolu" [ref=e220] [cursor=pointer]:
+          - /url: iller/bolu.html
+        - link "Burdur" [ref=e221] [cursor=pointer]:
+          - /url: iller/burdur.html
+        - link "Bursa" [ref=e222] [cursor=pointer]:
+          - /url: iller/bursa.html
+        - link "Çanakkale" [ref=e223] [cursor=pointer]:
+          - /url: iller/canakkale.html
+        - link "Çankırı" [ref=e224] [cursor=pointer]:
+          - /url: iller/cankiri.html
+        - link "Çorum" [ref=e225] [cursor=pointer]:
+          - /url: iller/corum.html
+        - link "Denizli" [ref=e226] [cursor=pointer]:
+          - /url: iller/denizli.html
+        - link "Diyarbakır" [ref=e227] [cursor=pointer]:
+          - /url: iller/diyarbakir.html
+        - link "Düzce" [ref=e228] [cursor=pointer]:
+          - /url: iller/duzce.html
+        - link "Edirne" [ref=e229] [cursor=pointer]:
+          - /url: iller/edirne.html
+        - link "Elazığ" [ref=e230] [cursor=pointer]:
+          - /url: iller/elazig.html
+        - link "Erzincan" [ref=e231] [cursor=pointer]:
+          - /url: iller/erzincan.html
+        - link "Erzurum" [ref=e232] [cursor=pointer]:
+          - /url: iller/erzurum.html
+        - link "Eskişehir" [ref=e233] [cursor=pointer]:
+          - /url: iller/eskisehir.html
+        - link "Gaziantep" [ref=e234] [cursor=pointer]:
+          - /url: iller/gaziantep.html
+        - link "Giresun" [ref=e235] [cursor=pointer]:
+          - /url: iller/giresun.html
+        - link "Gümüşhane" [ref=e236] [cursor=pointer]:
+          - /url: iller/gumushane.html
+        - link "Hakkari" [ref=e237] [cursor=pointer]:
+          - /url: iller/hakkari.html
+        - link "Hatay" [ref=e238] [cursor=pointer]:
+          - /url: iller/hatay.html
+        - link "Iğdır" [ref=e239] [cursor=pointer]:
+          - /url: iller/igdir.html
+        - link "Isparta" [ref=e240] [cursor=pointer]:
+          - /url: iller/isparta.html
+        - link "İstanbul" [ref=e241] [cursor=pointer]:
+          - /url: iller/istanbul.html
+        - link "İzmir" [ref=e242] [cursor=pointer]:
+          - /url: iller/izmir.html
+        - link "Kahramanmaraş" [ref=e243] [cursor=pointer]:
+          - /url: iller/kahramanmaras.html
+        - link "Karabük" [ref=e244] [cursor=pointer]:
+          - /url: iller/karabuk.html
+        - link "Karaman" [ref=e245] [cursor=pointer]:
+          - /url: iller/karaman.html
+        - link "Kars" [ref=e246] [cursor=pointer]:
+          - /url: iller/kars.html
+        - link "Kastamonu" [ref=e247] [cursor=pointer]:
+          - /url: iller/kastamonu.html
+        - link "Kayseri" [ref=e248] [cursor=pointer]:
+          - /url: iller/kayseri.html
+        - link "Kilis" [ref=e249] [cursor=pointer]:
+          - /url: iller/kilis.html
+        - link "Kırıkkale" [ref=e250] [cursor=pointer]:
+          - /url: iller/kirikkale.html
+        - link "Kırklareli" [ref=e251] [cursor=pointer]:
+          - /url: iller/kirklareli.html
+        - link "Kırşehir" [ref=e252] [cursor=pointer]:
+          - /url: iller/kirsehir.html
+        - link "Kocaeli" [ref=e253] [cursor=pointer]:
+          - /url: iller/kocaeli.html
+        - link "Konya" [ref=e254] [cursor=pointer]:
+          - /url: iller/konya.html
+        - link "Kütahya" [ref=e255] [cursor=pointer]:
+          - /url: iller/kutahya.html
+        - link "Malatya" [ref=e256] [cursor=pointer]:
+          - /url: iller/malatya.html
+        - link "Manisa" [ref=e257] [cursor=pointer]:
+          - /url: iller/manisa.html
+        - link "Mardin" [ref=e258] [cursor=pointer]:
+          - /url: iller/mardin.html
+        - link "Mersin" [ref=e259] [cursor=pointer]:
+          - /url: iller/mersin.html
+        - link "Muğla" [ref=e260] [cursor=pointer]:
+          - /url: iller/mugla.html
+        - link "Muş" [ref=e261] [cursor=pointer]:
+          - /url: iller/mus.html
+        - link "Nevşehir" [ref=e262] [cursor=pointer]:
+          - /url: iller/nevsehir.html
+        - link "Niğde" [ref=e263] [cursor=pointer]:
+          - /url: iller/nigde.html
+        - link "Ordu" [ref=e264] [cursor=pointer]:
+          - /url: iller/ordu.html
+        - link "Osmaniye" [ref=e265] [cursor=pointer]:
+          - /url: iller/osmaniye.html
+        - link "Rize" [ref=e266] [cursor=pointer]:
+          - /url: iller/rize.html
+        - link "Sakarya" [ref=e267] [cursor=pointer]:
+          - /url: iller/sakarya.html
+        - link "Samsun" [ref=e268] [cursor=pointer]:
+          - /url: iller/samsun.html
+        - link "Şanlıurfa" [ref=e269] [cursor=pointer]:
+          - /url: iller/sanliurfa.html
+        - link "Siirt" [ref=e270] [cursor=pointer]:
+          - /url: iller/siirt.html
+        - link "Sinop" [ref=e271] [cursor=pointer]:
+          - /url: iller/sinop.html
+        - link "Şırnak" [ref=e272] [cursor=pointer]:
+          - /url: iller/sirnak.html
+        - link "Sivas" [ref=e273] [cursor=pointer]:
+          - /url: iller/sivas.html
+        - link "Tekirdağ" [ref=e274] [cursor=pointer]:
+          - /url: iller/tekirdag.html
+        - link "Tokat" [ref=e275] [cursor=pointer]:
+          - /url: iller/tokat.html
+        - link "Trabzon" [ref=e276] [cursor=pointer]:
+          - /url: iller/trabzon.html
+        - link "Tunceli" [ref=e277] [cursor=pointer]:
+          - /url: iller/tunceli.html
+        - link "Uşak" [ref=e278] [cursor=pointer]:
+          - /url: iller/usak.html
+        - link "Van" [ref=e279] [cursor=pointer]:
+          - /url: iller/van.html
+        - link "Yalova" [ref=e280] [cursor=pointer]:
+          - /url: iller/yalova.html
+        - link "Yozgat" [ref=e281] [cursor=pointer]:
+          - /url: iller/yozgat.html
+        - link "Zonguldak" [ref=e282] [cursor=pointer]:
+          - /url: iller/zonguldak.html
+    - generic [ref=e284]:
+      - generic [ref=e285]:
+        - generic [ref=e286]: Sıkça Sorulanlar
+        - heading "Aklınızdaki Soruların Cevapları" [level=2] [ref=e287]
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - button "E-imza başvurusu için hangi belgeler gerekiyor? +" [ref=e290] [cursor=pointer]
+          - generic [ref=e291]: Bireysel başvuru için nüfus cüzdanı veya kimlik kartı fotoğrafı yeterlidir. Firma adına başvurularda ayrıca imza sirküleri, vergi levhası ve yetki belgesi talep edilir.
+        - generic [ref=e292]:
+          - button "E-imza ne kadar sürede teslim edilir? +" [ref=e293] [cursor=pointer]
+          - generic [ref=e294]: Başvurunuz onaylandıktan sonra aynı gün kargoya teslim edilir. Büyükşehirlerde ertesi gün, diğer illerde 1-2 iş günü içerisinde elinize ulaşır.
+        - generic [ref=e295]:
+          - button "E-imzamın süresi doldu, nasıl yenilerim? +" [ref=e296] [cursor=pointer]
+          - generic [ref=e297]: WhatsApp hattımızdan yenileme talebinizi iletmeniz yeterli. Yenileme süreci, ilk başvurudan daha hızlı tamamlanır.
+        - generic [ref=e298]:
+          - button "KEP adresi almak zorunlu mu? +" [ref=e299] [cursor=pointer]
+          - generic [ref=e300]: Türk Ticaret Kanunu uyarınca anonim, limited ve sermayesi paylara bölünmüş komandit şirketler için KEP adresi edinmek yasal bir zorunluluktur.
+        - generic [ref=e301]:
+          - button "Kredi kartı ile ödeme yapabiliyor muyum? +" [ref=e302] [cursor=pointer]
+          - generic [ref=e303]: Evet. Kredi kartı, havale/EFT ve kurumsal cari hesap seçenekleri mevcuttur. Detaylar için WhatsApp üzerinden bilgi alabilirsiniz.
+      - link "Tüm Soruları Gör" [ref=e305] [cursor=pointer]:
+        - /url: sss.html
+  - generic [ref=e307]:
+    - heading "Dakikalar İçinde Teklif Alın" [level=2] [ref=e308]
+    - paragraph [ref=e309]: E-imza, KEP veya diğer çözümler için uzman ekibimiz size en uygun fiyatı sunsun.
+    - link "WhatsApp ile Hemen Yaz" [ref=e310] [cursor=pointer]:
+      - /url: https://wa.me/908507771145?text=Merhaba,%20teklif%20almak%20istiyorum.
+  - contentinfo [ref=e311]:
+    - generic [ref=e312]:
+      - generic [ref=e313]:
+        - link "E-İmza Satın Al" [ref=e314] [cursor=pointer]:
+          - /url: e-imza.html
+        - link "KEP Başvurusu" [ref=e315] [cursor=pointer]:
+          - /url: kep.html
+        - link "Zaman Damgası" [ref=e316] [cursor=pointer]:
+          - /url: hizmetler.html#zaman-damgasi
+        - link "E-Mühür" [ref=e317] [cursor=pointer]:
+          - /url: hizmetler.html#e-muhur
+        - link "Sıkça Sorulan Sorular" [ref=e318] [cursor=pointer]:
+          - /url: sss.html
+        - link "E-İmza Nedir?" [ref=e319] [cursor=pointer]:
+          - /url: blog/e-imza-nedir-nasil-alinir.html
+        - link "E-İmza Kurulumu" [ref=e320] [cursor=pointer]:
+          - /url: blog/e-imza-kurulumu-nasil-yapilir.html
+        - link "E-İmza Yenileme" [ref=e321] [cursor=pointer]:
+          - /url: blog/e-imza-suresi-doldu-ne-yapilmali.html
+        - link "E-İmza Kullanım Alanları" [ref=e322] [cursor=pointer]:
+          - /url: blog/e-imza-nerelerde-kullanilir.html
+        - link "İstanbul E-İmza" [ref=e323] [cursor=pointer]:
+          - /url: iller/istanbul.html
+        - link "Ankara E-İmza" [ref=e324] [cursor=pointer]:
+          - /url: iller/ankara.html
+        - link "İzmir E-İmza" [ref=e325] [cursor=pointer]:
+          - /url: iller/izmir.html
+        - link "Bursa E-İmza" [ref=e326] [cursor=pointer]:
+          - /url: iller/bursa.html
+        - link "Antalya E-İmza" [ref=e327] [cursor=pointer]:
+          - /url: iller/antalya.html
+        - link "Sakarya E-İmza" [ref=e328] [cursor=pointer]:
+          - /url: iller/sakarya.html
+      - generic [ref=e329]:
+        - generic [ref=e330]:
+          - heading "Hizmetler" [level=4] [ref=e331]
+          - list [ref=e332]:
+            - listitem [ref=e333]:
+              - link "E-İmza" [ref=e334] [cursor=pointer]:
+                - /url: e-imza.html
+            - listitem [ref=e335]:
+              - link "KEP" [ref=e336] [cursor=pointer]:
+                - /url: kep.html
+            - listitem [ref=e337]:
+              - link "Zaman Damgası" [ref=e338] [cursor=pointer]:
+                - /url: hizmetler.html#zaman-damgasi
+            - listitem [ref=e339]:
+              - link "HSM Cihazları" [ref=e340] [cursor=pointer]:
+                - /url: hizmetler.html#hsm
+            - listitem [ref=e341]:
+              - link "E-Mühür" [ref=e342] [cursor=pointer]:
+                - /url: hizmetler.html#e-muhur
+        - generic [ref=e343]:
+          - heading "Kurumsal" [level=4] [ref=e344]
+          - list [ref=e345]:
+            - listitem [ref=e346]:
+              - link "Hakkımızda" [ref=e347] [cursor=pointer]:
+                - /url: hakkimizda.html
+            - listitem [ref=e348]:
+              - link "Blog" [ref=e349] [cursor=pointer]:
+                - /url: blog.html
+            - listitem [ref=e350]:
+              - link "SSS" [ref=e351] [cursor=pointer]:
+                - /url: sss.html
+            - listitem [ref=e352]:
+              - link "Aydınlatma Metni" [ref=e353] [cursor=pointer]:
+                - /url: aydinlatma-metni.html
+            - listitem [ref=e354]:
+              - link "Çerez Politikası" [ref=e355] [cursor=pointer]:
+                - /url: cerez-politikasi.html
+            - listitem [ref=e356]:
+              - link "İlgili Kurum Linkleri" [ref=e357] [cursor=pointer]:
+                - /url: ilgili-kurum-linkleri.html
+            - listitem [ref=e358]:
+              - link "Sertifika İlkeleri" [ref=e359] [cursor=pointer]:
+                - /url: sertifika-ilkeleri.html
+        - generic [ref=e360]:
+          - generic [ref=e361]:
+            - generic [ref=e362]: ★
+            - generic [ref=e363]: UMAY TÜM BİLİŞİM LTD.ŞTİ.
+          - paragraph [ref=e364]:
+            - text: UMAY TÜM BİLİŞİM VE EĞİTİM DAN. YAZILIM İTH. İHR. SAN. TİC. LTD.ŞTİ.
+            - text: Erenler Mah. 1193 Nolu Sk. No:4/1-213
+            - text: Meydan54 AVM B1 Blok K:2 D:84
+            - text: Erenler 54200 Sakarya / Türkiye
+            - text: Ali Fuat Cebesoy V.D. — 892 062 5443
+        - generic [ref=e365]:
+          - heading "İletişim" [level=4] [ref=e366]
+          - list [ref=e367]:
+            - listitem [ref=e368]:
+              - link "0 850 777 11 45" [ref=e369] [cursor=pointer]:
+                - /url: tel:+908507771145
+            - listitem [ref=e370]:
+              - link "0 264 777 11 45" [ref=e371] [cursor=pointer]:
+                - /url: tel:+902647771145
+            - listitem [ref=e372]:
+              - link "WhatsApp" [ref=e373] [cursor=pointer]:
+                - /url: https://wa.me/908507771145
+            - listitem [ref=e374]:
+              - link "bilgi@umaybilisim.com.tr" [ref=e375] [cursor=pointer]:
+                - /url: mailto:bilgi@umaybilisim.com.tr
+            - listitem [ref=e376]: Erenler Mah. Meydan54 AVM
+            - listitem [ref=e377]: Erenler / Sakarya
+      - generic [ref=e378]:
+        - text: © 2026
+        - link "UMAY TÜM BİLİŞİM LTD.ŞTİ." [ref=e379] [cursor=pointer]:
+          - /url: https://www.umaybilisim.com.tr
+        - text: Tüm hakları saklıdır. Ayyıldız® tescilli markadır.
+  - generic:
+    - generic:
+      - button "Kapat": ×
+      - strong: Merhaba!
+      - text: Size yardımcı olabilir miyiz? Hemen yazın, anında dönüş yapalım.
+  - link "WhatsApp" [ref=e380] [cursor=pointer]:
+    - /url: https://wa.me/908507771145
+    - text: ✆

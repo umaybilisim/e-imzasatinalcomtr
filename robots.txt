@@ -26,4 +26,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://aycangh.github.io/umay-eimza/sitemap.xml
+Sitemap: https://www.e-imzasatinal.com.tr/sitemap.xml
