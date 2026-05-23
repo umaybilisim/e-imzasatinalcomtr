@@ -1,0 +1,69 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Zengin Sonuçlar Testi" [level=1] [ref=e8]
+        - button [ref=e12] [cursor=pointer]:
+          - generic [ref=e15]: 
+        - generic [ref=e17]:
+          - button "Google uygulamaları" [ref=e21] [cursor=pointer]:
+            - img [ref=e22]
+          - link "Oturum açın" [ref=e25] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?service=sitemaps&passive=1209600&continue=https://search.google.com/test/rich-results?url%3Dhttps://www.e-imzasatinal.com.tr/e-imza.html&followup=https://search.google.com/test/rich-results?url%3Dhttps://www.e-imzasatinal.com.tr/e-imza.html&ec=GAZA1AI
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Sayfanız zengin sonuçları destekliyor mu?
+        - generic [ref=e33]:
+          - tablist [ref=e34]:
+            - tab "URL" [selected] [ref=e35] [cursor=pointer]:
+              - generic [ref=e36]:
+                - generic [ref=e37]: 
+                - text: URL
+            - tab "kod" [ref=e39] [cursor=pointer]:
+              - generic [ref=e40]:
+                - generic [ref=e41]: 
+                - text: kod
+          - tabpanel [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e47]:
+                - textbox "Test etmek için bir URL girin" [ref=e51]: https://www.e-imzasatinal.com.tr/e-imza.html
+                - button "URL'yi temizle" [ref=e52] [cursor=pointer]:
+                  - generic [ref=e55]: 
+              - generic [ref=e56]:
+                - listbox "Kullanıcı aracısı seçenekleri" [ref=e59] [cursor=pointer]:
+                  - generic [ref=e60]:
+                    - option "Google Denetleme Aracı akıllı telefon" [selected] [ref=e61]:
+                      - generic [ref=e63]:
+                        - generic [ref=e64]: 
+                        - generic [ref=e65]: Google Denetleme Aracı akıllı telefon
+                    - option "Google Denetleme Aracı masaüstü":
+                      - generic [ref=e67]:
+                        - generic [ref=e68]: 
+                        - generic [ref=e69]: Google Denetleme Aracı masaüstü
+                  - generic [ref=e70]: 
+                - button "URL'yi test et" [ref=e71] [cursor=pointer]:
+                  - generic [ref=e75]: URL'yi test et
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]: Zengin sonuç nedir?
+          - generic [ref=e85]: Zengin sonuçlar, Arama gibi Google sayfalarında standart mavi bağlantıdan daha fazla içerikle gösterilen deneyimlerdir. Zengin sonuçlar bant, resim veya diğer metin harici öğelerden oluşabilir.
+        - generic [ref=e86]:
+          - generic [ref=e87]: Bu test nedir?
+          - generic [ref=e88]: Sayfadaki yapısal veriler tarafından hangi zengin sonuçların oluşturulacağını görmek için genel erişime açık sayfanızı test edin.
+          - link "Daha fazla bilgi" [ref=e89] [cursor=pointer]:
+            - /url: https://support.google.com/webmasters/answer/7445569
+            - generic [ref=e93]:
+              - generic [ref=e94]: Daha fazla bilgi
+              - generic [ref=e96]: 
+        - generic [ref=e97]:
+          - generic [ref=e98]: Yapılandırılmış veri galerisi
+          - generic [ref=e99]: Google destekli yapısal veriler için başvuru dokümanları
+          - link "Dokümanları okuyun" [ref=e100] [cursor=pointer]:
+            - /url: https://developers.google.com/search/docs/guides/search-gallery
+            - generic [ref=e104]:
+              - generic [ref=e105]: Dokümanları okuyun
+              - generic [ref=e107]: 
+  - iframe [ref=e110]:
+    - generic [ref=f1e6]:
+      - strong [ref=f1e7]: reCAPTCHA
+      - text: tarafından korunmaktadır

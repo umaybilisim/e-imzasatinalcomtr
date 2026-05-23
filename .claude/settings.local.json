@@ -70,7 +70,10 @@
       "WebFetch(domain:www.googleapis.com)",
       "mcp__plugin_playwright_playwright__browser_wait_for",
       "mcp__plugin_playwright_playwright__browser_click",
-      "Bash(git reset *)"
+      "Bash(git reset *)",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_type",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\('C:\\\\claude\\\\GUN2\\\\assets\\\\img\\\\og-image.png'\\); Write-Host \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))"
     ]
   }
 }
