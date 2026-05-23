@@ -87,8 +87,11 @@
     if (href && href === path) a.classList.add("active");
   });
 
-  // GA4 gecikimli yükleme — sayfanın önce açılmasını sağlar
-  setTimeout(function () {
+  // GA4 — ilk kullanıcı etkileşiminde yükle (TBT sıfır, analytics tam)
+  var ga4Loaded = false;
+  function loadGA4() {
+    if (ga4Loaded) return;
+    ga4Loaded = true;
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     window.gtag = window.gtag || gtag;
@@ -98,5 +101,8 @@
     s.async = true;
     s.src = "https://www.googletagmanager.com/gtag/js?id=G-XTGNCVEKBV";
     document.head.appendChild(s);
-  }, 1500);
+  }
+  ["scroll", "click", "touchstart", "keydown", "mousemove"].forEach(function(evt) {
+    window.addEventListener(evt, loadGA4, { once: true, passive: true });
+  });
 })();
