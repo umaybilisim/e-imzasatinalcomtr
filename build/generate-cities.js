@@ -28,7 +28,11 @@ function render(tpl, city) {
     .replace(/\{\{IL_SLUG\}\}/g, city.slug)
     .replace(/\{\{PLAKA\}\}/g, String(city.plaka).padStart(2, "0"))
     .replace(/\{\{BOLGE\}\}/g, city.bolge)
-    .replace(/\{\{ILCE_ORNEK\}\}/g, city.ilceler);
+    .replace(/\{\{ILCE_ORNEK\}\}/g, city.ilceler)
+    .replace(/\{\{OZEL_GIRIS\}\}/g, city.ozel_giris || "")
+    .replace(/\{\{SEKTOR\}\}/g, city.sektor || "")
+    .replace(/\{\{OZEL_FAQ_SORU\}\}/g, city.ozel_faq_soru || "")
+    .replace(/\{\{OZEL_FAQ_CEVAP\}\}/g, city.ozel_faq_cevap || "");
 }
 
 let count = 0;
