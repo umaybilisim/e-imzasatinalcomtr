@@ -119,8 +119,8 @@ button{font-family:inherit;cursor:pointer;border:none}
   white-space:nowrap;cursor:pointer;text-decoration:none;
 }
 .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.btn--primary{background:var(--accent);color:var(--white)}
-.btn--primary:hover{background:var(--accent-dark);color:var(--white)}
+.btn--primary{background:var(--accent-dark);color:var(--white)}
+.btn--primary:hover{background:#a00f1a;color:var(--white)}
 .btn--navy{background:var(--navy);color:var(--white)}
 .btn--navy:hover{background:var(--navy-light);color:var(--white)}
 .btn--wa{background:var(--wa);color:var(--white)}
