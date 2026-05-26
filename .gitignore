@@ -3,4 +3,6 @@ Thumbs.db
 node_modules/
 .vscode/
 .idea/
+.claude/
+.playwright-mcp/
 *.log
