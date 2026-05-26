@@ -69,6 +69,43 @@
     if (!dismissed) {
       setTimeout(function() {
         waPopup.classList.add('is-visible');
+        try {
+          var AC = window.AudioContext || window.webkitAudioContext;
+          if (!AC) return;
+          var ac = new AC();
+          function chirp(t, f0, f1, dur, amp) {
+            var o = ac.createOscillator();
+            var g = ac.createGain();
+            o.connect(g);
+            g.connect(ac.destination);
+            o.type = 'sine';
+            o.frequency.setValueAtTime(f0, t);
+            o.frequency.exponentialRampToValueAtTime(f1, t + dur * 0.55);
+            o.frequency.exponentialRampToValueAtTime(f0 * 1.1, t + dur);
+            g.gain.setValueAtTime(0.001, t);
+            g.gain.linearRampToValueAtTime(amp, t + 0.012);
+            g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+            o.start(t);
+            o.stop(t + dur + 0.05);
+          }
+          var T = ac.currentTime + 0.05;
+          // Grup 1 — hızlı üç cıvıltı
+          chirp(T,        1900, 3200, 0.13, 0.30);
+          chirp(T + 0.17, 2100, 3500, 0.11, 0.28);
+          chirp(T + 0.32, 2000, 3300, 0.13, 0.26);
+          // Grup 2 — biraz farklı melodi
+          chirp(T + 0.72, 1700, 3000, 0.12, 0.28);
+          chirp(T + 0.88, 2200, 3600, 0.10, 0.26);
+          chirp(T + 1.02, 2000, 3400, 0.14, 0.24);
+          // Grup 3 — yükselen final
+          chirp(T + 1.55, 1800, 3100, 0.12, 0.24);
+          chirp(T + 1.71, 2100, 3500, 0.11, 0.22);
+          chirp(T + 1.86, 2400, 3800, 0.15, 0.20);
+          // Grup 4 — sessizce biten
+          chirp(T + 2.40, 1900, 3200, 0.12, 0.16);
+          chirp(T + 2.56, 2000, 3300, 0.11, 0.13);
+          chirp(T + 2.70, 1800, 3000, 0.14, 0.10);
+        } catch(e) {}
       }, 5000);
     }
     if (waClose) {
