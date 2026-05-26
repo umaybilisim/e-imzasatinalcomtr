@@ -97,24 +97,25 @@
     } catch(e) {}
   }
 
-  // WhatsApp popup
+  // WhatsApp popup — ilk kullanıcı etkileşiminden sonra açılır (autoplay politikası gereği)
   var waPopup = document.getElementById('waPopup');
   var waClose = document.getElementById('waPopupClose');
-  if (waPopup) {
-    var dismissed = sessionStorage.getItem('waPopupDismissed');
-    if (!dismissed) {
-      setTimeout(function() {
-        waPopup.classList.add('is-visible');
-        playBird();
-      }, 5000);
-    }
-    if (waClose) {
-      waClose.addEventListener('click', function(e) {
-        e.preventDefault();
-        waPopup.classList.remove('is-visible');
-        sessionStorage.setItem('waPopupDismissed', '1');
-      });
-    }
+  var waPopupShown = false;
+  function showWaPopup() {
+    if (waPopupShown || !waPopup) return;
+    if (sessionStorage.getItem('waPopupDismissed')) return;
+    waPopupShown = true;
+    setTimeout(function() {
+      waPopup.classList.add('is-visible');
+      playBird();
+    }, 3000);
+  }
+  if (waClose) {
+    waClose.addEventListener('click', function(e) {
+      e.preventDefault();
+      waPopup.classList.remove('is-visible');
+      sessionStorage.setItem('waPopupDismissed', '1');
+    });
   }
 
   // Mark active nav link
@@ -130,6 +131,7 @@
     if (ga4Loaded) return;
     ga4Loaded = true;
     unlockAudio();
+    showWaPopup();
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     window.gtag = window.gtag || gtag;
