@@ -43,7 +43,6 @@
           var target = parseInt(el.getAttribute('data-target'), 10);
           var suffix = el.getAttribute('data-suffix') || '+';
           var duration = 2000;
-          var start = 0;
           var startTime = null;
           function step(timestamp) {
             if (!startTime) startTime = timestamp;
@@ -61,6 +60,56 @@
     animateCounters();
   }
 
+  // AudioContext — ilk etkileşimde unlock edilir, popup sesinde kullanılır
+  var _ac = null;
+  function unlockAudio() {
+    try {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC || _ac) return;
+      _ac = new AC();
+      // Sessiz buffer ile Safari/mobil kilidi aç
+      var buf = _ac.createBuffer(1, 1, _ac.sampleRate);
+      var src = _ac.createBufferSource();
+      src.buffer = buf;
+      src.connect(_ac.destination);
+      src.start(0);
+    } catch(e) {}
+  }
+
+  function playBird() {
+    try {
+      if (!_ac || _ac.state === 'closed') return;
+      function chirp(t, f0, f1, dur, amp) {
+        var o = _ac.createOscillator();
+        var g = _ac.createGain();
+        o.connect(g);
+        g.connect(_ac.destination);
+        o.type = 'sine';
+        o.frequency.setValueAtTime(f0, t);
+        o.frequency.exponentialRampToValueAtTime(f1, t + dur * 0.55);
+        o.frequency.exponentialRampToValueAtTime(f0 * 1.1, t + dur);
+        g.gain.setValueAtTime(0.001, t);
+        g.gain.linearRampToValueAtTime(amp, t + 0.012);
+        g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+        o.start(t);
+        o.stop(t + dur + 0.05);
+      }
+      var T = _ac.currentTime + 0.05;
+      chirp(T,        1900, 3200, 0.13, 0.30);
+      chirp(T + 0.17, 2100, 3500, 0.11, 0.28);
+      chirp(T + 0.32, 2000, 3300, 0.13, 0.26);
+      chirp(T + 0.72, 1700, 3000, 0.12, 0.28);
+      chirp(T + 0.88, 2200, 3600, 0.10, 0.26);
+      chirp(T + 1.02, 2000, 3400, 0.14, 0.24);
+      chirp(T + 1.55, 1800, 3100, 0.12, 0.24);
+      chirp(T + 1.71, 2100, 3500, 0.11, 0.22);
+      chirp(T + 1.86, 2400, 3800, 0.15, 0.20);
+      chirp(T + 2.40, 1900, 3200, 0.12, 0.16);
+      chirp(T + 2.56, 2000, 3300, 0.11, 0.13);
+      chirp(T + 2.70, 1800, 3000, 0.14, 0.10);
+    } catch(e) {}
+  }
+
   // WhatsApp popup
   var waPopup = document.getElementById('waPopup');
   var waClose = document.getElementById('waPopupClose');
@@ -69,43 +118,7 @@
     if (!dismissed) {
       setTimeout(function() {
         waPopup.classList.add('is-visible');
-        try {
-          var AC = window.AudioContext || window.webkitAudioContext;
-          if (!AC) return;
-          var ac = new AC();
-          function chirp(t, f0, f1, dur, amp) {
-            var o = ac.createOscillator();
-            var g = ac.createGain();
-            o.connect(g);
-            g.connect(ac.destination);
-            o.type = 'sine';
-            o.frequency.setValueAtTime(f0, t);
-            o.frequency.exponentialRampToValueAtTime(f1, t + dur * 0.55);
-            o.frequency.exponentialRampToValueAtTime(f0 * 1.1, t + dur);
-            g.gain.setValueAtTime(0.001, t);
-            g.gain.linearRampToValueAtTime(amp, t + 0.012);
-            g.gain.exponentialRampToValueAtTime(0.001, t + dur);
-            o.start(t);
-            o.stop(t + dur + 0.05);
-          }
-          var T = ac.currentTime + 0.05;
-          // Grup 1 — hızlı üç cıvıltı
-          chirp(T,        1900, 3200, 0.13, 0.30);
-          chirp(T + 0.17, 2100, 3500, 0.11, 0.28);
-          chirp(T + 0.32, 2000, 3300, 0.13, 0.26);
-          // Grup 2 — biraz farklı melodi
-          chirp(T + 0.72, 1700, 3000, 0.12, 0.28);
-          chirp(T + 0.88, 2200, 3600, 0.10, 0.26);
-          chirp(T + 1.02, 2000, 3400, 0.14, 0.24);
-          // Grup 3 — yükselen final
-          chirp(T + 1.55, 1800, 3100, 0.12, 0.24);
-          chirp(T + 1.71, 2100, 3500, 0.11, 0.22);
-          chirp(T + 1.86, 2400, 3800, 0.15, 0.20);
-          // Grup 4 — sessizce biten
-          chirp(T + 2.40, 1900, 3200, 0.12, 0.16);
-          chirp(T + 2.56, 2000, 3300, 0.11, 0.13);
-          chirp(T + 2.70, 1800, 3000, 0.14, 0.10);
-        } catch(e) {}
+        playBird();
       }, 5000);
     }
     if (waClose) {
@@ -124,11 +137,12 @@
     if (href && href === path) a.classList.add("active");
   });
 
-  // GA4 — ilk kullanıcı etkileşiminde yükle (TBT sıfır, analytics tam)
+  // GA4 + AudioContext unlock — ilk kullanıcı etkileşiminde
   var ga4Loaded = false;
   function loadGA4() {
     if (ga4Loaded) return;
     ga4Loaded = true;
+    unlockAudio();
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     window.gtag = window.gtag || gtag;
