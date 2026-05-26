@@ -79,34 +79,21 @@
   function playBird() {
     try {
       if (!_ac || _ac.state === 'closed') return;
-      function chirp(t, f0, f1, dur, amp) {
-        var o = _ac.createOscillator();
-        var g = _ac.createGain();
-        o.connect(g);
-        g.connect(_ac.destination);
-        o.type = 'sine';
-        o.frequency.setValueAtTime(f0, t);
-        o.frequency.exponentialRampToValueAtTime(f1, t + dur * 0.55);
-        o.frequency.exponentialRampToValueAtTime(f0 * 1.1, t + dur);
-        g.gain.setValueAtTime(0.001, t);
-        g.gain.linearRampToValueAtTime(amp, t + 0.012);
-        g.gain.exponentialRampToValueAtTime(0.001, t + dur);
-        o.start(t);
-        o.stop(t + dur + 0.05);
-      }
-      var T = _ac.currentTime + 0.05;
-      chirp(T,        1900, 3200, 0.13, 0.30);
-      chirp(T + 0.17, 2100, 3500, 0.11, 0.28);
-      chirp(T + 0.32, 2000, 3300, 0.13, 0.26);
-      chirp(T + 0.72, 1700, 3000, 0.12, 0.28);
-      chirp(T + 0.88, 2200, 3600, 0.10, 0.26);
-      chirp(T + 1.02, 2000, 3400, 0.14, 0.24);
-      chirp(T + 1.55, 1800, 3100, 0.12, 0.24);
-      chirp(T + 1.71, 2100, 3500, 0.11, 0.22);
-      chirp(T + 1.86, 2400, 3800, 0.15, 0.20);
-      chirp(T + 2.40, 1900, 3200, 0.12, 0.16);
-      chirp(T + 2.56, 2000, 3300, 0.11, 0.13);
-      chirp(T + 2.70, 1800, 3000, 0.14, 0.10);
+      var t = _ac.currentTime + 0.05;
+      var dur = 0.22;
+      var o = _ac.createOscillator();
+      var g = _ac.createGain();
+      o.connect(g);
+      g.connect(_ac.destination);
+      o.type = 'sine';
+      o.frequency.setValueAtTime(2000, t);
+      o.frequency.exponentialRampToValueAtTime(3400, t + dur * 0.55);
+      o.frequency.exponentialRampToValueAtTime(2200, t + dur);
+      g.gain.setValueAtTime(0.001, t);
+      g.gain.linearRampToValueAtTime(0.32, t + 0.015);
+      g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+      o.start(t);
+      o.stop(t + dur + 0.05);
     } catch(e) {}
   }
 
