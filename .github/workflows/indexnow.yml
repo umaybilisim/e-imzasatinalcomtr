@@ -1,0 +1,77 @@
+name: IndexNow Ping
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Build URL list from changed files
+        id: urls
+        run: |
+          # Find changed HTML files in the last commit (added or modified)
+          CHANGED=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- '*.html')
+
+          # If sitemap.xml or robots.txt changed, also notify root
+          ROOT_CHANGED=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- 'sitemap.xml' 'robots.txt' 'llms.txt' || true)
+
+          # Convert filenames to URLs (strip .html, prepend domain)
+          BASE="https://www.e-imzasatinal.com.tr"
+          URLS=""
+          for f in $CHANGED; do
+            # Skip template/utility files
+            case "$f" in
+              build/*|.github/*|404.html|google*|assets/img/og-image-template.html|*template*) continue ;;
+            esac
+            # Strip .html
+            URL_PATH=$(echo "$f" | sed 's/\.html$//')
+            # Special: index → /
+            if [ "$URL_PATH" = "index" ]; then
+              URL_PATH=""
+            fi
+            URLS="${URLS}\"${BASE}/${URL_PATH}\","
+          done
+
+          # If root files changed, ping homepage and sitemap
+          if [ -n "$ROOT_CHANGED" ]; then
+            URLS="${URLS}\"${BASE}/\",\"${BASE}/sitemap.xml\","
+          fi
+
+          # Remove trailing comma
+          URLS=$(echo "$URLS" | sed 's/,$//')
+
+          if [ -z "$URLS" ]; then
+            echo "No URLs to notify."
+            echo "skip=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "URLs to notify: $URLS"
+          echo "urls=$URLS" >> $GITHUB_OUTPUT
+          echo "skip=false" >> $GITHUB_OUTPUT
+
+      - name: Notify IndexNow
+        if: steps.urls.outputs.skip != 'true'
+        run: |
+          BODY=$(cat <<EOF
+          {
+            "host": "www.e-imzasatinal.com.tr",
+            "key": "420736c7f00eef8b683a9175e51ae930",
+            "keyLocation": "https://www.e-imzasatinal.com.tr/420736c7f00eef8b683a9175e51ae930.txt",
+            "urlList": [${{ steps.urls.outputs.urls }}]
+          }
+          EOF
+          )
+          echo "Payload: $BODY"
+          curl -sS -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -H "Host: api.indexnow.org" \
+            -d "$BODY" \
+            -w "\nHTTP %{http_code}\n"
