@@ -90,6 +90,7 @@ C: Ayyıldız, BTK lisanslı 5 ESHS'den biridir. Kamu kurumlarıyla tam entegre 
 - [Hizmetler](https://www.e-imzasatinal.com.tr/hizmetler): Zaman damgası, e-mühür, HSM, mobil imza
 - [SSS](https://www.e-imzasatinal.com.tr/sss): Sıkça sorulan sorular
 - [Sözlük](https://www.e-imzasatinal.com.tr/sozluk): 45+ terim — e-imza, KEP, dijital güven terim sözlüğü (DefinedTermSet)
+- [Karşılaştırma](https://www.e-imzasatinal.com.tr/karsilastir): 5 detaylı tablo — E-imza vs Mobil İmza, 5 ESHS, paketler, sertifika tipleri, KEP vs e-posta
 - [İletişim](https://www.e-imzasatinal.com.tr/iletisim): WhatsApp, telefon, ofis bilgileri, banka hesapları, başvuru süreci timeline
 - [Hakkımızda](https://www.e-imzasatinal.com.tr/hakkimizda): Şirket profili
 - [Blog](https://www.e-imzasatinal.com.tr/blog): 8 detaylı blog yazısı
