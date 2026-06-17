@@ -185,6 +185,15 @@
       <p style="margin:0;color:#0f172a;font-size:.98rem;line-height:1.6">Bu sözlük, e-imza ekosisteminde sıkça karşılaşılan teknik (NES, ESHS, HSM, X.509...), hukuki (KVKK, TTK 18/3, 5070 sayılı Kanun...) ve kurumsal (BTK, Kamu SM, Ayyıldız, e-Devlet...) terimlerin <strong>kısa ve net tanımlarını</strong> içerir. İhtiyaç duyduğunuz terimi alfabetik gezinme veya tarayıcı arama ile bulabilirsiniz.</p>
     </div>
 
+    <div class="glossary-search" style="margin-bottom:24px">
+      <div style="position:relative;max-width:560px;margin:0 auto">
+        <input type="search" id="glossary-search-input" placeholder="Terim arayın... (örn: ESHS, KEP, mali mühür, TTK 18/3)" aria-label="Sözlükte terim ara" autocomplete="off" style="width:100%;padding:14px 18px 14px 48px;border:2px solid var(--border);border-radius:12px;font-size:1rem;background:#fff;color:var(--navy);box-shadow:0 1px 3px rgba(0,0,0,.04);outline:none;transition:border-color .2s;-webkit-appearance:none">
+        <span aria-hidden="true" style="position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:1.2rem;pointer-events:none">🔎</span>
+        <button id="glossary-search-clear" type="button" aria-label="Aramayı temizle" style="display:none;position:absolute;right:14px;top:50%;transform:translateY(-50%);background:var(--bg-alt);border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;color:#64748b;font-size:.9rem;font-weight:700">✕</button>
+      </div>
+      <div id="glossary-search-status" aria-live="polite" style="text-align:center;margin-top:10px;font-size:.85rem;color:#64748b;min-height:1.2rem"></div>
+    </div>
+
     <nav class="alphabet-nav" aria-label="Alfabetik gezinme" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:40px;padding:18px;background:#fff;border:1px solid var(--border);border-radius:12px">
       <a href="#harf-a" style="display:inline-block;min-width:36px;text-align:center;padding:8px 12px;background:var(--bg-alt);border-radius:8px;color:var(--navy);font-weight:700;text-decoration:none">A</a>
       <a href="#harf-b" style="display:inline-block;min-width:36px;text-align:center;padding:8px 12px;background:var(--bg-alt);border-radius:8px;color:var(--navy);font-weight:700;text-decoration:none">B</a>
@@ -562,5 +571,72 @@
 
 <a href="https://wa.me/908507771145" class="fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
 <script defer src="assets/js/main.js"></script>
+<script>
+(function() {
+  var input = document.getElementById('glossary-search-input');
+  var clearBtn = document.getElementById('glossary-search-clear');
+  var status = document.getElementById('glossary-search-status');
+  var cards = document.querySelectorAll('.term-card');
+  var sections = document.querySelectorAll('.letter-section');
+  if (!input || !cards.length) return;
+
+  function normalize(s) {
+    return (s || '').toLowerCase()
+      .replace(/ı/g, 'i').replace(/İ/g, 'i')
+      .replace(/ş/g, 's').replace(/Ş/g, 's')
+      .replace(/ğ/g, 'g').replace(/Ğ/g, 'g')
+      .replace(/ü/g, 'u').replace(/Ü/g, 'u')
+      .replace(/ö/g, 'o').replace(/Ö/g, 'o')
+      .replace(/ç/g, 'c').replace(/Ç/g, 'c');
+  }
+
+  function filter(query) {
+    var q = normalize(query.trim());
+    if (!q) {
+      cards.forEach(function(c) { c.style.display = ''; });
+      sections.forEach(function(s) { s.style.display = ''; });
+      status.textContent = '';
+      clearBtn.style.display = 'none';
+      return;
+    }
+    clearBtn.style.display = 'block';
+    var matchCount = 0;
+    cards.forEach(function(c) {
+      var text = normalize(c.textContent);
+      if (text.indexOf(q) !== -1) {
+        c.style.display = '';
+        matchCount++;
+      } else {
+        c.style.display = 'none';
+      }
+    });
+    sections.forEach(function(s) {
+      var hasVisible = Array.prototype.some.call(s.querySelectorAll('.term-card'), function(c) {
+        return c.style.display !== 'none';
+      });
+      s.style.display = hasVisible ? '' : 'none';
+    });
+    status.textContent = matchCount > 0
+      ? matchCount + ' terim bulundu'
+      : 'Eşleşen terim yok. WhatsApp\'tan sorabilirsiniz: +90 850 777 11 45';
+    status.style.color = matchCount > 0 ? '#16a34a' : '#dc2626';
+  }
+
+  var debounceTimer;
+  input.addEventListener('input', function(e) {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function() { filter(e.target.value); }, 120);
+  });
+
+  clearBtn.addEventListener('click', function() {
+    input.value = '';
+    input.focus();
+    filter('');
+  });
+
+  input.addEventListener('focus', function() { input.style.borderColor = 'var(--accent)'; });
+  input.addEventListener('blur', function() { input.style.borderColor = 'var(--border)'; });
+})();
+</script>
 </body>
 </html>
