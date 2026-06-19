@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Avukatlar İçin E-İmza ve UYAP Rehberi">
+  <defs>
+    <linearGradient id="bg-av" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2540"/>
+      <stop offset="1" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <radialGradient id="scale-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-av)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630"/>
+  </g>
+  <circle cx="400" cy="315" r="280" fill="url(#scale-glow)"/>
+  <!-- Scales of justice -->
+  <g transform="translate(400,300)" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" fill="none">
+    <!-- pillar -->
+    <line x1="0" y1="-130" x2="0" y2="120" stroke-width="8"/>
+    <!-- base -->
+    <line x1="-60" y1="125" x2="60" y2="125" stroke-width="12"/>
+    <line x1="-40" y1="115" x2="40" y2="115"/>
+    <!-- crossbar -->
+    <line x1="-130" y1="-130" x2="130" y2="-130" stroke-width="8"/>
+    <!-- left chains -->
+    <line x1="-130" y1="-130" x2="-130" y2="-60"/>
+    <!-- right chains -->
+    <line x1="130" y1="-130" x2="130" y2="-60"/>
+    <!-- left dish -->
+    <path d="M -180 -60 Q -130 -10 -80 -60 Z" fill="#e63946" stroke="#e63946"/>
+    <!-- right dish -->
+    <path d="M 80 -60 Q 130 -10 180 -60 Z" fill="#e63946" stroke="#e63946"/>
+    <!-- top ornament -->
+    <circle cx="0" cy="-145" r="12" fill="#fbbf24"/>
+  </g>
+  <!-- gavel -->
+  <g transform="translate(280,510) rotate(-20)" fill="#fbbf24">
+    <rect x="0" y="-12" width="80" height="24" rx="4"/>
+    <rect x="20" y="-30" width="40" height="60" rx="6"/>
+    <rect x="80" y="-4" width="60" height="8" rx="4" fill="#94a3b8"/>
+  </g>
+  <!-- Text -->
+  <g transform="translate(720,200)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="#fbbf24">AVUKATLAR İÇİN</text>
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#ffffff">E-İmza ve</text>
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#ffffff">UYAP Rehberi</text>
+    <line x1="0" y1="170" x2="120" y2="170" stroke="#e63946" stroke-width="4"/>
+    <text x="0" y="210" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="#ffffff" fill-opacity="0.7">Dava · Vekalet · Dilekçe · e-Tebligat</text>
+    <!-- stats -->
+    <g transform="translate(0,250)" font-family="Arial, sans-serif" fill="#ffffff">
+      <text x="0" y="0" font-size="40" font-weight="900" fill="#fbbf24">5.000+</text>
+      <text x="0" y="32" font-size="18">UYAP işlemi yıllık</text>
+      <text x="170" y="0" font-size="40" font-weight="900" fill="#fbbf24">%80</text>
+      <text x="170" y="32" font-size="18">Zaman tasarrufu</text>
+    </g>
+  </g>
+  <g transform="translate(40,600)">
+    <text font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" fill-opacity="0.5">e-imzasatinal.com.tr · UMAY TÜM BİLİŞİM</text>
+  </g>
+</svg>

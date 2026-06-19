@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="E-İmza Tarayıcı Eklentisi Kurulumu">
+  <defs>
+    <linearGradient id="bg-te" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2540"/>
+      <stop offset="1" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="chrome-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4285f4"/><stop offset="1" stop-color="#0f9d58"/></linearGradient>
+    <linearGradient id="firefox-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7139"/><stop offset="1" stop-color="#e31b5d"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-te)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630"/>
+  </g>
+  <!-- Three browser circles -->
+  <g transform="translate(400,250)">
+    <!-- Chrome -->
+    <g transform="translate(0,0)">
+      <circle r="80" fill="#ffffff"/>
+      <circle r="70" fill="url(#chrome-blue)"/>
+      <circle r="32" fill="#ffffff"/>
+      <circle r="22" fill="#4285f4"/>
+      <text y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Chrome</text>
+    </g>
+    <!-- Edge -->
+    <g transform="translate(180,30)">
+      <circle r="65" fill="#ffffff"/>
+      <path d="M-50 10 A 50 50 0 1 1 50 10 Q 30 -10 0 0 Q -10 30 -50 10 Z" fill="#0078d4"/>
+      <path d="M-30 -10 A 30 30 0 1 1 30 -10 L 30 25 Z" fill="#1cc7d0" opacity="0.7"/>
+      <text y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Edge</text>
+    </g>
+    <!-- Firefox -->
+    <g transform="translate(340,0)">
+      <circle r="80" fill="#ffffff"/>
+      <circle r="70" fill="url(#firefox-orange)"/>
+      <path d="M-30 -25 Q-20 -50 10 -45 Q 35 -25 30 0 Q 50 20 30 40 Q 0 60 -30 35 Q -55 10 -30 -25 Z" fill="#ffaf2c"/>
+      <circle r="22" fill="#0a2540"/>
+      <text y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Firefox</text>
+    </g>
+  </g>
+  <!-- Connecting USB icon -->
+  <g transform="translate(575,180)" fill="#fbbf24">
+    <rect x="-15" y="0" width="30" height="40" rx="3"/>
+    <rect x="-22" y="-12" width="44" height="14" rx="2"/>
+    <rect x="-5" y="40" width="10" height="50" fill="#94a3b8"/>
+  </g>
+  <!-- Text -->
+  <g transform="translate(60,460)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#fbbf24">TARAYICI EKLENTİSİ</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="48" font-weight="900" fill="#ffffff">Chrome · Edge · Firefox Kurulum Rehberi</text>
+    <line x1="0" y1="90" x2="120" y2="90" stroke="#e63946" stroke-width="4"/>
+  </g>
+  <g transform="translate(40,600)">
+    <text font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" fill-opacity="0.5">e-imzasatinal.com.tr · UMAY TÜM BİLİŞİM</text>
+  </g>
+</svg>
