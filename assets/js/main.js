@@ -145,4 +145,96 @@
   ["scroll", "click", "touchstart", "keydown", "mousemove"].forEach(function(evt) {
     window.addEventListener(evt, loadGA4, { once: true, passive: true });
   });
+
+  // --- Contact event tracking (WhatsApp / telefon / e-posta / ödeme) ---
+  // GA4 yüklenmeden önceki tıklamalar dataLayer'a queue'lanır,
+  // GA4 yüklendiğinde otomatik işlenir.
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+
+  function detectContactSource(el) {
+    if (el.closest(".fab-wa")) return "fab";
+    if (el.closest("#waPopup")) return "popup";
+    if (el.closest(".site-header")) return "header";
+    if (el.closest(".site-footer")) return "footer";
+    if (el.closest(".hero")) return "hero";
+    if (el.closest(".cta-strip")) return "cta_strip";
+    if (el.closest(".form-wrap")) return "iletisim_form";
+    if (el.closest(".contact-info")) return "iletisim_panel";
+    if (el.closest(".testimonial")) return "testimonial";
+    if (el.closest(".answer-card") || el.closest(".geo-answer-card")) return "answer_card";
+    if (el.closest(".card")) return "card";
+    return "inline";
+  }
+
+  function detectIntent(text) {
+    if (!text) return "general";
+    var t = text.toLowerCase();
+    if (t.indexOf("kep") !== -1) return "kep";
+    if (t.indexOf("mali mühür") !== -1 || t.indexOf("muhur") !== -1) return "mali_muhur";
+    if (t.indexOf("fatura") !== -1) return "e_fatura";
+    if (t.indexOf("yenileme") !== -1 || t.indexOf("süresi") !== -1) return "yenileme";
+    if (t.indexOf("fiyat") !== -1 || t.indexOf("teklif") !== -1) return "pricing";
+    if (t.indexOf("e-imza") !== -1 || t.indexOf("imza") !== -1) return "e_imza";
+    return "general";
+  }
+
+  function trackContactClick(e) {
+    var a = e.target && e.target.closest && e.target.closest("a[href]");
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var method = null;
+    var label = null;
+    var intent = "general";
+
+    if (href.indexOf("wa.me") !== -1 || href.indexOf("whatsapp.com") !== -1 || href.indexOf("https://wa.") === 0) {
+      method = "whatsapp";
+      var qIdx = href.indexOf("?text=");
+      if (qIdx !== -1) {
+        try {
+          label = decodeURIComponent(href.substring(qIdx + 6)).substring(0, 120);
+          intent = detectIntent(label);
+        } catch(_) {}
+      }
+    } else if (href.indexOf("tel:") === 0) {
+      method = "phone";
+      label = href.substring(4);
+    } else if (href.indexOf("mailto:") === 0) {
+      method = "email";
+      label = href.substring(7).split("?")[0];
+      var sIdx = href.indexOf("subject=");
+      if (sIdx !== -1) {
+        try { intent = detectIntent(decodeURIComponent(href.substring(sIdx + 8))); } catch(_) {}
+      }
+    } else if (href.indexOf("odeme.umaybilisim.com.tr") !== -1) {
+      method = "payment";
+      label = "online_tahsilat";
+    } else {
+      return;
+    }
+
+    var source = detectContactSource(a);
+    var page_path = location.pathname + location.hash;
+
+    // Granular custom event — tıklama tipi bazında segmentasyon için
+    window.gtag("event", method + "_click", {
+      source: source,
+      intent: intent,
+      label: label,
+      page_path: page_path
+    });
+
+    // GA4 recommended event — conversion olarak işaretlemek için
+    window.gtag("event", "generate_lead", {
+      currency: "TRY",
+      value: 0,
+      method: method,
+      source: source,
+      intent: intent,
+      page_path: page_path
+    });
+  }
+
+  // Capture phase'de dinle — alt elementlere bubble olmadan önce yakalanır
+  document.addEventListener("click", trackContactClick, true);
 })();
