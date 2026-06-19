@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="yandex-verification" content="75d11aafa4214159">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-İmza Tarayıcı Eklentisi Kurulumu (Chrome / Edge / Firefox) | UMAY TÜM BİLİŞİM</title>
+<meta name="description" content="E-imza için Chrome, Edge ve Firefox tarayıcı eklentisi kurulumu. AKİS, Java ve NSS yapılandırması adım adım. e-Devlet, EKAP, UYAP için hazırlık rehberi.">
+<meta name="keywords" content="e-imza tarayıcı eklentisi, Chrome e-imza, Edge e-imza, Firefox e-imza, AKİS eklenti, e-imza Java">
+<link rel="canonical" href="https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu">
+<meta property="og:title" content="E-İmza Tarayıcı Eklentisi — Chrome, Edge, Firefox Kurulumu">
+<meta property="og:description" content="Hangi tarayıcıda hangi eklenti gerekli, nasıl kurulur, sorun giderme adımları.">
+<meta property="og:image" content="https://www.e-imzasatinal.com.tr/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UMAY TÜM BİLİŞİM — Ayyıldız E-İmza ve KEP Yetkili Satıcısı">
+<meta property="og:image:type" content="image/png">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="UMAY TÜM BİLİŞİM LTD.ŞTİ.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="E-İmza Tarayıcı Eklentisi — Chrome, Edge, Firefox Kurulumu">
+<meta name="twitter:description" content="Hangi tarayıcıda hangi eklenti gerekli, nasıl kurulur, sorun giderme adımları.">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a2540'/%3E%3Ctext x='50' y='72' font-size='68' text-anchor='middle' fill='%23e63946'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"E-İmza Tarayıcı Eklentisi Kurulumu (Chrome / Edge / Firefox)","description":"E-imza için Chrome, Edge ve Firefox tarayıcı eklentisi kurulumu. AKİS, Java ve NSS yapılandırması adım adım. e-Devlet, EKAP, UYAP için hazırlık rehberi.","image":"https://www.e-imzasatinal.com.tr/assets/img/og-image.png","datePublished":"2026-06-19","dateModified":"2026-06-19","author":{"@type":"Organization","name":"UMAY TÜM BİLİŞİM Editör Ekibi","url":"https://www.e-imzasatinal.com.tr/hakkimizda"},"publisher":{"@type":"Organization","name":"UMAY TÜM BİLİŞİM LTD.ŞTİ.","logo":{"@type":"ImageObject","url":"https://www.e-imzasatinal.com.tr/assets/img/og-image.png"}},"mainEntityOfPage":"https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu"}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Anasayfa",
+      "item": "https://www.e-imzasatinal.com.tr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.e-imzasatinal.com.tr/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "E-İmza Tarayıcı Eklentisi Kurulumu"
+    }
+  ]
+}
+</script>
+<!-- GEO-BLOG-SCHEMA-V1 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#howto",
+  "name": "Tarayıcı Eklentisi Kurulumu",
+  "description": "Chrome, Edge ve Firefox için e-imza tarayıcı eklentisi kurulum rehberi.",
+  "image": "https://www.e-imzasatinal.com.tr/assets/img/og-image.png",
+  "totalTime": "PT10M",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "TRY",
+    "value": "0"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "AKİS Sürücüsünü Yükleyin",
+      "text": "Önce AKİS Kart İzleme Sistemi bilgisayarınıza yüklenmiş olmalıdır. Detaylar için kurulum rehberine bakın.",
+      "url": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#adim-1"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Tarayıcınızı Seçin",
+      "text": "Chrome, Microsoft Edge ve Firefox için farklı kurulum adımları vardır. Hangisini kullanıyorsanız ilgili bölümü takip edin.",
+      "url": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#adim-2"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Eklentiyi İndirin ve Kurun",
+      "text": "Chrome Web Store / Edge Eklentileri'nden 'Ayyıldız İmzala' eklentisini yükleyin. Firefox için NSS yapılandırması ayrı yapılır.",
+      "url": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#adim-3"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Tarayıcıyı Yeniden Başlatın",
+      "text": "Eklenti yüklendikten sonra tarayıcıyı kapatıp tekrar açın.",
+      "url": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#adim-4"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Test İmzası Yapın",
+      "text": "turkiye.gov.tr veya başka bir e-imza destekli sitede test girişi yaparak doğrulayın.",
+      "url": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#adim-5"
+    }
+  ],
+  "inLanguage": "tr-TR",
+  "publisher": {
+    "@id": "https://www.e-imzasatinal.com.tr/#organization"
+  },
+  "author": {
+    "@id": "https://www.e-imzasatinal.com.tr/#editorialteam"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#webpage",
+  "url": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu",
+  "name": "E-İmza Tarayıcı Eklentisi Kurulumu (Chrome / Edge / Firefox)",
+  "isPartOf": {
+    "@id": "https://www.e-imzasatinal.com.tr/#website"
+  },
+  "about": {
+    "@id": "https://www.e-imzasatinal.com.tr/#organization"
+  },
+  "inLanguage": "tr-TR",
+  "dateModified": "2026-06-19",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".page-hero h1",
+      ".tldr-box p",
+      "h2",
+      "h3"
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#techarticle",
+  "headline": "E-İmza Tarayıcı Eklentisi Kurulumu (Chrome / Edge / Firefox)",
+  "url": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu",
+  "datePublished": "2026-06-19",
+  "dateModified": "2026-06-19",
+  "inLanguage": "tr-TR",
+  "wordCount": 1600,
+  "articleSection": "Teknik Rehber",
+  "keywords": "e-imza tarayıcı eklentisi, Chrome e-imza, Edge e-imza, Firefox e-imza, AKİS eklenti, e-imza Java",
+  "isPartOf": {
+    "@id": "https://www.e-imzasatinal.com.tr/#website"
+  },
+  "publisher": {
+    "@id": "https://www.e-imzasatinal.com.tr/#organization"
+  },
+  "author": {
+    "@type": "Organization",
+    "@id": "https://www.e-imzasatinal.com.tr/#editorialteam",
+    "name": "UMAY TÜM BİLİŞİM Editör Ekibi",
+    "url": "https://www.e-imzasatinal.com.tr/hakkimizda",
+    "description": "Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, yetkili bayi uzmanlarından oluşan editör ekibi.",
+    "knowsAbout": [
+      "Elektronik İmza",
+      "KEP",
+      "Dijital Güven",
+      "5070 sayılı Kanun",
+      "6102 sayılı TTK"
+    ]
+  },
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Ayyıldız Bilgi Güvenliği — Sürücüler",
+      "url": "https://www.ayyildiz.com.tr"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Mozilla NSS Kütüphanesi",
+      "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AKİS Kart İzleme Sistemi",
+      "url": "https://www.akis.com.tr"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "DefinedTerm",
+      "name": "E-IMZA",
+      "inDefinedTermSet": "https://www.e-imzasatinal.com.tr/#glossary"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "AKIS",
+      "inDefinedTermSet": "https://www.e-imzasatinal.com.tr/#glossary"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "NES",
+      "inDefinedTermSet": "https://www.e-imzasatinal.com.tr/#glossary"
+    }
+  ],
+  "mainEntityOfPage": {
+    "@id": "https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu#webpage"
+  }
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></a>
+    <button class="nav-toggle" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="/">Anasayfa</a>
+      <a href="../e-imza">E-İmza</a>
+      <a href="../kep">KEP</a>
+      <a href="../hizmetler">Hizmetler</a>
+      <a href="../blog">Blog</a>
+      <a href="../sss">SSS</a>
+      <a href="../iletisim">İletişim</a>
+      <a href="https://odeme.umaybilisim.com.tr/" class="btn btn--pay btn--sm nav-cta" target="_blank" rel="noopener">Online Tahsilat</a>
+      <a href="https://wa.me/908507771145" class="btn btn--wa btn--sm nav-cta" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Teknik Rehber</span>
+    <h1>E-İmza Tarayıcı Eklentisi Kurulumu</h1>
+    <p>E-imza için Chrome, Edge ve Firefox tarayıcı eklentisi kurulumu. AKİS, Java ve NSS yapılandırması adım adım. e-Devlet, EKAP, UYAP için hazırlık rehberi.</p>
+  </div>
+</section>
+
+<nav class="breadcrumb"><div class="container"><a href="/">Anasayfa</a><span>/</span><a href="../blog">Blog</a><span>/</span>E-İmza Tarayıcı Eklentisi Kurulumu</div></nav>
+
+<section class="section">
+  <div class="container">
+    <article class="prose">
+
+      <div class="post-meta" style="display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--border);margin-bottom:24px;font-size:.9rem;color:#475569">
+        <div style="width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700">U</div>
+        <div>
+          <div style="font-weight:600;color:var(--navy)">UMAY TÜM BİLİŞİM Editör Ekibi</div>
+          <div style="font-size:.85rem">Yayınlanma: 19 Haziran 2026 · Güncelleme: 19 Haziran 2026</div>
+        </div>
+      </div>
+
+      <!-- GEO-TLDR-V1 -->
+      <aside class="tldr-box" style="background:linear-gradient(135deg,#f0f4ff 0%,#e8f5f0 100%);border-left:4px solid var(--wa);border-radius:12px;padding:22px 26px;margin:24px 0 32px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+          <span style="background:var(--wa);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.5px;padding:4px 10px;border-radius:999px">📌 ÖZET</span>
+          <span style="font-size:.85rem;color:#475569">2026 itibarıyla güncel · UMAY TÜM BİLİŞİM Editör Ekibi tarafından doğrulanmıştır</span>
+        </div>
+        <p style="margin:0;color:#0f172a;font-size:1rem;line-height:1.65"><strong>E-imza tarayıcı eklentisi</strong>, web tarayıcısının (Chrome, Edge, Firefox) e-imza kartınızla iletişim kurmasını sağlar. <strong>Chrome ve Edge için</strong> tek bir resmi eklenti yeterli (Ayyıldız İmzala). <strong>Firefox için</strong> NSS kütüphanesi tanıtılır. Tüm tarayıcılarda kullanım: AKİS sürücüsü → tarayıcı eklentisi → e-Devlet/UYAP/EKAP girişinde otomatik algılama.</p>
+      </aside>
+
+      <h2>Tarayıcı Eklentisi Neden Gerekli?</h2>
+      <p>E-imza ile web tabanlı işlemler (e-Devlet, <a href="/sozluk#ekap" class="term-link">EKAP</a>, <a href="/sozluk#uyap" class="term-link">UYAP</a>, <a href="/sozluk#mersis" class="term-link">MERSİS</a>, GİB) yapabilmek için tarayıcının <strong>kriptografik kart ile iletişim kurabilmesi</strong> gerekir. Bu iletişimi sağlayan ara katmana <strong>tarayıcı eklentisi</strong> denir.</p>
+      <p><a href="/sozluk#akis" class="term-link">AKİS</a> sürücüsü kartı işletim sistemine tanıtırken, tarayıcı eklentisi <strong>web sayfasının</strong> bu kartla konuşmasını sağlar. İkisi de gereklidir.</p>
+
+      <h2>Hangi Tarayıcıda Hangi Eklenti?</h2>
+      <ul>
+        <li><strong>Google Chrome:</strong> Ayyıldız İmzala eklentisi (Chrome Web Store)</li>
+        <li><strong>Microsoft Edge:</strong> Aynı Chrome eklentisi (Edge eklenti mağazasında)</li>
+        <li><strong>Mozilla Firefox:</strong> NSS kütüphanesine PKCS#11 modülü tanıtımı</li>
+        <li><strong>Safari (Mac):</strong> Sınırlı destek — Mac kullanıcılar Chrome veya Firefox tercih etmelidir</li>
+      </ul>
+
+      <h2>Chrome İçin Kurulum</h2>
+      <div class="steps">
+        <div class="step"><h3>1. Chrome Web Store'a Git</h3><p>Chrome tarayıcısında <strong>chrome.google.com/webstore</strong> adresine gidin.</p></div>
+        <div class="step"><h3>2. "Ayyıldız İmzala" Ara</h3><p>Arama kutusuna <strong>"Ayyıldız İmzala"</strong> veya <strong>"e-imza imzala"</strong> yazın.</p></div>
+        <div class="step"><h3>3. "Chrome'a Ekle" Butonu</h3><p>İlgili eklentinin sayfasında <strong>"Chrome'a Ekle"</strong> butonuna basın. Onay penceresinde <strong>"Eklentiyi ekle"</strong> seçin.</p></div>
+        <div class="step"><h3>4. Eklentiyi Sabit Tut</h3><p>Sağ üstteki yapboz ikonuna tıklayın, eklentinin yanındaki pin işaretine basarak sabit tutun.</p></div>
+      </div>
+
+      <h2>Edge İçin Kurulum</h2>
+      <p>Microsoft Edge tarayıcısı Chrome eklentilerini desteklediği için aynı eklentiyi kullanabilirsiniz. İki seçenek vardır:</p>
+      <ul>
+        <li><strong>Seçenek A:</strong> Edge'de <strong>edge://extensions</strong> adresine gidin, <strong>"Diğer mağazalardan eklentilere izin ver"</strong> seçeneğini açın, Chrome Web Store'dan kurun.</li>
+        <li><strong>Seçenek B:</strong> Microsoft Edge Eklentiler mağazasında doğrudan <strong>"Ayyıldız İmzala"</strong> aratın.</li>
+      </ul>
+
+      <h2>Firefox İçin Kurulum (NSS Modülü)</h2>
+      <p>Firefox, kendi <strong>NSS (Network Security Services)</strong> kütüphanesini kullanır. Bu nedenle PKCS#11 modülü manuel olarak tanıtılır:</p>
+      <div class="steps">
+        <div class="step"><h3>1. AKİS Yüklendi mi Kontrol Et</h3><p>AKİS yüklü değilse Firefox kartı göremez. Önce AKİS sürücüsünü yükleyin.</p></div>
+        <div class="step"><h3>2. Firefox Ayarları</h3><p>Firefox menüsünden <strong>Ayarlar → Gizlilik ve Güvenlik → Sertifikalar → Güvenlik Aygıtları</strong> bölümüne gidin.</p></div>
+        <div class="step"><h3>3. Yeni PKCS#11 Modülü</h3><p><strong>"Yükle"</strong> butonuna basın. Modül adı: <code>AKIS</code>. Modül dosyası genellikle <code>C:\Windows\System32\akisp11.dll</code> konumundadır.</p></div>
+        <div class="step"><h3>4. Tamam → Yeniden Başlat</h3><p>Tamam'a basın ve Firefox'u yeniden başlatın.</p></div>
+      </div>
+
+      <div class="callout">
+        <strong>Önemli Not:</strong> Bazı yeni e-imza uygulamaları artık tarayıcı eklentisi yerine <strong>yerli imzalama uygulamaları</strong> (örn. PDF Sign, XML Signer) ile çalışır. Bu durumda tarayıcı eklentisine gerek kalmayabilir.
+      </div>
+
+      <h2>Java Kurulumu Gerekli mi?</h2>
+      <p>Eski e-imza uygulamaları Java Applet ile çalışıyordu. <strong>Bugün çoğu modern e-imza uygulaması Java gerektirmez.</strong> Ancak bazı kurumsal sistemler (özellikle eski belediye, üniversite portalları) hâlâ Java tabanlı çalışır.</p>
+      <p>Gerekiyorsa Oracle JRE veya AdoptOpenJDK'nın güncel sürümünü yükleyin. Java ile birlikte gelen <strong>Java Web Start</strong> ve <strong>tarayıcı entegrasyonu</strong> seçenekleri aktif edilmelidir.</p>
+
+      <h2>Test ve Doğrulama</h2>
+      <p>Tüm kurulumlar tamamlandıktan sonra şu adımlarla test edin:</p>
+      <ol>
+        <li>USB token'ı bilgisayara takın</li>
+        <li>Tarayıcıdan <strong>turkiye.gov.tr</strong> adresine gidin</li>
+        <li><strong>"Elektronik İmza"</strong> seçeneği ile giriş yapmayı deneyin</li>
+        <li>Sertifikanız listede görünüyorsa kurulum başarılıdır</li>
+      </ol>
+
+      <h2>Sorun Giderme</h2>
+      <h3>"Eklenti çalışmıyor / kart algılanmıyor"</h3>
+      <ul>
+        <li>AKİS sürücüsünün güncel sürümünü yeniden yükleyin</li>
+        <li>Bilgisayarı yeniden başlatın</li>
+        <li>Tarayıcının güncel sürüm olduğundan emin olun</li>
+      </ul>
+
+      <h3>"Firefox sertifika göremiyor"</h3>
+      <ul>
+        <li>PKCS#11 modülünün doğru tanıtıldığını kontrol edin</li>
+        <li>AKIS modülünün etkin durumda olduğundan emin olun</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Ücretsiz uzaktan destek:</strong> Kurulumda sorun yaşarsanız UMAY TÜM BİLİŞİM WhatsApp +90 850 777 11 45 hattından AnyDesk ile ekran paylaşımı yaparak ücretsiz destek alabilirsiniz.
+      </div>
+
+      <!-- GEO-AUTHOR-SOURCES-V1 -->
+      <section class="article-footer" style="margin-top:48px;padding-top:32px;border-top:2px solid var(--border)">
+
+        <div class="author-bio" style="display:flex;gap:20px;background:var(--bg-alt);padding:24px 26px;border-radius:12px;margin-bottom:24px;align-items:flex-start">
+          <div style="flex-shrink:0;width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.5rem">U</div>
+          <div>
+            <h3 style="margin:0 0 6px;font-size:1.05rem;color:var(--navy)">UMAY TÜM BİLİŞİM Editör Ekibi</h3>
+            <p style="margin:0 0 10px;font-size:.9rem;color:#475569;line-height:1.55">Ayyıldız Bilgi Güvenliği A.Ş. yetkili bayisi olarak <strong>5+ yıllık sektörel deneyime</strong> sahip, BTK mevzuatı, 5070 sayılı Elektronik İmza Kanunu ve 6102 sayılı TTK üzerinde uzmanlaşmış uzmanlardan oluşan editör ekibimiz. Tüm içerikler güncel mevzuat ve uygulamaya uygunluk açısından gözden geçirilir.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:.82rem">
+              <span style="color:#64748b">✓ Ayyıldız Yetkili Bayi</span>
+              <span style="color:#64748b">✓ 5+ Yıl Deneyim</span>
+              <span style="color:#64748b">✓ 81 İl Hizmet</span>
+              <span style="color:#64748b">✓ BTK Mevzuat Uyumlu</span>
+            </div>
+          </div>
+        </div>
+
+        <details class="article-sources" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-bottom:18px">
+          <summary style="font-weight:700;cursor:pointer;color:var(--navy);font-size:1rem">📚 Bu Makalede Kullanılan Kaynaklar ve Yasal Dayanaklar</summary>
+          <ul style="margin:14px 0 0;padding-left:20px;color:#475569;font-size:.92rem;line-height:1.7">
+    <li><a href="https://www.ayyildiz.com.tr" target="_blank" rel="noopener nofollow">Ayyıldız Bilgi Güvenliği — Sürücüler</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS" target="_blank" rel="noopener nofollow">Mozilla NSS Kütüphanesi</a></li>
+    <li><a href="https://www.akis.com.tr" target="_blank" rel="noopener nofollow">AKİS Kart İzleme Sistemi</a></li>
+          </ul>
+          <p style="margin:14px 0 0;font-size:.82rem;color:#64748b;font-style:italic">Tüm kaynaklar resmi devlet kurumları veya ilgili düzenleyici otoritelerin yayınladığı belgeler ile birinci derece kaynak şirketlerin web sitelerinden alınmıştır.</p>
+        </details>
+
+        <div class="last-updated" style="text-align:center;padding:14px;background:#f0f9f4;border-radius:8px;font-size:.88rem;color:#16745b">
+          🔄 Bu içerik en son <strong>19 Haziran 2026</strong> tarihinde gözden geçirildi ve güncel mevzuata uygunluğu teyit edildi.
+        </div>
+
+      </section>
+    </article>
+    <div class="center" style="margin-top:32px">
+      <a href="https://wa.me/908507771145?text=E-imza%20başvurusu%20yapmak%20istiyorum" class="btn btn--wa btn--lg" target="_blank" rel="noopener">WhatsApp ile Başvur</a>
+      <a href="../blog" class="btn btn--ghost btn--lg" style="margin-left:12px">Tüm Yazılar</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">İlgili Yazılar</span>
+      <h2>Bunlar da İlginizi Çekebilir</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+      <a href="e-imza-kurulumu-nasil-yapilir" class="blog-card" style="display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:transform .2s,box-shadow .2s">
+        <div style="padding:18px"><h3 style="margin:0;font-size:1rem;color:var(--navy);font-weight:700">E-İmza Kurulumu Nasıl Yapılır?</h3></div>
+      </a>
+      <a href="e-imza-ile-e-devlete-giris" class="blog-card" style="display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:transform .2s,box-shadow .2s">
+        <div style="padding:18px"><h3 style="margin:0;font-size:1rem;color:var(--navy);font-weight:700">E-İmza ile e-Devlet'e Giriş</h3></div>
+      </a>
+      <a href="e-imza-nedir-nasil-alinir" class="blog-card" style="display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:transform .2s,box-shadow .2s">
+        <div style="padding:18px"><h3 style="margin:0;font-size:1rem;color:var(--navy);font-weight:700">E-İmza Nedir? Nasıl Alınır?</h3></div>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div class="about"><div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></div><p>Türkiye'nin 81 ilinde Ayyıldız e-imza, KEP ve dijital güven çözümlerinde yetkili satıcınız.</p></div>
+      <div><h3>Hizmetler</h3><ul><li><a href="../e-imza">E-İmza</a></li><li><a href="../kep">KEP</a></li><li><a href="../hizmetler">Hizmetler</a></li></ul></div>
+      <div><h3>Kurumsal</h3><ul><li><a href="../hakkimizda">Hakkımızda</a></li><li><a href="../blog">Blog</a></li><li><a href="../sss">SSS</a></li><li><a href="../sozluk">Sözlük</a></li><li><a href="../karsilastir">Karşılaştırma</a></li><li><a href="../iletisim">İletişim</a></li></ul></div>
+      <div><h3>İletişim</h3><ul><li><a href="tel:+908507771145">0 850 777 11 45</a></li><li><a href="tel:+902647771145">0 264 777 11 45</a></li><li><a href="https://wa.me/908507771145" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:bilgi@umaybilisim.com.tr">bilgi@umaybilisim.com.tr</a></li><li>Sakarya / Erenler</li></ul></div>
+    </div>
+    <div class="footer-bottom">© 2026 <a href="https://www.umaybilisim.com.tr" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">UMAY TÜM BİLİŞİM LTD.ŞTİ.</a> Tüm hakları saklıdır.</div>
+  </div>
+</footer>
+<a href="https://wa.me/908507771145" class="fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+<script defer src="../assets/js/main.js"></script>
+</body>
+</html>
