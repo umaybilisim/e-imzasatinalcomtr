@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="E-İmza Kartım Kayıp Çalıntı Hasarlı">
+  <defs>
+    <linearGradient id="bg-kc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2540"/>
+      <stop offset="1" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <radialGradient id="glow-alert" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ef4444" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip-broken" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-kc)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630"/>
+  </g>
+  <circle cx="380" cy="315" r="280" fill="url(#glow-alert)"/>
+  <!-- Broken/damaged card + alert triangle -->
+  <g transform="translate(380,315)">
+    <!-- USB Token in halves -->
+    <g transform="rotate(-8)">
+      <!-- Left half (broken diagonal) -->
+      <path d="M -140 -60 L 40 -60 L 20 60 L -140 60 Z" fill="#e63946"/>
+      <!-- Chip on left half -->
+      <rect x="-100" y="-25" width="45" height="35" fill="url(#chip-broken)"/>
+      <g stroke="#78350f" stroke-width="1.5">
+        <line x1="-95" y1="-15" x2="-60" y2="-15"/>
+        <line x1="-95" y1="-5" x2="-60" y2="-5"/>
+        <line x1="-95" y1="5" x2="-60" y2="5"/>
+      </g>
+      <!-- Zigzag broken edge overlay -->
+      <path d="M 40 -60 L 30 -30 L 40 0 L 30 30 L 20 60" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- Right half offset -->
+    <g transform="translate(60,20) rotate(15)">
+      <path d="M -20 -60 L 140 -60 L 140 60 L -40 60 Z" fill="#b71c2c"/>
+      <path d="M -20 -60 L -10 -30 L -20 0 L -10 30 L -40 60" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- Cracks -->
+    <g stroke="#fbbf24" stroke-width="3" fill="none" opacity="0.7">
+      <path d="M 20 -55 L 35 -30 L 20 -10 L 30 15 L 15 40"/>
+    </g>
+  </g>
+  <!-- Alert triangle -->
+  <g transform="translate(240,470)">
+    <polygon points="0,-60 60,50 -60,50" fill="#fbbf24" stroke="#0a2540" stroke-width="4"/>
+    <rect x="-5" y="-30" width="10" height="40" fill="#0a2540"/>
+    <circle cx="0" cy="25" r="6" fill="#0a2540"/>
+  </g>
+  <!-- Text -->
+  <g transform="translate(680,150)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ef4444">ACİL EYLEM REHBERİ</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="900" fill="#ffffff">E-İmza Kartım</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff" fill-opacity="0.9">Kayıp/Çalıntı/Hasarlı</text>
+    <line x1="0" y1="155" x2="120" y2="155" stroke="#e63946" stroke-width="4"/>
+    <text x="0" y="195" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.7">Ne yapmalıyım? · PIN/PUK kilit · İptal</text>
+    <!-- 3 hızlı adım -->
+    <g transform="translate(0,235)" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">
+      <g transform="translate(0,0)"><circle cx="18" cy="18" r="18" fill="#ef4444"/><text x="18" y="24" text-anchor="middle" font-size="16">1</text><text x="45" y="24">Sertifikayı iptal</text></g>
+      <g transform="translate(0,44)"><circle cx="18" cy="18" r="18" fill="#f97316"/><text x="18" y="24" text-anchor="middle" font-size="16">2</text><text x="45" y="24">Suç duyurusu</text></g>
+      <g transform="translate(0,88)"><circle cx="18" cy="18" r="18" fill="#22c55e"/><text x="18" y="24" text-anchor="middle" font-size="16">3</text><text x="45" y="24">Yeni başvuru</text></g>
+    </g>
+  </g>
+  <g transform="translate(40,600)">
+    <text font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" fill-opacity="0.5">e-imzasatinal.com.tr · UMAY TÜM BİLİŞİM</text>
+  </g>
+</svg>

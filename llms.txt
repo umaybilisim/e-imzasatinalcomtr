@@ -110,6 +110,10 @@ C: Ayyıldız, BTK lisanslı 5 ESHS'den biridir. Kamu kurumlarıyla tam entegre 
 - [Avukatlar İçin E-İmza ve UYAP](https://www.e-imzasatinal.com.tr/blog/avukatlar-icin-e-imza-uyap): UYAP üzerinden dava, vekalet, dilekçe gönderimi
 - [Muhasebeciler İçin E-İmza Paketleri](https://www.e-imzasatinal.com.tr/blog/muhasebeciler-icin-e-imza): SMMM/YMM için müvekkil sayısına göre paket önerileri
 - [Vekaletle E-İmza Alınabilir Mi?](https://www.e-imzasatinal.com.tr/blog/vekaletle-e-imza-alinabilir-mi): Vekaletle başvuru yasal çerçevesi ve istisnalar
+- [Doktorlar İçin E-İmza ve E-Reçete Rehberi](https://www.e-imzasatinal.com.tr/blog/doktorlar-icin-e-imza-e-recete): Sağlık sektörü — e-Reçete, MEDULA, muayenehane, diş hekimi, eczacı
+- [Mühendisler İçin E-İmza ve TMMOB İşlemleri](https://www.e-imzasatinal.com.tr/blog/muhendisler-icin-e-imza-tmmob): TMMOB oda kayıtları, SMM belgesi, İSG-KATİP, yapı denetim
+- [EKAP İçin E-İmza — Kamu İhale Rehberi](https://www.e-imzasatinal.com.tr/blog/ekap-icin-e-imza-kamu-ihale): EKAP kaydı, e-teklif zarfı, KİK, kamu ihalelerine katılım
+- [E-İmza Kartım Kayıp/Çalıntı/Hasarlı](https://www.e-imzasatinal.com.tr/blog/e-imza-kayip-calinti-hasarli): Sertifika iptali, PIN/PUK kilit, acil eylem rehberi
 
 ### Yasal & Politika
 - [Aydınlatma Metni (KVKK)](https://www.e-imzasatinal.com.tr/aydinlatma-metni)
