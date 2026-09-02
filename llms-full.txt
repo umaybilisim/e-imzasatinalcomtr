@@ -44,17 +44,30 @@ Türkiye'de BTK lisanslı yalnızca **5 ESHS** vardır:
 - **HSM**: Yüksek güvenlikli donanım modülü (kurumsal)
 - **Bulut tabanlı (Cloud HSM)**: Uzak imzalama (yeni nesil)
 
-### Süre Seçenekleri ve Fiyatlandırma (2026)
-| Paket | Süre | Yaklaşık Fiyat (KDV dahil) |
-|-------|------|-----|
-| Bireysel | 1 yıl | 800-1.200 TL |
-| Bireysel | 2 yıl | 1.300-1.900 TL |
-| Bireysel | 3 yıl | 1.900-2.800 TL |
-| Firma | 1 yıl | 1.000-1.500 TL |
-| Firma | 3 yıl | 2.500-3.500 TL |
-| Mali Mühür | 3 yıl | 3.000-4.500 TL |
+### Süre Seçenekleri ve Fiyatlandırma (2026 — UMAY TÜM BİLİŞİM Ayyıldız Paketleri)
 
-*Fiyatlar üretici, dağıtıcı ve kampanyalara göre değişebilir. Güncel fiyat için: WhatsApp +90 850 777 11 45*
+**Yurt İçi (KDV dahil):**
+| Paket | Süre | Fiyat |
+|-------|------|-------|
+| Ayyıldız E-İmza | 1 yıl | 3.000 TL |
+| Ayyıldız E-İmza | 2 yıl | 3.500 TL |
+| Ayyıldız E-İmza | 3 yıl | 4.000 TL |
+
+**Yurt Dışı (KDV dahil):**
+| Paket | Süre | Fiyat |
+|-------|------|-------|
+| Yurtdışı E-İmza | 1 yıl | 115 € / 115 $ |
+| Yurtdışı E-İmza | 2 yıl | 135 € / 135 $ |
+| Yurtdışı E-İmza | 3 yıl | 165 € / 165 $ |
+
+Tüm paketlere kart okuyucu (USB token), ücretsiz uzaktan kurulum ve sertifika süresi boyunca teknik destek dahildir.
+
+**Ek Ürünler (yaklaşık pazar aralığı):**
+- Mali Mühür (GİB, 3 yıl): ~4.000-6.000 TL
+- KEP hesabı (yıllık): ~500-800 TL
+- Zaman damgası: kullanıma göre paket
+
+*Fiyatlar dönemsel kampanyalara göre değişebilir. Güncel fiyat ve teklif için: WhatsApp +90 850 777 11 45*
 
 ### Kurulum ve Kullanım
 **Gerekli yazılımlar**:
