@@ -76,28 +76,36 @@
     } catch(e) {}
   }
 
-  function playBird() {
+  // Popup açılış sesi: iki tonlu "ding" (ses, tarayıcı izin verirse çalar)
+  function playDing() {
     try {
       if (!_ac || _ac.state === 'closed') return;
-      var t = _ac.currentTime + 0.05;
-      var dur = 0.22;
-      var o = _ac.createOscillator();
-      var g = _ac.createGain();
-      o.connect(g);
-      g.connect(_ac.destination);
-      o.type = 'sine';
-      o.frequency.setValueAtTime(2000, t);
-      o.frequency.exponentialRampToValueAtTime(3400, t + dur * 0.55);
-      o.frequency.exponentialRampToValueAtTime(2200, t + dur);
-      g.gain.setValueAtTime(0.001, t);
-      g.gain.linearRampToValueAtTime(0.32, t + 0.015);
-      g.gain.exponentialRampToValueAtTime(0.001, t + dur);
-      o.start(t);
-      o.stop(t + dur + 0.05);
+      if (_ac.state === 'suspended') _ac.resume();
+      var t = _ac.currentTime + 0.02;
+      [[1046.5, 0.3, 1.1], [2093, 0.08, 0.5]].forEach(function (p) {
+        var o = _ac.createOscillator();
+        var g = _ac.createGain();
+        o.connect(g);
+        g.connect(_ac.destination);
+        o.type = 'sine';
+        o.frequency.setValueAtTime(p[0], t);
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(p[1], t + 0.01);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + p[2]);
+        o.start(t);
+        o.stop(t + p[2] + 0.05);
+      });
     } catch(e) {}
   }
 
-  // WhatsApp popup — ilk kullanıcı etkileşiminden sonra açılır (autoplay politikası gereği)
+  // WhatsApp — buton ve popup, siteden geldiği belli olan hazır mesajla açılır
+  var WA_NUMBER = "908507771145";
+  var WA_TEXT = "Merhaba, eimzasatinal.com.tr sitesinden yazıyorum. Yardımcı olabilir misiniz?";
+  var waHref = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_TEXT);
+  var waFab = document.querySelector(".fab-wa");
+  if (waFab) waFab.setAttribute("href", waHref);
+
+  // WhatsApp popup — sayfa açıldıktan 10 sn sonra çıkar ve "ding" sesi çalar
   var waPopup = document.getElementById('waPopup');
   var waClose = document.getElementById('waPopupClose');
   var waPopupShown = false;
@@ -105,14 +113,20 @@
     if (waPopupShown || !waPopup) return;
     if (sessionStorage.getItem('waPopupDismissed')) return;
     waPopupShown = true;
-    setTimeout(function() {
-      waPopup.classList.add('is-visible');
-      playBird();
-    }, 3000);
+    waPopup.classList.add('is-visible');
+    playDing();
+  }
+  setTimeout(showWaPopup, 10000);
+  if (waPopup) {
+    waPopup.addEventListener('click', function(e) {
+      if (e.target.closest('#waPopupClose')) return;
+      window.open(waHref, '_blank', 'noopener');
+    });
   }
   if (waClose) {
     waClose.addEventListener('click', function(e) {
       e.preventDefault();
+      e.stopPropagation();
       waPopup.classList.remove('is-visible');
       sessionStorage.setItem('waPopupDismissed', '1');
     });
@@ -131,7 +145,6 @@
     if (ga4Loaded) return;
     ga4Loaded = true;
     unlockAudio();
-    showWaPopup();
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     window.gtag = window.gtag || gtag;
