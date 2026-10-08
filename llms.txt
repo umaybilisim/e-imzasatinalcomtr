@@ -118,6 +118,7 @@ C: Ayyıldız, BTK lisanslı 5 ESHS'den biridir. Kamu kurumlarıyla tam entegre 
 - [E-İmza Hataları ve Çözümleri](https://www.e-imzasatinal.com.tr/blog/e-imza-hatalari-ve-cozumleri): Kart görünmüyor, Java, sürücü, imza socket, PIN/PUK ve sertifika süresi hataları için çözüm rehberi
 - [E-Fatura İçin E-İmza Gerekli mi?](https://www.e-imzasatinal.com.tr/blog/e-fatura-icin-e-imza-gerekli-mi): Şahıs (NES veya mali mühür), şirket (mali mühür), özel entegratör, GİB e-Arşiv Portal (SMS onay); kaşe/ıslak imza aranmaz
 - [E-İmza Kaç Günde Gelir?](https://www.e-imzasatinal.com.tr/blog/e-imza-kac-gunde-gelir): Onay sonrası aynı gün kargo, büyükşehirlere ertesi gün, diğer illere 1-2 iş günü; İstanbul/Ankara/İzmir aynı gün kurye
+- [E-SIM ile Mobil İmza Olur mu?](https://www.e-imzasatinal.com.tr/blog/e-sim-mobil-imza): Turkcell resmi: mobil imza yalnızca 128K SIM'de, e-SIM'de kullanılamaz; SIM değişikliği mobil imzayı iptal eder; kart tipi e-imza SIM/operatörden bağımsız
 
 ### Yasal & Politika
 - [Aydınlatma Metni (KVKK)](https://www.e-imzasatinal.com.tr/aydinlatma-metni)

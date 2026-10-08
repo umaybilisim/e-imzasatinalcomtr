@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="E-SIM ile Mobil İmza Olur mu">
+  <defs>
+    <linearGradient id="bg-es" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2540"/><stop offset="1" stop-color="#1e3a5f"/></linearGradient>
+    <radialGradient id="glow-es" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#a78bfa" stop-opacity="0.45"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-es)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630"/>
+  </g>
+  <circle cx="360" cy="315" r="280" fill="url(#glow-es)"/>
+  <!-- Phone -->
+  <g transform="translate(300,315)">
+    <rect x="-90" y="-180" width="180" height="360" rx="28" fill="#0f172a" stroke="#94a3b8" stroke-width="6"/>
+    <rect x="-70" y="-150" width="140" height="290" rx="10" fill="#1e293b"/>
+    <text x="0" y="-90" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#a78bfa">eSIM</text>
+    <g transform="translate(0,-10)">
+      <circle r="40" fill="#e63946"/>
+      <path d="M -16 -16 L 16 16 M 16 -16 L -16 16" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" fill-opacity="0.8">Mobil İmza</text>
+  </g>
+  <!-- Smart card -->
+  <g transform="translate(470,400) rotate(-10)">
+    <rect x="-80" y="-50" width="160" height="100" rx="12" fill="#e63946"/>
+    <rect x="-58" y="-20" width="40" height="32" rx="4" fill="#fbbf24"/>
+    <text x="22" y="6" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#ffffff">E-İMZA</text>
+  </g>
+  <g transform="translate(560,330)">
+    <circle r="30" fill="#25d366"/>
+    <path d="M -12 0 L -3 10 L 14 -10" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(680,150)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#a78bfa">MOBİL İMZA REHBERİ 2026</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="900" fill="#ffffff">E-SIM ile</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff" fill-opacity="0.9">Mobil İmza Olur mu?</text>
+    <line x1="0" y1="155" x2="120" y2="155" stroke="#e63946" stroke-width="4"/>
+    <text x="0" y="195" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.7">Turkcell · Vodafone · Türk Telekom</text>
+    <text x="0" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#fbbf24">Telefondan bağımsız çözüm</text>
+  </g>
+</svg>
