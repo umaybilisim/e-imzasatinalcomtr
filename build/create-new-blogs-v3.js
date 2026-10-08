@@ -13,8 +13,9 @@ const DATE_PUBLISHED = "2026-10-08";
 const DATE_MODIFIED = "2026-10-08";
 const DATE_TEXT = "8 Ekim 2026";
 
-const blogs = require("./blogs-v3-data");
-const { cta } = blogs;
+// Kullanim: node build/create-new-blogs-v3.js [veri-dosyasi]  (varsayilan: blogs-v3-data.js)
+const blogs = require(process.argv[2] ? path.resolve(process.argv[2]) : "./blogs-v3-data");
+const { cta } = require("./blogs-v3-data");
 
 function renderHead(b) {
   const url = `${SITE}/blog/${b.slug}`;

@@ -116,6 +116,8 @@ C: Ayyıldız, BTK lisanslı 5 ESHS'den biridir. Kamu kurumlarıyla tam entegre 
 - [E-İmza Kartım Kayıp/Çalıntı/Hasarlı](https://www.e-imzasatinal.com.tr/blog/e-imza-kayip-calinti-hasarli): Sertifika iptali, PIN/PUK kilit, acil eylem rehberi
 - [E-İmza Yenileme ve Süre Uzatma 2026](https://www.e-imzasatinal.com.tr/blog/e-imza-yenileme-sure-uzatma): Süre öğrenme, 2026 fiyatları (3.000/3.500/4.000 TL KDV dahil), süre uzatma adımları, e-Güven/TÜRKKEP/E-Tuğra'dan geçiş
 - [E-İmza Hataları ve Çözümleri](https://www.e-imzasatinal.com.tr/blog/e-imza-hatalari-ve-cozumleri): Kart görünmüyor, Java, sürücü, imza socket, PIN/PUK ve sertifika süresi hataları için çözüm rehberi
+- [E-Fatura İçin E-İmza Gerekli mi?](https://www.e-imzasatinal.com.tr/blog/e-fatura-icin-e-imza-gerekli-mi): Şahıs (NES veya mali mühür), şirket (mali mühür), özel entegratör, GİB e-Arşiv Portal (SMS onay); kaşe/ıslak imza aranmaz
+- [E-İmza Kaç Günde Gelir?](https://www.e-imzasatinal.com.tr/blog/e-imza-kac-gunde-gelir): Onay sonrası aynı gün kargo, büyükşehirlere ertesi gün, diğer illere 1-2 iş günü; İstanbul/Ankara/İzmir aynı gün kurye
 
 ### Yasal & Politika
 - [Aydınlatma Metni (KVKK)](https://www.e-imzasatinal.com.tr/aydinlatma-metni)

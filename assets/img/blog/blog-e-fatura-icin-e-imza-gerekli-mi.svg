@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="E-Fatura İçin E-İmza Gerekli mi">
+  <defs>
+    <linearGradient id="bg-ef" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2540"/><stop offset="1" stop-color="#1e3a5f"/></linearGradient>
+    <radialGradient id="glow-ef" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#25d366" stop-opacity="0.45"/><stop offset="1" stop-color="#25d366" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ef)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630"/>
+  </g>
+  <circle cx="360" cy="315" r="280" fill="url(#glow-ef)"/>
+  <g transform="translate(360,315)">
+    <rect x="-130" y="-170" width="240" height="320" rx="14" fill="#ffffff"/>
+    <rect x="-130" y="-170" width="240" height="56" rx="14" fill="#e63946"/>
+    <rect x="-130" y="-130" width="240" height="16" fill="#e63946"/>
+    <text x="-10" y="-132" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="#ffffff">e-FATURA</text>
+    <rect x="-100" y="-90" width="180" height="12" rx="6" fill="#cbd5e1"/>
+    <rect x="-100" y="-66" width="140" height="12" rx="6" fill="#cbd5e1"/>
+    <rect x="-100" y="-42" width="160" height="12" rx="6" fill="#cbd5e1"/>
+    <rect x="-100" y="-6" width="180" height="2" fill="#94a3b8"/>
+    <rect x="-100" y="10" width="100" height="12" rx="6" fill="#cbd5e1"/>
+    <rect x="30" y="10" width="50" height="12" rx="6" fill="#0a2540"/>
+    <g transform="translate(70,100)">
+      <circle r="62" fill="#25d366"/>
+      <circle r="50" fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="6 5"/>
+      <path d="M -22 0 L -6 16 L 24 -16" stroke="#ffffff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g transform="translate(680,150)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#25d366">E-FATURA REHBERİ 2026</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="900" fill="#ffffff">E-Fatura İçin</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff" fill-opacity="0.9">E-İmza Gerekli mi?</text>
+    <line x1="0" y1="155" x2="120" y2="155" stroke="#e63946" stroke-width="4"/>
+    <text x="0" y="195" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.7">Şahıs · Şirket · Entegratör · e-Arşiv</text>
+    <text x="0" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#fbbf24">Net cevap ve karar tablosu</text>
+  </g>
+</svg>
