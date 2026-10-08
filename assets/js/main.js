@@ -168,6 +168,7 @@
   function detectContactSource(el) {
     if (el.closest(".fab-wa")) return "fab";
     if (el.closest("#waPopup")) return "popup";
+    if (el.closest(".blog-cta")) return "blog_cta";
     if (el.closest(".site-header")) return "header";
     if (el.closest(".site-footer")) return "footer";
     if (el.closest(".hero")) return "hero";

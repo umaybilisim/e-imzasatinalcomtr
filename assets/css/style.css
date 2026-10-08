@@ -397,3 +397,22 @@ button{font-family:inherit;cursor:pointer;border:none}
 .bank-card__row{font-size:.88rem;color:var(--gray);margin-bottom:4px}
 .bank-card__row strong{color:var(--text)}
 .bank-card__iban{font-size:1rem;font-weight:700;color:var(--navy);letter-spacing:.5px;margin-top:10px;padding:10px 14px;background:var(--bg);border-radius:8px;font-family:'Courier New',monospace;word-break:break-all}
+
+/* ---------- Blog CTA (satış kutusu) ---------- */
+.blog-cta{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--navy);color:#e2e8f0;border-radius:var(--radius-lg);padding:22px 26px;margin:32px 0;box-shadow:var(--shadow)}
+.blog-cta__text{flex:1 1 320px;min-width:0}
+.blog-cta__eyebrow{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fca5a5;margin-bottom:6px}
+.blog-cta__title{display:block;color:var(--white);font-size:1.12rem;font-weight:800;line-height:1.35;margin-bottom:6px}
+.blog-cta__desc{margin:0;font-size:.93rem;line-height:1.55;color:#cbd5e1}
+.blog-cta__actions{display:flex;gap:10px;flex-wrap:wrap}
+.blog-cta--compact{padding:16px 20px;margin:24px 0}
+.blog-cta--compact .blog-cta__title{font-size:1rem;margin-bottom:2px}
+.blog-cta .btn--ghost{color:var(--white);border-color:rgba(255,255,255,.5)}
+.blog-cta .btn--ghost:hover{background:var(--white);color:var(--navy)}
+.blog-cta__prices{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.blog-cta__prices span{font-size:.8rem;font-weight:700;background:rgba(255,255,255,.1);color:#fff;padding:4px 10px;border-radius:999px}
+@media (max-width:600px){.blog-cta__actions,.blog-cta__actions .btn{width:100%}.blog-cta__actions .btn{text-align:center}}
+.price-table{width:100%;border-collapse:collapse;font-size:.95rem;margin:20px 0;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.price-table th{background:var(--navy);color:#fff;padding:12px 14px;text-align:left}
+.price-table td{padding:12px 14px;border-bottom:1px solid var(--border)}
+.price-table tr:last-child td{border-bottom:0;font-weight:700;color:var(--navy)}
