@@ -45,7 +45,7 @@ for (const file of files) {
       const newTags = [
         `<meta property="og:image:width" content="${w}">`,
         `<meta property="og:image:height" content="${h}">`,
-        `<meta property="og:image:alt" content="UMAY TÜM BİLİŞİM — Ayyıldız E-İmza ve KEP Yetkili Satıcısı">`,
+        `<meta property="og:image:alt" content="UMAY TÜM BİLİŞİM — AYYILDIZ İMZA e-imza bayisi">`,
         `<meta property="og:image:type" content="${type}">`,
       ].join("\n");
 

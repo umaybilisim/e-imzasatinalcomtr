@@ -126,7 +126,7 @@ function buildProfile(slug, data) {
 
     <div style="background:#fff;border-left:4px solid var(--accent);padding:20px 24px;border-radius:10px;margin-bottom:30px;box-shadow:0 1px 3px rgba(0,0,0,.04)">
       <h3 style="margin:0 0 8px;color:var(--navy);font-size:1.1rem">📍 ${slug.charAt(0).toUpperCase()}${slug.slice(1)}'da E-İmza Özelinde Neden Yoğun?</h3>
-      <p style="margin:0;color:#334155;line-height:1.65">${data.vurgu}. UMAY TÜM BİLİŞİM Ayyıldız yetkili bayisi olarak bu sektörlerdeki firmalara WhatsApp tabanlı hızlı destek sunar.</p>
+      <p style="margin:0;color:#334155;line-height:1.65">${data.vurgu}. UMAY TÜM BİLİŞİM AYYILDIZ İMZA bayisi olarak bu sektörlerdeki firmalara WhatsApp tabanlı hızlı destek sunar.</p>
     </div>
   </div>
 </section>`;

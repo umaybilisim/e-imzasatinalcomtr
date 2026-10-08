@@ -101,10 +101,10 @@ button{font-family:inherit;cursor:pointer;border:none}
     position:fixed;top:var(--header-h);left:0;right:0;
     background:var(--white);flex-direction:column;align-items:stretch;
     padding:16px 20px;gap:4px;border-bottom:1px solid var(--border);
-    transform:translateY(-120%);transition:transform 300ms ease;
-    box-shadow:var(--shadow);
+    transform:translateY(-120%);transition:transform 300ms ease,visibility 0s linear 300ms;
+    box-shadow:var(--shadow);visibility:hidden;
   }
-  .nav.is-open{transform:translateY(0)}
+  .nav.is-open{transform:translateY(0);visibility:visible;transition:transform 300ms ease,visibility 0s}
   .nav a{padding:14px 16px;border-radius:var(--radius-sm)}
   .nav-cta{margin:8px 0 0}
   .nav-toggle{display:block}
@@ -418,3 +418,14 @@ button{font-family:inherit;cursor:pointer;border:none}
 .price-table tr:last-child td{border-bottom:0}
 .price-table--best-last tr:last-child td{font-weight:700;color:var(--navy)}
 @media (max-width:600px){.price-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:.88rem}.price-table th,.price-table td{padding:10px 10px}}
+
+/* ---------- AYYILDIZ İMZA bayilik bandı (talimat 07.10.2026, madde 1-2) ---------- */
+.dealer-bar{background:#f1f5f9;border-bottom:1px solid var(--border);color:#0f172a}
+.dealer-bar p{margin:0;padding:8px 0;font-size:13px;line-height:1.5}
+.dealer-bar a{color:#0a2540;text-decoration:underline;text-underline-offset:2px}
+.dealer-bar .dealer-name{font-weight:800;font-size:13px;color:#0a2540}
+.site-footer .about .dealer-name{font-weight:800;font-size:14px;color:#ffffff;text-decoration:underline;text-underline-offset:2px}
+.site-footer .about a{color:#e2e8f0;text-decoration:underline}
+.footer-dealer{font-size:.85rem;line-height:1.6;color:#cbd5e1;margin:0 0 20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-dealer .dealer-name{font-weight:800;font-size:14px;color:#ffffff;text-decoration:underline;text-underline-offset:2px}
+.footer-dealer a{color:#e2e8f0;text-decoration:underline}

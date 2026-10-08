@@ -37,8 +37,8 @@ const posts = {
   },
   "kep-nedir-kimler-almak-zorunda": {
     msg: "KEP adresi almak istiyorum.",
-    mid: { title: "KEP adresi almanız mı gerekiyor?", desc: "Şahıs, şirket ve meslek mensupları için Ayyıldız KEP başvurusunu WhatsApp üzerinden başlatın.", btn: "KEP Başvurusu" },
-    end: { eyebrow: "Ayyıldız KEP", title: "KEP adresinizi online başvuruyla açalım", desc: "Belgelerinizi WhatsApp'tan iletin, başvurunuzu Ayyıldız yetkili bayisi olarak biz takip edelim. KEP ile birlikte e-imza ihtiyacınız varsa tek seferde planlayalım.", btn: "WhatsApp ile Yaz", ghost: { href: "../kep", text: "KEP Paketleri" } }
+    mid: { title: "KEP adresi almanız mı gerekiyor?", desc: "Şahıs, şirket ve meslek mensupları için KEP başvurusunu WhatsApp üzerinden başlatın.", btn: "KEP Başvurusu" },
+    end: { eyebrow: "KEP Başvurusu", title: "KEP adresinizi online başvuruyla açalım", desc: "Belgelerinizi WhatsApp'tan iletin, başvurunuzu AYYILDIZ İMZA bayisi olarak biz takip edelim. KEP ile birlikte e-imza ihtiyacınız varsa tek seferde planlayalım.", btn: "WhatsApp ile Yaz", ghost: { href: "../kep", text: "KEP Paketleri" } }
   },
   "doktorlar-icin-e-imza-e-recete": {
     msg: "Doktor olarak e-imza almak istiyorum.",

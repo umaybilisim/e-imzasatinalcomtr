@@ -56,7 +56,7 @@ const blogs = [
         <thead><tr style="background:var(--navy);color:#fff"><th style="padding:12px 14px;text-align:left">Özellik</th><th style="padding:12px 14px;text-align:left">E-İmza (NES)</th><th style="padding:12px 14px;text-align:left">Mali Mühür</th></tr></thead>
         <tbody>
           <tr style="border-bottom:1px solid var(--border)"><td style="padding:10px 14px"><strong>Sahip</strong></td><td style="padding:10px 14px">Gerçek kişi</td><td style="padding:10px 14px">Tüzel kişi (şirket)</td></tr>
-          <tr style="border-bottom:1px solid var(--border);background:#f8fafc"><td style="padding:10px 14px"><strong>Üreten kurum</strong></td><td style="padding:10px 14px">BTK lisanslı ESHS (Ayyıldız vb.)</td><td style="padding:10px 14px">GİB (Gelir İdaresi Başkanlığı)</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:#f8fafc"><td style="padding:10px 14px"><strong>Üreten kurum</strong></td><td style="padding:10px 14px">BTK tarafından yetkilendirilmiş ESHS (Ayyıldız vb.)</td><td style="padding:10px 14px">GİB (Gelir İdaresi Başkanlığı)</td></tr>
           <tr style="border-bottom:1px solid var(--border)"><td style="padding:10px 14px"><strong>e-Devlet girişi</strong></td><td style="padding:10px 14px">✅ Evet</td><td style="padding:10px 14px">❌ Hayır</td></tr>
           <tr style="border-bottom:1px solid var(--border);background:#f8fafc"><td style="padding:10px 14px"><strong>e-Fatura imzalama</strong></td><td style="padding:10px 14px">❌ Hayır</td><td style="padding:10px 14px">✅ Evet (zorunlu)</td></tr>
           <tr style="border-bottom:1px solid var(--border)"><td style="padding:10px 14px"><strong>UYAP / EKAP</strong></td><td style="padding:10px 14px">✅ Evet</td><td style="padding:10px 14px">❌ Hayır</td></tr>
@@ -89,7 +89,7 @@ const blogs = [
         <li><strong>1 yıllık mali mühür:</strong> 1.500-2.000 TL</li>
         <li><strong>3 yıllık mali mühür:</strong> 3.000-4.500 TL</li>
       </ul>
-      <p>UMAY TÜM BİLİŞİM Ayyıldız yetkili bayisi olarak mali mühür başvurusu sürecinde rehberlik sağlar ve uygun fiyat avantajı sunar.</p>
+      <p>UMAY TÜM BİLİŞİM AYYILDIZ İMZA bayisi olarak mali mühür başvurusu sürecinde rehberlik sağlar ve uygun fiyat avantajı sunar.</p>
 
       <h2>Tipik Şirket Konfigürasyonu: Hangileri Alınmalı?</h2>
       <div class="callout">
@@ -127,7 +127,7 @@ const blogs = [
     tldr: "<strong>E-imza ile e-Devlet girişi</strong>, kart ve okuyucu hazır olduktan sonra 4 adımda tamamlanır: (1) <a href='https://www.turkiye.gov.tr' target='_blank' rel='noopener'>turkiye.gov.tr</a> sayfasında 'E-İmza' seçeneği seçilir, (2) tarayıcı eklentisi kartı algılar, (3) sertifika listesinden seçim yapılır, (4) <strong>PIN</strong> girilir. Sorun yaşarsanız genellikle AKİS sürücüsü veya tarayıcı eklentisi eksiktir.",
     citations: [
       { name: "e-Devlet Kapısı — Resmi Site", url: "https://www.turkiye.gov.tr" },
-      { name: "Ayyıldız Bilgi Güvenliği — Sürücüler", url: "https://www.ayyildiz.com.tr" },
+      { name: "AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. — Sürücüler", url: "https://www.ayyildizimza.com.tr/" },
       { name: "5070 sayılı Elektronik İmza Kanunu", url: "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5070.pdf" }
     ],
     mentions: ["e-imza", "e-devlet", "akis", "nes"],
@@ -136,7 +136,7 @@ const blogs = [
       description: "Türkiye.gov.tr (e-Devlet) sitesine e-imza kartınızla giriş yapmak için 5 adımlı resmi rehber.",
       totalTime: "PT5M",
       steps: [
-        { name: "AKİS Sürücüsünü ve Tarayıcı Eklentisini Doğrulayın", text: "Bilgisayarınızda AKİS Kart İzleme Sistemi yüklü olmalı ve tarayıcı (Chrome/Edge/Firefox) e-imza eklentisi aktif olmalıdır. Yoksa önce <a href='/blog/e-imza-tarayici-eklentisi-kurulumu'>kurulum rehberi</a>ni takip edin." },
+        { name: "AKİS Sürücüsünü ve Tarayıcı Eklentisini Doğrulayın", text: "Bilgisayarınızda AKİS Kart İzleme Aracı yüklü olmalı ve tarayıcı (Chrome/Edge/Firefox) e-imza eklentisi aktif olmalıdır. Yoksa önce <a href='/blog/e-imza-tarayici-eklentisi-kurulumu'>kurulum rehberi</a>ni takip edin." },
         { name: "USB Token'ı Takın", text: "Ayyıldız USB token'ınızı bilgisayarın bir USB portuna takın. Sistem tepsisinde AKİS simgesinin yeşil olduğunu kontrol edin." },
         { name: "e-Devlet'e Gidin", text: "Tarayıcınızda <a href='https://www.turkiye.gov.tr' target='_blank' rel='noopener'>turkiye.gov.tr</a> adresine gidin. 'Giriş Yap' butonuna basın." },
         { name: "E-İmza Seçeneğini Seçin", text: "Açılan giriş ekranında 'Elektronik İmza' sekmesini seçin. Sistem otomatik olarak kartınızı algılayacaktır." },
@@ -152,7 +152,7 @@ const blogs = [
       <ul>
         <li><strong>Geçerli bir e-imza sertifikası</strong> (Ayyıldız NES — süresi dolmuş olmamalı)</li>
         <li><strong>USB token veya akıllı kart + okuyucu</strong></li>
-        <li><strong>AKİS sürücüsü</strong> (Ayyıldız Kart İzleme Sistemi)</li>
+        <li><strong>AKİS sürücüsü</strong> (TÜBİTAK BİLGEM AKİS kart sürücüsü)</li>
         <li><strong>Tarayıcı eklentisi</strong> (Chrome, Edge veya Firefox için)</li>
         <li><strong>Java Runtime Environment</strong> (bazı işlemlerde gerekli olabilir)</li>
         <li><strong>PIN kodu</strong> (kart ile birlikte size iletilen 4-8 haneli şifre)</li>
@@ -238,9 +238,9 @@ const blogs = [
     wordCount: 1600,
     tldr: "<strong>E-imza tarayıcı eklentisi</strong>, web tarayıcısının (Chrome, Edge, Firefox) e-imza kartınızla iletişim kurmasını sağlar. <strong>Chrome ve Edge için</strong> tek bir resmi eklenti yeterli (Ayyıldız İmzala). <strong>Firefox için</strong> NSS kütüphanesi tanıtılır. Tüm tarayıcılarda kullanım: AKİS sürücüsü → tarayıcı eklentisi → e-Devlet/UYAP/EKAP girişinde otomatik algılama.",
     citations: [
-      { name: "Ayyıldız Bilgi Güvenliği — Sürücüler", url: "https://www.ayyildiz.com.tr" },
+      { name: "AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. — Sürücüler", url: "https://www.ayyildizimza.com.tr/" },
       { name: "Mozilla NSS Kütüphanesi", url: "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS" },
-      { name: "AKİS Kart İzleme Sistemi", url: "https://www.akis.com.tr" }
+      { name: "AKİS Kart İzleme Aracı", url: "https://www.akis.com.tr" }
     ],
     mentions: ["e-imza", "akis", "nes"],
     howto: {
@@ -248,7 +248,7 @@ const blogs = [
       description: "Chrome, Edge ve Firefox için e-imza tarayıcı eklentisi kurulum rehberi.",
       totalTime: "PT10M",
       steps: [
-        { name: "AKİS Sürücüsünü Yükleyin", text: "Önce AKİS Kart İzleme Sistemi bilgisayarınıza yüklenmiş olmalıdır. Detaylar için <a href='/blog/e-imza-kurulumu-nasil-yapilir'>kurulum rehberi</a>ne bakın." },
+        { name: "AKİS Sürücüsünü Yükleyin", text: "Önce AKİS Kart İzleme Aracı bilgisayarınıza yüklenmiş olmalıdır. Detaylar için <a href='/blog/e-imza-kurulumu-nasil-yapilir'>kurulum rehberi</a>ne bakın." },
         { name: "Tarayıcınızı Seçin", text: "Chrome, Microsoft Edge ve Firefox için farklı kurulum adımları vardır. Hangisini kullanıyorsanız ilgili bölümü takip edin." },
         { name: "Eklentiyi İndirin ve Kurun", text: "Chrome Web Store / Edge Eklentileri'nden 'Ayyıldız İmzala' eklentisini yükleyin. Firefox için NSS yapılandırması ayrı yapılır." },
         { name: "Tarayıcıyı Yeniden Başlatın", text: "Eklenti yüklendikten sonra tarayıcıyı kapatıp tekrar açın." },
@@ -508,7 +508,7 @@ const blogs = [
       <h2>Sık Sorulan Sorular</h2>
       <p><strong>SMMM ve YMM e-imza farklı mı?</strong> Hayır, aynı tip e-imza her ikisinin de işine yarar.</p>
       <p><strong>Müvekkilim emrime e-imza verebilir mi?</strong> Hayır. Her kişi kendi e-imzasını taşımak zorundadır. Yetki vekalet ile devredilir.</p>
-      <p><strong>TÜRMOB'un özel anlaşması var mı?</strong> Mali müşavirler için bazı ESHS'lerin meslek odası anlaşmaları olabilir. UMAY TÜM BİLİŞİM Ayyıldız yetkili bayisi olarak avantajlı paketler sunar.</p>
+      <p><strong>TÜRMOB'un özel anlaşması var mı?</strong> Mali müşavirler için bazı ESHS'lerin meslek odası anlaşmaları olabilir. UMAY TÜM BİLİŞİM AYYILDIZ İMZA bayisi olarak avantajlı paketler sunar.</p>
 
       <div class="callout">
         <strong>Mali müşavirler için danışmanlık:</strong> Müvekkil sayınıza ve iş yoğunluğunuza özel paket önerisi için WhatsApp +90 850 777 11 45.
@@ -688,7 +688,7 @@ function renderHead(b) {
       "@id": `${SITE}/#editorialteam`,
       "name": "UMAY TÜM BİLİŞİM Editör Ekibi",
       "url": `${SITE}/hakkimizda`,
-      "description": "Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, yetkili bayi uzmanlarından oluşan editör ekibi.",
+      "description": "Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, AYYILDIZ İMZA bayisi uzmanlarından oluşan editör ekibi.",
       "knowsAbout": ["Elektronik İmza", "KEP", "Dijital Güven", "5070 sayılı Kanun", "6102 sayılı TTK"]
     },
     "citation": b.citations.map(c => ({ "@type": "CreativeWork", "name": c.name, "url": c.url })),
@@ -737,7 +737,7 @@ function renderHead(b) {
 <meta property="og:image" content="${SITE}/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="UMAY TÜM BİLİŞİM — Ayyıldız E-İmza ve KEP Yetkili Satıcısı">
+<meta property="og:image:alt" content="UMAY TÜM BİLİŞİM — AYYILDIZ İMZA e-imza bayisi">
 <meta property="og:image:type" content="image/png">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="UMAY TÜM BİLİŞİM LTD.ŞTİ.">
@@ -769,6 +769,7 @@ function renderBody(b) {
       </a>`).join("\n");
 
   return `<body>
+<div class="dealer-bar" role="note"><div class="container"><p>UMAY TÜM BİLİŞİM VE EĞİTİM DAN. YAZILIM İTH. İHR. SAN. TİC. LTD. ŞTİ. (e-imzasatinal.com.tr), <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.</a>'nin bayisi / başvuru noktasıdır. Nitelikli Elektronik Sertifikalar ile askı ve iptal dahil tüm sertifika hizmetleri <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA</a> tarafından sunulmaktadır. <a href="https://www.btk.gov.tr/elektronik-sertifika-hizmet-saglayicilari" target="_blank" rel="noopener">BTK ESHS listesi</a></p></div></div>
 <header class="site-header">
   <div class="container">
     <a href="/" class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></a>
@@ -827,12 +828,11 @@ ${b.body}
           <div style="flex-shrink:0;width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.5rem">U</div>
           <div>
             <h3 style="margin:0 0 6px;font-size:1.05rem;color:var(--navy)">UMAY TÜM BİLİŞİM Editör Ekibi</h3>
-            <p style="margin:0 0 10px;font-size:.9rem;color:#475569;line-height:1.55">Ayyıldız Bilgi Güvenliği A.Ş. yetkili bayisi olarak <strong>5+ yıllık sektörel deneyime</strong> sahip, BTK mevzuatı, 5070 sayılı Elektronik İmza Kanunu ve 6102 sayılı TTK üzerinde uzmanlaşmış uzmanlardan oluşan editör ekibimiz. Tüm içerikler güncel mevzuat ve uygulamaya uygunluk açısından gözden geçirilir.</p>
+            <p style="margin:0 0 10px;font-size:.9rem;color:#475569;line-height:1.55">AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. bayisi olarak <strong>5+ yıllık sektörel deneyime</strong> sahip, BTK mevzuatı, 5070 sayılı Elektronik İmza Kanunu ve 6102 sayılı TTK üzerinde uzmanlaşmış uzmanlardan oluşan editör ekibimiz. Tüm içerikler güncel mevzuat ve uygulamaya uygunluk açısından gözden geçirilir.</p>
             <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:.82rem">
-              <span style="color:#64748b">✓ Ayyıldız Yetkili Bayi</span>
+              <span style="color:#64748b">✓ AYYILDIZ İMZA Bayisi</span>
               <span style="color:#64748b">✓ 5+ Yıl Deneyim</span>
               <span style="color:#64748b">✓ 81 İl Hizmet</span>
-              <span style="color:#64748b">✓ BTK Mevzuat Uyumlu</span>
             </div>
           </div>
         </div>
@@ -874,12 +874,12 @@ ${related}
 <footer class="site-footer">
   <div class="container">
     <div class="cols">
-      <div class="about"><div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></div><p>Türkiye'nin 81 ilinde Ayyıldız e-imza, KEP ve dijital güven çözümlerinde yetkili satıcınız.</p></div>
+      <div class="about"><div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></div><p>UMAY TÜM BİLİŞİM VE EĞİTİM DAN. YAZILIM İTH. İHR. SAN. TİC. LTD. ŞTİ. (e-imzasatinal.com.tr), <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.</a>'nin bayisi / başvuru noktasıdır. Nitelikli Elektronik Sertifikalar ile askı ve iptal dahil tüm sertifika hizmetleri <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA</a> tarafından sunulmaktadır. <a href="https://www.btk.gov.tr/elektronik-sertifika-hizmet-saglayicilari" target="_blank" rel="noopener">BTK ESHS listesi</a></p></div>
       <div><h3>Hizmetler</h3><ul><li><a href="../e-imza">E-İmza</a></li><li><a href="../kep">KEP</a></li><li><a href="../hizmetler">Hizmetler</a></li></ul></div>
       <div><h3>Kurumsal</h3><ul><li><a href="../hakkimizda">Hakkımızda</a></li><li><a href="../blog">Blog</a></li><li><a href="../sss">SSS</a></li><li><a href="../sozluk">Sözlük</a></li><li><a href="../karsilastir">Karşılaştırma</a></li><li><a href="../iletisim">İletişim</a></li></ul></div>
       <div><h3>İletişim</h3><ul><li><a href="tel:+908507771145">0 850 777 11 45</a></li><li><a href="tel:+902647771145">0 264 777 11 45</a></li><li><a href="https://wa.me/908507771145" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:bilgi@umaybilisim.com.tr">bilgi@umaybilisim.com.tr</a></li><li>Sakarya / Erenler</li></ul></div>
     </div>
-    <div class="footer-bottom">© 2026 <a href="https://www.umaybilisim.com.tr" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">UMAY TÜM BİLİŞİM LTD.ŞTİ.</a> Tüm hakları saklıdır.</div>
+    <div class="footer-bottom">© 2026 <a href="https://www.umaybilisim.com.tr" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">UMAY TÜM BİLİŞİM VE EĞİTİM DAN. YAZILIM İTH. İHR. SAN. TİC. LTD. ŞTİ.</a> Tüm hakları saklıdır. AYYILDIZ İMZA markası AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.'ye aittir.</div>
   </div>
 </footer>
 <a href="https://wa.me/908507771145" class="fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>

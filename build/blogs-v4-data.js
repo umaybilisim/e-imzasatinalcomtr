@@ -104,7 +104,7 @@ ${cta({ compact: true, title: "Hangi yöntemin size uygun olduğundan emin deği
     citations: [
       { name: "5070 sayılı Elektronik İmza Kanunu", url: "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5070.pdf" },
       { name: "BTK — Elektronik Sertifika Hizmet Sağlayıcıları", url: "https://www.btk.gov.tr" },
-      { name: "Ayyıldız Bilgi Güvenliği", url: "https://www.ayyildiz.com.tr" }
+      { name: "AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.", url: "https://www.ayyildizimza.com.tr/" }
     ],
     mentions: ["e-imza", "eshs", "nes"],
     faq: [

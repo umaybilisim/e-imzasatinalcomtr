@@ -357,11 +357,11 @@ const blogs = [
     section: "Sorun Giderme",
     keywords: ["e-imza kayıp", "e-imza çalındı", "e-imza hasarlı", "PIN kilitlendi", "PUK kilitlendi", "e-imza iptal", "sertifika iptali"],
     wordCount: 1600,
-    tldr: "<strong>E-imza kartınız kayıp/çalıntı ise:</strong> derhal ESHS'yi arayarak sertifikayı iptal ettirin (kötüye kullanım riskini önler). <strong>Hasarlı ise:</strong> sertifika kart üzerinde saklı olduğu için genelde iade veya yeni başvuru gerekir. <strong>PIN 3 kez yanlış → kart bloke</strong> (PUK ile açılır); <strong>PUK 5 kez yanlış → kart kalıcı kilit</strong> (yeni başvuru zorunlu). Tüm işlemlerde WhatsApp +90 850 777 11 45 destek verir.",
+    tldr: "<strong>E-imza kartınız kayıp/çalıntı ise:</strong> derhal AYYILDIZ İMZA'ya başvurarak sertifikanızı askıya aldırın veya iptal ettirin (kötüye kullanım riskini önler). <strong>Hasarlı ise:</strong> sertifika kart üzerinde saklı olduğu için genelde iade veya yeni başvuru gerekir. <strong>PIN 3 kez yanlış → kart bloke</strong> (PUK ile açılır); <strong>PUK 5 kez yanlış → kart kalıcı kilit</strong> (yeni başvuru zorunlu). Tüm işlemlerde WhatsApp +90 850 777 11 45 destek verir.",
     citations: [
       { name: "5070 sayılı Elektronik İmza Kanunu", url: "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5070.pdf" },
       { name: "BTK — ESHS Düzenleyici Çerçevesi", url: "https://www.btk.gov.tr" },
-      { name: "Ayyıldız Bilgi Güvenliği — Sertifika İptal Süreci", url: "https://www.ayyildiz.com.tr" }
+      { name: "AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. — Sertifika İptal Süreci", url: "https://www.ayyildizimza.com.tr/" }
     ],
     mentions: ["e-imza", "eshs", "nes", "akis"],
     body: `
@@ -372,7 +372,7 @@ const blogs = [
       <h2>1. Kayıp E-İmza — Ne Yapmalıyım?</h2>
       <div class="steps">
         <div class="step"><h3>Sakin Kalın, Aramaya Başlayın</h3><p>Son 24 saatte kartı çıkardığınız yerleri (ofis çekmece, laptop çantası, araba) mantıklı bir sırayla arayın. Çoğu kayıp aslında geçici unutmadır.</p></div>
-        <div class="step"><h3>Kart Yoksa: Derhal Sertifikayı İptal Ettirin</h3><p>ESHS'ye (Ayyıldız veya bayisi UMAY TÜM BİLİŞİM) telefon veya WhatsApp ile ulaşın. TC kimlik numaranız ile sertifikanız iptal edilir. İptal sonrası kart artık işlem yapamaz.</p></div>
+        <div class="step"><h3>Kart Yoksa: Derhal Sertifikayı İptal Ettirin</h3><p>Sertifikanızın askıya alınması veya iptali için derhal AYYILDIZ İMZA'ya başvurun (iletişim bilgileri: https://www.ayyildizimza.com.tr/). Askı ve iptal işlemleri AYYILDIZ İMZA tarafından yapılır; dilerseniz bize de bilgi verin, süreçte yönlendirelim. İptal sonrası kart artık işlem yapamaz.</p></div>
         <div class="step"><h3>Yeni Başvuru Yapın</h3><p>İptal sonrası yeni bir e-imza almanız gerekir. Yeni başvuru süreci normal başvuruya benzer, 1-3 iş günü sürer.</p></div>
       </div>
 
@@ -383,7 +383,7 @@ const blogs = [
       <h2>2. Çalıntı E-İmza — Ne Yapmalıyım?</h2>
       <p>Çalıntı durumunda kayıptan daha ciddi bir risk vardır: kartı alan kişi hedef odaklı olabilir. Adımlar:</p>
       <div class="steps">
-        <div class="step"><h3>1. Derhal Sertifika İptali</h3><p>Kayıp durumundaki gibi acil olarak ESHS'yi arayın. Çalıntı olduğunu açıkça belirtin — bazı ESHS'ler ekstra güvenlik önlemleri uygular.</p></div>
+        <div class="step"><h3>1. Derhal Sertifika İptali</h3><p>Kayıp durumundaki gibi acil olarak AYYILDIZ İMZA'ya başvurun. Çalıntı olduğunu açıkça belirtin — bazı ESHS'ler ekstra güvenlik önlemleri uygular.</p></div>
         <div class="step"><h3>2. Emniyete Suç Duyurusu</h3><p>En yakın karakola veya online e-Devlet üzerinden <strong>hırsızlık suç duyurusu</strong> yapın. Tutanak numarası yeni başvuru sürecinde belge olarak kullanılabilir.</p></div>
         <div class="step"><h3>3. Kredi Notu Kontrolü</h3><p>Kimliğinizin başka amaçlarla kullanılıp kullanılmadığını görmek için Findeks kredi notunuzu ve varsa banka hesaplarınızı kontrol edin.</p></div>
         <div class="step"><h3>4. Yeni E-İmza Başvurusu</h3><p>İptal onayından sonra yeni e-imza başvurusu yapın. Süreç 1-3 iş günü.</p></div>
@@ -449,7 +449,7 @@ const blogs = [
       </ul>
 
       <div class="callout">
-        <strong>Acil destek:</strong> Kayıp, çalıntı veya kilitlenme durumunda WhatsApp +90 850 777 11 45'i arayın — mesai saatleri dışında bile 24 saat içinde iptal işleminizi başlatabiliriz.
+        <strong>Acil destek:</strong> Kayıp, çalıntı veya kilitlenme durumunda önce sertifikanızın askıya alınması veya iptali için AYYILDIZ İMZA'ya (https://www.ayyildizimza.com.tr/) başvurun. Ardından WhatsApp +90 850 777 11 45 üzerinden bize yazın; yeni başvurunuzu hemen başlatalım.
       </div>
 `,
     related: [
@@ -525,7 +525,7 @@ function renderHead(b) {
       "@id": `${SITE}/#editorialteam`,
       "name": "UMAY TÜM BİLİŞİM Editör Ekibi",
       "url": `${SITE}/hakkimizda`,
-      "description": "Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, yetkili bayi uzmanlarından oluşan editör ekibi.",
+      "description": "Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, AYYILDIZ İMZA bayisi uzmanlarından oluşan editör ekibi.",
       "knowsAbout": ["Elektronik İmza", "KEP", "Dijital Güven", "5070 sayılı Kanun", "6102 sayılı TTK"]
     },
     "citation": b.citations.map(c => ({ "@type": "CreativeWork", "name": c.name, "url": c.url })),
@@ -550,7 +550,7 @@ function renderHead(b) {
 <meta property="og:image" content="${SITE}/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="UMAY TÜM BİLİŞİM — Ayyıldız E-İmza ve KEP Yetkili Satıcısı">
+<meta property="og:image:alt" content="UMAY TÜM BİLİŞİM — AYYILDIZ İMZA e-imza bayisi">
 <meta property="og:image:type" content="image/png">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="UMAY TÜM BİLİŞİM LTD.ŞTİ.">
@@ -582,6 +582,7 @@ function renderBody(b) {
       </a>`).join("\n");
 
   return `<body>
+<div class="dealer-bar" role="note"><div class="container"><p>UMAY TÜM BİLİŞİM VE EĞİTİM DAN. YAZILIM İTH. İHR. SAN. TİC. LTD. ŞTİ. (e-imzasatinal.com.tr), <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.</a>'nin bayisi / başvuru noktasıdır. Nitelikli Elektronik Sertifikalar ile askı ve iptal dahil tüm sertifika hizmetleri <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA</a> tarafından sunulmaktadır. <a href="https://www.btk.gov.tr/elektronik-sertifika-hizmet-saglayicilari" target="_blank" rel="noopener">BTK ESHS listesi</a></p></div></div>
 <header class="site-header">
   <div class="container">
     <a href="/" class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></a>
@@ -641,12 +642,11 @@ ${b.body}
           <div style="flex-shrink:0;width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.5rem">U</div>
           <div>
             <h3 style="margin:0 0 6px;font-size:1.05rem;color:var(--navy)">UMAY TÜM BİLİŞİM Editör Ekibi</h3>
-            <p style="margin:0 0 10px;font-size:.9rem;color:#475569;line-height:1.55">Ayyıldız Bilgi Güvenliği A.Ş. yetkili bayisi olarak <strong>5+ yıllık sektörel deneyime</strong> sahip, BTK mevzuatı, 5070 sayılı Elektronik İmza Kanunu ve 6102 sayılı TTK üzerinde uzmanlaşmış uzmanlardan oluşan editör ekibimiz. Tüm içerikler güncel mevzuat ve uygulamaya uygunluk açısından gözden geçirilir.</p>
+            <p style="margin:0 0 10px;font-size:.9rem;color:#475569;line-height:1.55">AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. bayisi olarak <strong>5+ yıllık sektörel deneyime</strong> sahip, BTK mevzuatı, 5070 sayılı Elektronik İmza Kanunu ve 6102 sayılı TTK üzerinde uzmanlaşmış uzmanlardan oluşan editör ekibimiz. Tüm içerikler güncel mevzuat ve uygulamaya uygunluk açısından gözden geçirilir.</p>
             <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:.82rem">
-              <span style="color:#64748b">✓ Ayyıldız Yetkili Bayi</span>
+              <span style="color:#64748b">✓ AYYILDIZ İMZA Bayisi</span>
               <span style="color:#64748b">✓ 5+ Yıl Deneyim</span>
               <span style="color:#64748b">✓ 81 İl Hizmet</span>
-              <span style="color:#64748b">✓ BTK Mevzuat Uyumlu</span>
             </div>
           </div>
         </div>
@@ -688,12 +688,12 @@ ${related}
 <footer class="site-footer">
   <div class="container">
     <div class="cols">
-      <div class="about"><div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></div><p>Türkiye'nin 81 ilinde Ayyıldız e-imza, KEP ve dijital güven çözümlerinde yetkili satıcınız.</p></div>
+      <div class="about"><div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>UMAY TÜM BİLİŞİM LTD.ŞTİ.</span></div><p>UMAY TÜM BİLİŞİM VE EĞİTİM DAN. YAZILIM İTH. İHR. SAN. TİC. LTD. ŞTİ. (e-imzasatinal.com.tr), <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.</a>'nin bayisi / başvuru noktasıdır. Nitelikli Elektronik Sertifikalar ile askı ve iptal dahil tüm sertifika hizmetleri <a href="https://www.ayyildizimza.com.tr/" target="_blank" rel="noopener" class="dealer-name">AYYILDIZ İMZA</a> tarafından sunulmaktadır. <a href="https://www.btk.gov.tr/elektronik-sertifika-hizmet-saglayicilari" target="_blank" rel="noopener">BTK ESHS listesi</a></p></div>
       <div><h3>Hizmetler</h3><ul><li><a href="../e-imza">E-İmza</a></li><li><a href="../kep">KEP</a></li><li><a href="../hizmetler">Hizmetler</a></li></ul></div>
       <div><h3>Kurumsal</h3><ul><li><a href="../hakkimizda">Hakkımızda</a></li><li><a href="../blog">Blog</a></li><li><a href="../sss">SSS</a></li><li><a href="../sozluk">Sözlük</a></li><li><a href="../karsilastir">Karşılaştırma</a></li><li><a href="../iletisim">İletişim</a></li></ul></div>
       <div><h3>İletişim</h3><ul><li><a href="tel:+908507771145">0 850 777 11 45</a></li><li><a href="tel:+902647771145">0 264 777 11 45</a></li><li><a href="https://wa.me/908507771145" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:bilgi@umaybilisim.com.tr">bilgi@umaybilisim.com.tr</a></li><li>Sakarya / Erenler</li></ul></div>
     </div>
-    <div class="footer-bottom">© 2026 <a href="https://www.umaybilisim.com.tr" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">UMAY TÜM BİLİŞİM LTD.ŞTİ.</a> Tüm hakları saklıdır.</div>
+    <div class="footer-bottom">© 2026 <a href="https://www.umaybilisim.com.tr" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">UMAY TÜM BİLİŞİM VE EĞİTİM DAN. YAZILIM İTH. İHR. SAN. TİC. LTD. ŞTİ.</a> Tüm hakları saklıdır. AYYILDIZ İMZA markası AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.'ye aittir.</div>
   </div>
 </footer>
 <a href="https://wa.me/908507771145" class="fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>

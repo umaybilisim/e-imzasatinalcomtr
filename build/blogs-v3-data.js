@@ -48,7 +48,7 @@ module.exports = [
     citations: [
       { name: "5070 sayılı Elektronik İmza Kanunu", url: "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5070.pdf" },
       { name: "BTK — Elektronik Sertifika Hizmet Sağlayıcıları", url: "https://www.btk.gov.tr" },
-      { name: "Ayyıldız Bilgi Güvenliği", url: "https://www.ayyildiz.com.tr" }
+      { name: "AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş.", url: "https://www.ayyildizimza.com.tr/" }
     ],
     mentions: ["e-imza", "eshs", "nes"],
     faq: [
@@ -137,7 +137,7 @@ ${cta({ compact: true, title: "Sürenizi biz kontrol edelim", desc: "TC kimlik n
     citations: [
       { name: "BTK — Elektronik İmza", url: "https://www.btk.gov.tr" },
       { name: "Java (Oracle) resmi indirme sayfası", url: "https://www.java.com" },
-      { name: "Ayyıldız Bilgi Güvenliği — Destek", url: "https://www.ayyildiz.com.tr" }
+      { name: "AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. — Destek", url: "https://www.ayyildizimza.com.tr/" }
     ],
     mentions: ["e-imza", "akis", "java", "pkcs11"],
     faq: [

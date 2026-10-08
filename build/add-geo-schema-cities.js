@@ -52,7 +52,7 @@ function buildSchemas(citySlug, cityName) {
           "@id": `${cityUrl}#term-eimza`,
           "name": "E-İmza",
           "alternateName": ["Elektronik İmza", "Nitelikli Elektronik Sertifika", "NES"],
-          "description": `${cityName} ilinde de geçerli elektronik imza (e-imza), bir kişinin kimliğini doğrulayan ve elektronik belgelere atılan kriptografik imzadır. Türkiye'de 5070 sayılı Elektronik İmza Kanunu ile düzenlenmiş olup ıslak imza ile aynı hukuki sonucu doğurur.`,
+          "description": `${cityName} ilinde de geçerli elektronik imza (e-imza), bir kişinin kimliğini doğrulayan ve elektronik belgelere atılan kriptografik imzadır. Türkiye'de 5070 sayılı Elektronik İmza Kanunu ile düzenlenmiş olup güvenli elektronik imza olarak elle atılan imza ile aynı hukukî sonucu doğurur (5070 sayılı Kanun md. 5; kanundaki istisnalar hariç).`,
           "inDefinedTermSet": `${SITE}/#glossary`,
           "termCode": "EIMZA"
         },

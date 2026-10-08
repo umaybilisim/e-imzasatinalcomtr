@@ -28,7 +28,7 @@ const blogConfig = {
     title: "E-İmza Nedir? Nasıl Alınır?",
     keywords: ["e-imza", "elektronik imza", "NES", "nitelikli elektronik sertifika", "e-imza nasıl alınır", "Ayyıldız e-imza"],
     section: "E-İmza Rehberi",
-    tldr: "<strong>E-imza nedir?</strong> Bir kişinin kimliğini doğrulayan ve elektronik belgelere atılan kriptografik imzadır. Türkiye'de <strong>5070 sayılı Elektronik İmza Kanunu</strong> ile düzenlenmiş, ıslak imza ile aynı hukuki sonucu doğurur. <strong>Nasıl alınır?</strong> BTK lisanslı 5 ESHS'den birinden veya yetkili bayisinden alınır. UMAY TÜM BİLİŞİM Ayyıldız yetkili bayisi olarak 81 ile WhatsApp tabanlı 1-3 iş günü teslimat sunar.",
+    tldr: "<strong>E-imza nedir?</strong> Bir kişinin kimliğini doğrulayan ve elektronik belgelere atılan kriptografik imzadır. Türkiye'de <strong>5070 sayılı Elektronik İmza Kanunu</strong> ile düzenlenmiş, güvenli elektronik imza olarak elle atılan imza ile aynı hukukî sonucu doğurur (5070 sayılı Kanun md. 5; kanundaki istisnalar hariç). <strong>Nasıl alınır?</strong> BTK tarafından yetkilendirilmiş bir ESHS'den veya bayisinden alınır. UMAY TÜM BİLİŞİM, AYYILDIZ İMZA bayisi olarak 81 ile WhatsApp tabanlı 1-3 iş günü teslimat sunar.",
     citations: [
       { name: "5070 sayılı Elektronik İmza Kanunu", url: "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5070.pdf" },
       { name: "BTK — Elektronik Sertifika Hizmet Sağlayıcıları Listesi", url: "https://www.btk.gov.tr" },
@@ -43,8 +43,8 @@ const blogConfig = {
     section: "Teknik Rehber",
     tldr: "<strong>E-imza kurulumu 5 adımda tamamlanır:</strong> (1) <strong>AKİS</strong> kart sürücüsü kurulur. (2) USB token bilgisayara takılır. (3) <strong>PIN kodu</strong> ile aktivasyon yapılır. (4) Tarayıcı eklentisi (Chrome/Edge için) kurulur. (5) Test imzası ile doğrulama yapılır. UMAY TÜM BİLİŞİM <strong>AnyDesk üzerinden ücretsiz uzaktan kurulum desteği</strong> sunar.",
     citations: [
-      { name: "Ayyıldız Bilgi Güvenliği — Sürücü İndirme", url: "https://www.ayyildiz.com.tr" },
-      { name: "AKİS Kart İzleme Sistemi", url: "https://www.akis.com.tr" }
+      { name: "AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. — Sürücü İndirme", url: "https://www.ayyildizimza.com.tr/" },
+      { name: "AKİS Kart İzleme Aracı", url: "https://www.akis.com.tr" }
     ],
     mentions: ["e-imza", "akis", "usb token"],
     wordCount: 1600
@@ -69,7 +69,7 @@ const blogConfig = {
     tldr: "<strong>E-imza süresi bitmeden 2 hafta önce yenileme önerilir.</strong> Süre dolmadan yenilenirse mevcut karta yeni sertifika yüklenir (yenileme — hızlı). Süre dolduktan sonra yeni başvuru gerekir; bazen yeni kart da gerekebilir. <strong>PIN unutulduysa</strong> PUK kodu ile açılabilir; <strong>PUK 5 hatalı denendiyse</strong> kart kalıcı kilitlenir.",
     citations: [
       { name: "5070 sayılı Elektronik İmza Kanunu", url: "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.5070.pdf" },
-      { name: "Ayyıldız — Yenileme Süreci", url: "https://www.ayyildiz.com.tr" }
+      { name: "Ayyıldız — Yenileme Süreci", url: "https://www.ayyildizimza.com.tr/" }
     ],
     mentions: ["e-imza", "akis", "nes"],
     wordCount: 1400
@@ -167,7 +167,7 @@ function buildExtraSchemas(slug, cfg) {
         "@id": `${SITE}/#editorialteam`,
         "name": "UMAY TÜM BİLİŞİM Editör Ekibi",
         "url": `${SITE}/hakkimizda`,
-        "description": "Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, yetkili bayi uzmanlarından oluşan editör ekibi. Tüm içerikler yasal mevzuata uygunluk açısından gözden geçirilir.",
+        "description": "Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, AYYILDIZ İMZA bayisi uzmanlarından oluşan editör ekibi. Tüm içerikler yasal mevzuata uygunluk açısından gözden geçirilir.",
         "knowsAbout": ["Elektronik İmza", "KEP", "Dijital Güven", "5070 sayılı Kanun", "6102 sayılı TTK"],
         "memberOf": { "@id": `${SITE}/#organization` }
       },
@@ -212,12 +212,11 @@ function buildFooter(cfg) {
     <div style="flex-shrink:0;width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.5rem">U</div>
     <div>
       <h3 style="margin:0 0 6px;font-size:1.05rem;color:var(--navy)">UMAY TÜM BİLİŞİM Editör Ekibi</h3>
-      <p style="margin:0 0 10px;font-size:.9rem;color:#475569;line-height:1.55">Ayyıldız Bilgi Güvenliği A.Ş. yetkili bayisi olarak <strong>5+ yıllık sektörel deneyime</strong> sahip, BTK mevzuatı, 5070 sayılı Elektronik İmza Kanunu ve 6102 sayılı TTK üzerinde uzmanlaşmış uzmanlardan oluşan editör ekibimiz. Tüm içerikler güncel mevzuat ve uygulamaya uygunluk açısından gözden geçirilir.</p>
+      <p style="margin:0 0 10px;font-size:.9rem;color:#475569;line-height:1.55">AYYILDIZ İMZA BİLGİ GÜVENLİĞİ VE TEKNOLOJİLERİ A.Ş. bayisi olarak <strong>5+ yıllık sektörel deneyime</strong> sahip, BTK mevzuatı, 5070 sayılı Elektronik İmza Kanunu ve 6102 sayılı TTK üzerinde uzmanlaşmış uzmanlardan oluşan editör ekibimiz. Tüm içerikler güncel mevzuat ve uygulamaya uygunluk açısından gözden geçirilir.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:.82rem">
-        <span style="color:#64748b">✓ Ayyıldız Yetkili Bayi</span>
+        <span style="color:#64748b">✓ AYYILDIZ İMZA Bayisi</span>
         <span style="color:#64748b">✓ 5+ Yıl Deneyim</span>
         <span style="color:#64748b">✓ 81 İl Hizmet</span>
-        <span style="color:#64748b">✓ BTK Mevzuat Uyumlu</span>
       </div>
     </div>
   </div>

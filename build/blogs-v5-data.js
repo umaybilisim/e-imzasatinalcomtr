@@ -38,7 +38,7 @@ module.exports = [
       { q: "E-SIM'e geçersem mobil imzam iptal olur mu?", a: "Evet, büyük olasılıkla. Mobil imza sertifikası SIM kartın içinde saklanır ve başka bir karta taşınamaz; Turkcell, SIM kart değişikliğinde mobil imzanın iptal olduğunu belirtiyor. E-SIM'e geçmek de bir SIM değişikliğidir." },
       { q: "Mobil imza neden 128K SIM kart istiyor?", a: "Mobil imzada nitelikli elektronik sertifika ve şifreleme işlemleri SIM kartın güvenli alanında tutulur. BTK düzenlemesiyle 2015'ten itibaren mobil imza yalnızca güncel şifreleme algoritmasını destekleyen 128K SIM kartlarda sunulmaktadır." },
       { q: "E-SIM kullanıyorum, imza için ne yapmalıyım?", a: "İki seçeneğiniz var: mobil imza için fiziksel 128K SIM'e geri dönmek ya da telefondan ve SIM'den bağımsız çalışan kart tipi e-imza almak. Kart tipi e-imza operatör veya telefon değişikliğinden etkilenmez." },
-      { q: "Mobil imza ile kart tipi e-imza aynı hukuki değere sahip mi?", a: "Evet. İkisi de 5070 sayılı Elektronik İmza Kanunu kapsamında nitelikli elektronik imzadır ve ıslak imzayla aynı hukuki sonucu doğurur. Fark, sertifikanın nerede saklandığı ve hangi cihazla kullanıldığıdır." }
+      { q: "Mobil imza ile kart tipi e-imza aynı hukuki değere sahip mi?", a: "Evet. İkisi de 5070 sayılı Elektronik İmza Kanunu kapsamında nitelikli elektronik imzadır ve güvenli elektronik imza olarak elle atılan imzayla aynı hukukî sonucu doğurur (kanundaki istisnalar hariç). Fark, sertifikanın nerede saklandığı ve hangi cihazla kullanıldığıdır." }
     ],
     body: `
       <h2>Kısa Cevap: Şu An İçin Hayır</h2>
@@ -75,7 +75,7 @@ ${cta({ compact: true, title: "E-SIM'e geçtiniz, imzanız mı gitti?", desc: "T
       </div>
 
       <h2>Mobil İmza mı, Kart Tipi E-İmza mı?</h2>
-      <p>İkisi de 5070 sayılı Kanun kapsamında <strong>nitelikli elektronik imzadır</strong> ve ıslak imzayla aynı hukuki sonucu doğurur. Seçim, nasıl çalıştığınıza bağlıdır:</p>
+      <p>İkisi de 5070 sayılı Kanun kapsamında <strong>nitelikli elektronik imzadır</strong> ve güvenli elektronik imza olarak elle atılan imzayla aynı hukukî sonucu doğurur (kanundaki istisnalar hariç). Seçim, nasıl çalıştığınıza bağlıdır:</p>
       <table class="price-table">
         <thead><tr><th></th><th>Mobil imza</th><th>Kart tipi e-imza</th></tr></thead>
         <tbody>

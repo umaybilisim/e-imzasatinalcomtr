@@ -20,7 +20,7 @@ for (const name of files) {
   // 1. Article schema'sını zenginleştir — author'a EditorialOrganization detayı ekle
   html = html.replace(
     /"author":\{"@type":"Organization","name":"UMAY TÜM BİLİŞİM LTD\.ŞTİ\.","url":"https:\/\/www\.e-imzasatinal\.com\.tr"\}/g,
-    '"author":{"@type":"Organization","name":"UMAY TÜM BİLİŞİM Editör Ekibi","url":"https://www.e-imzasatinal.com.tr/hakkimizda","description":"Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, yetkili bayi uzmanlarından oluşan editör ekibi."}'
+    '"author":{"@type":"Organization","name":"UMAY TÜM BİLİŞİM Editör Ekibi","url":"https://www.e-imzasatinal.com.tr/hakkimizda","description":"Ayyıldız e-imza ve KEP konusunda 5+ yıl deneyimli, AYYILDIZ İMZA bayisi uzmanlarından oluşan editör ekibi."}'
   );
 
   // 2. Visible byline ekle — <h1> sonrası
