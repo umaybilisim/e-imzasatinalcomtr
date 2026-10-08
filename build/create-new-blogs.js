@@ -179,7 +179,7 @@ const blogs = [
         <li>USB token başka bir USB porta takın</li>
         <li>AKİS uygulamasını yeniden başlatın</li>
         <li>Bilgisayarı yeniden başlatın</li>
-        <li>AKİS'in güncel sürümünü yükleyin (Ayyıldız resmi sitesinden)</li>
+        <li>AKİS'in güncel sürümünü yükleyin (AYYILDIZ İMZA'nın web sitesinden)</li>
       </ul>
 
       <h3>Sorun 2: "Tarayıcı Eklentisi Çalışmıyor"</h3>
@@ -588,7 +588,7 @@ const blogs = [
       <p>Velayet, vesayet veya engelli temsil gibi <strong>özel durumlarda</strong> vekaletle başvuru süreci:</p>
       <div class="steps">
         <div class="step"><h3>Noter Vekaletnamesi</h3><p>Noter huzurunda <strong>"elektronik imza başvurusu yapma yetkisi"</strong> açıkça belirtilmiş özel vekaletname düzenlenmelidir. Genel vekalet yeterli değildir.</p></div>
-        <div class="step"><h3>ESHS Onayı</h3><p>Vekaletname ile birlikte ilgili ESHS'ye (Ayyıldız vb.) başvurulur. ESHS'nin durumu değerlendirip onaylaması gerekir.</p></div>
+        <div class="step"><h3>ESHS Onayı</h3><p>Vekaletname ile birlikte ilgili ESHS'ye (AYYILDIZ İMZA vb.) başvurulur. ESHS'nin durumu değerlendirip onaylaması gerekir.</p></div>
         <div class="step"><h3>Kimlik Doğrulama</h3><p>Asıl başvuru sahibinin kimliği özel yöntemlerle doğrulanır (vesayet kararı, sağlık raporu, mahkeme kararı vb.).</p></div>
         <div class="step"><h3>Teslim</h3><p>Sertifika ve PIN kodu, vekalet eden kişiye <strong>asıl sahibe ulaştırmak üzere</strong> teslim edilir.</p></div>
       </div>

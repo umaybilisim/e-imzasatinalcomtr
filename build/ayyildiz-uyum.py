@@ -415,6 +415,69 @@ t = re.sub(r'(<div class="term-card" id="ayyildiz"[^>]*>\s*<h3[^>]*>)Ayyıldız(
            lambda m: m.group(1) + "AYYILDIZ İMZA" + m.group(2) + "<strong>" + AY_TXT.split(". ")[0] + ".</strong> " + ". ".join(AY_TXT.split(". ")[1:]) + m.group(3), t, flags=re.S)
 if t != o: save(P, t)
 
+
+# ---------------------------------------------------------------- (K) MADDE 3: saglayici anlamindaki "Ayyıldız" -> AYYILDIZ İMZA (urun adi "Ayyıldız e-imza" kalir)
+RULES3 = [
+    ("hakkimizda.html", r"<h2>Ayyıldız Hakkında</h2>", "<h2>AYYILDIZ İMZA Hakkında</h2>"),
+    ("hakkimizda.html", r"Ayyıldız e-imza ve KEP yetkili satıcısı|Ayyıldız e-imza ve KEP bayisi", "Ayyıldız e-imza bayisi"),
+    ("hizmetler.html", r"Ayyıldız'ın e-imza ve KEP dışındaki tüm kurumsal çözümleri", "AYYILDIZ İMZA'nın e-imza dışındaki kurumsal çözümleri"),
+    ("hizmetler.html", r"Ayyıldız'ın REST ve SOAP", "AYYILDIZ İMZA'nın REST ve SOAP"),
+    ("hizmetler.html", r"Ayyıldız API'si", "AYYILDIZ İMZA API'si"),
+    ("iletisim.html", r"Ödeme onayı sonrası Ayyıldız sistemine başvurunuz iletilir, e-imza sertifikanız üretilir",
+     "Ödeme onayı sonrası başvurunuz AYYILDIZ İMZA'ya iletilir; kimlik doğrulama ve sertifika üretimi AYYILDIZ İMZA tarafından gerçekleştirilir"),
+    ("llms-full.txt", r"Ödeme onayı sonrası Ayyıldız sistemine başvuru iletilir\. Sertifika üretilir",
+     "Ödeme onayı sonrası başvuru AYYILDIZ İMZA'ya iletilir. Kimlik doğrulama ve sertifika üretimi AYYILDIZ İMZA tarafından yapılır"),
+    ("kep.html", r"Ayyıldız sistemi üzerinden KEP hesabınız açılır\.", "Başvurunuz BTK tarafından yetkilendirilmiş bir KEP hizmet sağlayıcısına iletilir ve KEP hesabınız açılır."),
+    ("index.html", r"Ayyıldız ürünlerini sadece satmıyoruz", "AYYILDIZ İMZA ürünlerini sadece satmıyoruz"),
+    ("index.html", r'"@type": "Brand", "name": "Ayyıldız"', '"@type": "Brand", "name": "AYYILDIZ İMZA"'),
+    ("index.html", r"Türkiye'nin 81 ilinde Ayyıldız e-imza, KEP, zaman damgası ve HSM çözümleri\.", "Türkiye'nin 81 ilinde AYYILDIZ İMZA e-imza, zaman damgası ve e-mühür çözümleri ile KEP başvurusu."),
+    ("index.html", r"Ayyıldız e-imza ve KEP hizmetlerine hızlıca ulaşın", "Ayyıldız e-imza ve KEP başvuru hizmetlerine hızlıca ulaşın"),
+    ("e-imza.html", r'"@type": "Brand", "name": "Ayyıldız"', '"@type": "Brand", "name": "AYYILDIZ İMZA"'),
+    ("sertifika-ilkeleri.html", r'(<meta (?:property="og:description"|name="twitter:description") content=")Ayyıldız nitelikli elektronik sertifika ilkeleri[^"]*',
+     r"\g<1>" + FULL + " Nitelikli Elektronik Sertifika İlkeleri, Uygulama Esasları ve zaman damgası belgeleri."),
+    ("sozluk.html", r"\(BTK, Kamu SM, Ayyıldız, e-Devlet\.\.\.\)", "(BTK, Kamu SM, AYYILDIZ İMZA, e-Devlet...)"),
+    ("karsilastir.html", r"ESHS \(Ayyıldız vb\.\)", "ESHS (AYYILDIZ İMZA vb.)"),
+    ("karsilastir.html", r"ESHS karşılaştırması, Ayyıldız Kamu SM E-Güven E-Tuğra TürkTrust, ", ""),
+    ("llms.txt", r"bayisi\. Ayyıldız, 5070 sayılı", "bayisi. AYYILDIZ İMZA, 5070 sayılı"),
+    ("llms.txt", r"\*\*S: E-imza neden Ayyıldız üzerinden alınmalı\?\*\* C: Ayyıldız,", "**S: E-imza neden AYYILDIZ İMZA üzerinden alınmalı?** C: AYYILDIZ İMZA,"),
+    ("llms-full.txt", r"\*\*ESHS\*\* \(Ayyıldız vb\. — sertifika üreticisi\)", "**ESHS** (AYYILDIZ İMZA vb. — sertifika üreticisi)"),
+    ("llms-full.txt", r"ESHS'ler'den \(Ayyıldız, Kamu SM, E-Güven, E-Tuğra, TürkTrust\) birinden", "ESHS'lerden (güncel liste: BTK ESHS listesi, " + BTK_ESHS + ") birinden"),
+]
+for f, pat, new in RULES3:
+    if os.path.exists(f):
+        t = load(f); t2 = re.sub(pat, new, t)
+        if t2 != t: save(f, t2)
+# blog genelinde saglayici anlami
+BLOG3 = [
+    (r"ESHS(</a>)?'ye \(Ayyıldız vb\.\)", r"ESHS\1'ye (AYYILDIZ İMZA vb.)"),
+    (r"(ESHS</a>) \(Ayyıldız vb\.\)", r"\1 (AYYILDIZ İMZA vb.)"),
+    (r"\(Ayyıldız resmi sitesinden\)", "(AYYILDIZ İMZA'nın web sitesinden)"),
+    (r'"name": "Ayyıldız — Yenileme Süreci"', '"name": "AYYILDIZ İMZA — Yenileme Süreci"'),
+    (r"Ayyıldız sistemi üzerinden başvurunuz oluşturulur\.", "Başvurunuz AYYILDIZ İMZA'ya iletilir; kimlik doğrulama ve sertifika üretimi AYYILDIZ İMZA tarafından gerçekleştirilir."),
+    (r"birden fazla sağlayıcı vardır \(Ayyıldız, e-Güven, TÜRKKEP, E-Tuğra, kamu personeli için Kamu SM gibi\)",
+     "birden fazla sağlayıcı vardır (AYYILDIZ İMZA, E-Güven, E-Tuğra, kamu personeli için Kamu SM gibi; güncel liste: " + BTK_LINK + ")"),
+]
+for f in glob.glob("blog/*.html") + JS_FILES:
+    t = load(f); o = t
+    for pat, new in BLOG3:
+        if f.endswith(".js") and "<a " in new: new = new.replace(BTK_LINK, "BTK ESHS listesi")
+        t = re.sub(pat, new, t)
+    if t != o: save(f, t)
+# il sayfalari: "Ayyıldız ... KEP" algisi (ana sayfa H1 ile ayni dil)
+for f in glob.glob("iller/*.html") + ["build/city-template.html"] + sorted(glob.glob("build/*.json")):
+    t = load(f); o = t
+    t = re.sub(r"(\w+'(?:d|t)(?:a|e)) Ayyıldız E-İmza ve KEP</h2>", r"\1 Ayyıldız E-İmza ve KEP Başvurusu</h2>", t)
+    t = t.replace("{{IL_ADI}}'da Ayyıldız E-İmza ve KEP</h2>", "{{IL_ADI}}'da Ayyıldız E-İmza ve KEP Başvurusu</h2>")
+    t = re.sub(r"ilinde Ayyıldız e-imza, KEP ve zaman damgası hizmetleri", "ilinde Ayyıldız e-imza, zaman damgası ve KEP başvuru hizmetleri", t)
+    t = re.sub(r"ilinde Ayyıldız e-imza ve KEP\.", "ilinde Ayyıldız e-imza ve KEP başvurusu.", t)
+    if t != o: save(f, t)
+
+
+# ---------------------------------------------------------------- (L) madde 35 schema aciklamasi + madde 39 gorunen metin birebir
+rep("karsilastir.html", "mobil imza, ESHS'ler, paketler, bireysel/firma ve KEP.", "mobil imza, paketler, bireysel/firma ve KEP.", required=False)
+rep("sozluk.html", "<strong>BTK tarafından yetkilendirilmiş, Nitelikli Elektronik Sertifika üretmeye yetkili kuruluştur.</strong>",
+    "<strong>5070 sayılı Elektronik İmza Kanunu kapsamında BTK tarafından yetkilendirilmiş, Nitelikli Elektronik Sertifika üretmeye yetkili kuruluştur.</strong>", required=False)
+
 # ---------------------------------------------------------------- (E) RAPOR
 print(f"Degisen dosya: {len(changed_files)}  | sayfaya ozel kural basarili: {REPORT['ok']}")
 if REPORT["miss"]:

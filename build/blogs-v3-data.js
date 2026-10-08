@@ -92,7 +92,7 @@ ${cta({ compact: true, title: "Sürenizi biz kontrol edelim", desc: "TC kimlik n
       </div>
 
       <h2>Başka Firmadan Aldığım E-İmzayı Ayyıldız ile Yenileyebilir miyim?</h2>
-      <p>Evet. Türkiye'de BTK yetkisiyle nitelikli elektronik sertifika veren birden fazla sağlayıcı vardır (Ayyıldız, e-Güven, TÜRKKEP, E-Tuğra, kamu personeli için Kamu SM gibi). Hangisinden aldığınız fark etmeksizin, süre uzatma zamanı geldiğinde <strong>sağlayıcı değiştirebilirsiniz</strong>.</p>
+      <p>Evet. Türkiye'de BTK yetkisiyle nitelikli elektronik sertifika veren birden fazla sağlayıcı vardır (AYYILDIZ İMZA, E-Güven, E-Tuğra, kamu personeli için Kamu SM gibi; güncel liste: BTK ESHS listesi). Hangisinden aldığınız fark etmeksizin, süre uzatma zamanı geldiğinde <strong>sağlayıcı değiştirebilirsiniz</strong>.</p>
       <ul>
         <li><strong>Yeni başvuru sayılır:</strong> Farklı sağlayıcının sertifikası eski kartınıza yüklenmez; size yeni Ayyıldız kartı gönderilir (1-3 iş günü).</li>
         <li><strong>Kullanım alanı değişmez:</strong> e-Devlet, UYAP, EKAP, GİB, MERSİS, e-Reçete gibi sistemler BTK yetkili tüm sağlayıcıların sertifikalarını kabul eder.</li>
