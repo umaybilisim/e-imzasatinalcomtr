@@ -73,7 +73,7 @@ module.exports = [
 ${cta({ compact: true, title: "Sürenizi biz kontrol edelim", desc: "TC kimlik numaranızı yazın, bitiş tarihini ve yenileme seçeneklerini iletelim.", msg: "E-imza süremi öğrenmek ve yenilemek istiyorum.", btn: "Süremi Sor" })}
       <h2>2026 E-İmza Yenileme Fiyatları</h2>
       <p>Ayyıldız e-imza yenileme fiyatları yeni başvuruyla aynıdır. Uzun süreli paket, yıllık maliyeti belirgin şekilde düşürür:</p>
-      <table class="price-table">
+      <table class="price-table price-table--best-last">
         <thead><tr><th>Paket</th><th>Fiyat (KDV dahil)</th><th>Yıllık maliyet</th></tr></thead>
         <tbody>
           <tr><td>1 yıllık</td><td>3.000 TL</td><td>3.000 TL</td></tr>

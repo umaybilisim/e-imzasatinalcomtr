@@ -103,7 +103,7 @@ C: Ayyıldız, BTK lisanslı 5 ESHS'den biridir. Kamu kurumlarıyla tam entegre 
 - [E-İmza Nerelerde Kullanılır?](https://www.e-imzasatinal.com.tr/blog/e-imza-nerelerde-kullanilir): 30+ kullanım alanı
 - [E-Fatura Geçiş Zorunluluğu 2026](https://www.e-imzasatinal.com.tr/blog/e-fatura-gecis-zorunlulugu-2026): Güncel mevzuat
 - [E-Ticaret İçin E-İmza](https://www.e-imzasatinal.com.tr/blog/e-ticaret-icin-e-imza): E-ticaret zorunlulukları
-- [KEP Nedir, Kimler Almak Zorunda?](https://www.e-imzasatinal.com.tr/blog/kep-nedir-kimler-almak-zorunda): KEP yasal rehberi
+- [KEP Adresi Nedir? Kimlere Zorunlu?](https://www.e-imzasatinal.com.tr/blog/kep-nedir-kimler-almak-zorunda): KEP yasal rehberi
 - [Mali Mühür Nedir? E-İmza ile Farkı](https://www.e-imzasatinal.com.tr/blog/mali-muhur-nedir-eimza-farki): Mali mühür (e-mühür) ile e-imza arasındaki farklar, GİB başvurusu
 - [E-İmza ile e-Devlet'e Nasıl Girilir?](https://www.e-imzasatinal.com.tr/blog/e-imza-ile-e-devlete-giris): HowTo - turkiye.gov.tr girişi adım adım
 - [E-İmza Tarayıcı Eklentisi Kurulumu](https://www.e-imzasatinal.com.tr/blog/e-imza-tarayici-eklentisi-kurulumu): HowTo - Chrome, Edge, Firefox kurulum
@@ -119,6 +119,8 @@ C: Ayyıldız, BTK lisanslı 5 ESHS'den biridir. Kamu kurumlarıyla tam entegre 
 - [E-Fatura İçin E-İmza Gerekli mi?](https://www.e-imzasatinal.com.tr/blog/e-fatura-icin-e-imza-gerekli-mi): Şahıs (NES veya mali mühür), şirket (mali mühür), özel entegratör, GİB e-Arşiv Portal (SMS onay); kaşe/ıslak imza aranmaz
 - [E-İmza Kaç Günde Gelir?](https://www.e-imzasatinal.com.tr/blog/e-imza-kac-gunde-gelir): Onay sonrası aynı gün kargo, büyükşehirlere ertesi gün, diğer illere 1-2 iş günü; İstanbul/Ankara/İzmir aynı gün kurye
 - [E-SIM ile Mobil İmza Olur mu?](https://www.e-imzasatinal.com.tr/blog/e-sim-mobil-imza): Turkcell resmi: mobil imza yalnızca 128K SIM'de, e-SIM'de kullanılamaz; SIM değişikliği mobil imzayı iptal eder; kart tipi e-imza SIM/operatörden bağımsız
+- [KEP Adresi Kimlere Zorunlu?](https://www.e-imzasatinal.com.tr/blog/kep-adresi-kimlere-zorunlu): Tebligat Kanunu 7/a: tüm özel hukuk tüzel kişileri (A.Ş., Ltd., kollektif, komandit, kooperatif, dernek, vakıf), noter, avukat, arabulucu, bilirkişi, kamu zorunlu; şahıs şirketi isteğe bağlı; tebligat 5. günün sonunda yapılmış sayılır
+- [KEP Sağlayıcıları 2026](https://www.e-imzasatinal.com.tr/blog/kep-saglayicilari-karsilastirma): BTK yetkili KEPHS: PTT hs01, TNB hs02, TÜRKKEP hs03, QNB eSolutions hs05, KEPKUR hs06, F.I.T. hs07, EDM hs09, Ark Dijital hs10; hukuki geçerlilik aynı
 
 ### Yasal & Politika
 - [Aydınlatma Metni (KVKK)](https://www.e-imzasatinal.com.tr/aydinlatma-metni)

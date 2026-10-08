@@ -415,4 +415,6 @@ button{font-family:inherit;cursor:pointer;border:none}
 .price-table{width:100%;border-collapse:collapse;font-size:.95rem;margin:20px 0;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05)}
 .price-table th{background:var(--navy);color:#fff;padding:12px 14px;text-align:left}
 .price-table td{padding:12px 14px;border-bottom:1px solid var(--border)}
-.price-table tr:last-child td{border-bottom:0;font-weight:700;color:var(--navy)}
+.price-table tr:last-child td{border-bottom:0}
+.price-table--best-last tr:last-child td{font-weight:700;color:var(--navy)}
+@media (max-width:600px){.price-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:.88rem}.price-table th,.price-table td{padding:10px 10px}}

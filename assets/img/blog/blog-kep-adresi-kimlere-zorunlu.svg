@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="KEP Adresi Kimlere Zorunlu">
+  <defs>
+    <linearGradient id="bg-kz" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2540"/><stop offset="1" stop-color="#1e3a5f"/></linearGradient>
+    <radialGradient id="glow-kz" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#25d366" stop-opacity="0.45"/><stop offset="1" stop-color="#25d366" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-kz)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630"/>
+  </g>
+  <circle cx="360" cy="315" r="280" fill="url(#glow-kz)"/>
+  <g transform="translate(360,315)">
+    <rect x="-170" y="-110" width="300" height="200" rx="14" fill="#ffffff"/>
+    <path d="M -170 -96 L -20 10 L 130 -96" stroke="#0a2540" stroke-width="8" fill="none" stroke-linejoin="round"/>
+    <text x="-20" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="900" fill="#e63946">KEP</text>
+    <g transform="translate(150,-120)">
+      <rect x="-60" y="-50" width="120" height="150" rx="10" fill="#fbbf24"/>
+      <g stroke="#0a2540" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M -38 -18 L -28 -8 L -12 -28"/>
+        <path d="M -38 22 L -28 32 L -12 12"/>
+        <path d="M -38 62 L -28 72 L -12 52"/>
+      </g>
+      <g fill="#0a2540"><rect x="0" y="-22" width="44" height="8" rx="4"/><rect x="0" y="18" width="44" height="8" rx="4"/><rect x="0" y="58" width="44" height="8" rx="4"/></g>
+    </g>
+  </g>
+  <g transform="translate(680,150)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#25d366">KEP REHBERİ 2026</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="900" fill="#ffffff">KEP Adresi</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff" fill-opacity="0.9">Kimlere Zorunlu?</text>
+    <line x1="0" y1="155" x2="120" y2="155" stroke="#e63946" stroke-width="4"/>
+    <text x="0" y="195" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.7">Şahıs · Limited · Anonim · Avukat</text>
+    <text x="0" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#fbbf24">Kanun maddesiyle net liste</text>
+  </g>
+</svg>

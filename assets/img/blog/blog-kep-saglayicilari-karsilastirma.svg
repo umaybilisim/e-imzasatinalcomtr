@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="KEP Sağlayıcıları Karşılaştırma">
+  <defs>
+    <linearGradient id="bg-ks" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a2540"/><stop offset="1" stop-color="#1e3a5f"/></linearGradient>
+    <radialGradient id="glow-ks" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.45"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-ks)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200"/>
+    <path d="M150 0 V630 M300 0 V630 M450 0 V630 M600 0 V630 M750 0 V630 M900 0 V630 M1050 0 V630"/>
+  </g>
+  <circle cx="360" cy="315" r="280" fill="url(#glow-ks)"/>
+  <g transform="translate(360,315)">
+    <g fill="#ffffff">
+      <rect x="-210" y="-150" width="170" height="70" rx="12"/>
+      <rect x="-60" y="-35" width="170" height="70" rx="12"/>
+      <rect x="-210" y="80" width="170" height="70" rx="12"/>
+    </g>
+    <g font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#0a2540" text-anchor="middle">
+      <text x="-125" y="-108">hs01.kep.tr</text>
+      <text x="25" y="7">hs03.kep.tr</text>
+      <text x="-125" y="122">hs09.kep.tr</text>
+    </g>
+    <g stroke="#22d3ee" stroke-width="5" fill="none" stroke-dasharray="10 8">
+      <path d="M -125 -80 L -60 -10"/>
+      <path d="M -125 80 L -60 10"/>
+    </g>
+    <g transform="translate(150,-120)">
+      <circle r="44" fill="#25d366"/>
+      <text y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#ffffff">BTK</text>
+    </g>
+  </g>
+  <g transform="translate(680,150)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#22d3ee">KEP REHBERİ 2026</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="900" fill="#ffffff">KEP</text>
+    <text x="0" y="120" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff" fill-opacity="0.9">Sağlayıcıları</text>
+    <line x1="0" y1="155" x2="120" y2="155" stroke="#e63946" stroke-width="4"/>
+    <text x="0" y="195" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#ffffff" fill-opacity="0.7">TÜRKKEP · PTT · TNB · EDM ve diğerleri</text>
+    <text x="0" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#fbbf24">BTK yetkili liste</text>
+  </g>
+</svg>
